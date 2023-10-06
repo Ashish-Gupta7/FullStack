@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaymentForm</title>
+    <link rel="stylesheet" href="PaymentForm.css">
+</head>
+<body>
+    <div class="container">
+    <!-- payment form banane ke liye form tag ka use krte h isme ek action nam ka attribute hota h jisme hm server ki location dete h lekin hamare pas abhi koi serever nhi h isiliye ise hm blank chhod dete h -->
+    <form action="">
+        <h2 class="main">Payment Form</h2><hr>
+        <p>Required Fields are followed by *</p>
+        <h3><b>Contact Information</b></h3>
+        <!-- text display karane ke liye hm p tag ka use kr rhe h iski jagah div ya span tag bhi use kr skte h -->
+        <!-- input tag ki madad se hm user se data input karate h aur input type attribute ki madad se hm jo chahe vo data input krwa skte h jaise nam ke liye text input type, password ke liye password input type, email ke liye email input type, gender ke liye radio input type etc. isme server me data save krne ke liye name attribute ka use krte h isko jo bhi value ya jo bhi likha jayega vo server me save hota h aur jo hm user se data lete h vo bhi server me save hota h -->
+        <!-- name attribute ko jo bhi value di jati h vo ek unique value honi chahiye. jaise ki first name aur last name kisi bhi vyakti ka pura nam hota h isliye hm name attribute ko same value de rhe h lekin gender aur name dono alag h isliye dono ki value alag h yadi hm value same kr dete to server nam aur gender ko alag nhi samjhta vo dono ko ek hi samjhta. jaise yadi hm gender me male, female aur other ko alag alag value de to fir aap male female other teeno ko select kr skte h jbki ye possible nhi h isliye teeno ko alag alag nhi balki ek hi value di jaati h jisse server teeno ko ek hi samjhe. -->
+        <p>First Name*: <input type="text" name="name" placeholder="Enter First Name" required></p>
+        <p>Last Name*: <input type="text" name="name" placeholder="Enter Last Name" required></p>
+        <p>DOB*: <input type="date" name="DOB" id="DOB" required></p>
+        <!-- fieldset ek box banata h aur legend ek tarah se heading ka kam krta h -->
+        <fieldset>
+            <legend>Gender*</legend>
+        <p>
+           Male <input type="radio" name="gender" id="gender" required>
+           Female <input type="radio" name="gender" id="gender" required>
+           Other <input type="radio"name="gender" id="gender" required>
+        </p>
+        </fieldset>
+        <!-- address multiple lines ka bhi ho skta h isliye hm textarea tag ka use krte h -->
+        <p>Address*: <textarea name="Address" id="Address" cols="100" rows="4" placeholder="Enter Address" required></textarea></p>
+        <p>Email*: <input type="email" name="email" id="email" placeholder="Enter Email Address" required></p>
+        <p>Pincode*: <input type="number" name="pincode" id="pincode" placeholder="Enter Pincode"></p>
+        
+        <h3><b>Payment Information</b></h3>
+        <p>Card Type*:
+            <select name="card type" id="card type" required>
+                <!-- hm phle option tag ke value nam ke attribute ko empty chhod dete h kyoki yadi ise fill kiya to ye server ke pas chla jaega jabki hme select a card type ko server me nhi bhejna h hme to user se card select krwana h aur us select kiye gye card ko server ke pas bhejna h -->
+                <option value="">Select a card type</option>
+                <option value="Rapay">Rupay</option>
+                <option value="visa">visa</option>
+                <option value="mastercard">MasterCard</option>
+            </select>
+            <p>Card Number*: <input type="number" name="card_number" id="card_number" placeholder="Enter Card Number" required></p>
+            <p>Expiration Date*: <input type="date" name="exp_date" id="exp_date" required></p>
+            <p>CVV*: <input type="password" name="CVV" id="CVV" placeholder="Enter CVV Number" required></p>
+            <input type="submit" value="Pay Now">
+        </p>
+    </form>
+    </div>
+</body>
+</html>

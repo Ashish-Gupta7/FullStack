@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+</head>
+<body>
+    <h1>What is Responsive Design</h1>
+    1. Endless new resolutions and devices are difficult to support separately for a web developer. <br>
+    2. Responsive design is a way for a web developer to make his website adapt to all the devices and resolutions. <br>
+    3. Responsive design is a necessity and not a luxury anymore! <br><br><br>
+    <h2>Various ways to achieve responsive design.</h2>
+    <h3><b>
+        1. Setting up the viewport. <br>
+        2. Use max-width/max-height. <br>
+        3. Using CSS Media Queries. <br>
+        4. Using rem/vh/vw units over pixels. <br>
+    </b></h3>
+</body>
+</html>
+
+
+<!-- Units and Box Model
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Size units</title>
+    <style>
+        .container{
+            width:400px;
+            /* height: 344px; */
+            height: 100vh;
+            width: 100vw;
+            font-size: 20px;
+            border :2px solid red;
+        }
+    h1{
+        text-align: center;
+        font-size: 3em;
+    }
+        /* font-size: 3em;
+        padding: 3em; */
+        /* font-size: 3rem;
+        padding: 3rem; */
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+</body>
+</html> -->
+
+
+
+
+<!-- self
+<!DOCTYPE html>     
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units in CSS</title>
+    <style>
+        .lorem100{
+            background-color: aqua;
+            padding: 15px;
+            border: 5px solid black;
+            margin: 10px;
+        }
+        .box1{
+            margin: 30px;
+            background-color: brown;
+        }
+        .box2{
+            padding: 30px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>types of Units in CSS</h1>
+    <h2>1. Absolute Units</h2>
+    <p>
+        Absolute Units are fixed and they are not relative to anything else and are generally considered to always be the same size.
+        <table>
+            <tbody>
+                <tr><td> 1.  cm : 1cm = 96px/2.54</td></tr>
+                <tr><td>2.  mm : milimeters</td></tr>
+                <tr><td>3.  in : in = inches(96px=2.54cm)</td></tr>
+                <tr><td>4.  px : pixels = (1px = 1/96th of 1in)</td></tr>
+                <tr><td>5.  pt : points = (1pt =1/72 of 1 in)</td></tr>
+                <tr><td>6.  pc : picas = (1pc = 12pt)</td></tr>
+            </tbody>
+        </table>
+    </p>
+    <br>
+    <h2>2. Relative Units</h2>
+    <p>
+        Relative length units are relative to something else, perhaps the size of the parent element's font, or the size of the viewport.
+        ye device pr nirbhar rhte h.
+        <table>
+            <tbody>
+            <tr><td>% : reletive to the parent element</td></tr>
+            <tr><td>em : relative to the font-size of the element(2em means 2 times the size of the current ) - ye parent container ke hisab se font size ko change karti h.</td></tr>
+            <tr><td>rem : font size of the root(html ke font size ke relative rem work krta h) element - rem ko use krne ke liye html ko units dete h.</td></tr>
+            <tr><td>vw : relative to 1% of the width of the viewport - 100vw mtlb jitni width dikh rahi h uss poori width ko cover kr lena.</td></tr>
+            <tr><td>vh : relative to 1% of the height oh the viewport - 100vh mtlb jitni height dikh rahi h uss poori height ko cover kr lena.</td></tr>
+            <tr><td>vmin : 1% of the viewport's smaller dimension</td></tr>
+            <tr><td>vmax : 1% of the viewport's larger dimension</td></tr>
+            </tbody>
+        </table>
+    </p>
+
+    <br><br><br>
+    <h2>Box Model Img</h2>
+    <a href="https://www.youtube.com/watch?v=5koxb4JaDqc&pp=ygUeYm94IG1vZGVsIGNzcyBjb2RlIHdpdGggaGFycnkg"></a>
+    <img src="C:\Users\HP\Videos\Captures\Media Player 23-09-2023 19_33_26.png" width="100%" alt="">
+    <div class="lorem100">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, fugit? Consequatur nisi pariatur possimus voluptatem enim, quos inventore quia architecto id repellat laborum quae fugiat. Ab possimus, vero fugiat aliquam omnis cum? Quasi deleniti temporibus vitae perferendis reprehenderit cupiditate, excepturi laudantium porro fugit alias aut beatae itaque eligendi consequuntur quos quod, inventore delectus pariatur ea iure tenetur qui nisi facilis. Sapiente impedit voluptas aspernatur distinctio inventore corporis vero ad omnis id! Fugiat quisquam harum eos blanditiis esse consequuntur quos pariatur, sint nobis, est minima, iure repellendus totam rem sunt. Dolor molestiae exercitationem ad ab quaerat nesciunt veritatis quibusdam obcaecati hic.
+    </div>
+    <p><h2>padding</h2>
+        padding kisi bhi content ke suround khali jagah h, yadi kisi bhi content ka background color green h to padding ka color bhi green ho jaega.   
+        <h2>difference b/w padding & margin</h2>
+        padding content ke sath juda hua hota h jabki margin content ke bahar ka area hota h.
+    </p>
+    <div class="box1">
+           box1
+    </div>
+    <div class="box2">
+           box2
+    </div>
+    <h3>Developer Tools :- inspact elements- <a href="https://www.youtube.com/watch?v=buxedopZbKM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=16&pp=iAQB">Codewithharry- WD playlist 16th lecture.</a></h3>
+</body>
+</html>   -->
+
+
+
+
+<!-- Media Qurries
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+
+        @media only screen and (max-width:300px){
+            #box-1{
+                display: block;
+                background-color: cyan;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            #box-2{
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            #box-3{
+                display: block;
+                color: black;
+                background-color: yellow;
+            }
+        }
+
+        @media (min-width: 800px)  {
+            #box-4{
+                display: block;
+                background-color: green;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">Mai ek iPhone hoon</div>
+    <div class="box" id="box-2">Mai ek Tablet hoon</div>
+    <div class="box" id="box-3">Mai ek desktop computer hoon</div>
+    <div class="box" id="box-4">Mai ek widescreen computer hoon</div>
+</body>
+</html> -->

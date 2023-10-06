@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        .box-set, .box, .Dabba-set, .Dabba, .fix-set, .fix{
+            border-radius: 6px;
+        }
+        .box-set, .Dabba-set, .fix-set{
+            background: rgba(171, 148, 148, 0.915);
+        }
+        .box{
+            background: #2db34a;
+            position: relative;
+             /* position property me static ek default value h.  */
+            /* position relative krne se hmm box ko top bottom left right kisi bhi direction me move kr skte h. */
+            height: 80px;
+            width: 80px;
+            text-align: center;
+            margin: 20px;
+        }
+        .box-1{
+            top: 30px;
+            /* agar hm position relative nhi dete to box-1 pr top 30px ki value work nhi krti. */
+        }
+
+        .Dabba{
+            background: #4a2db3;
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            text-align: center;
+            margin: 20px;
+        }
+        .Dabba-3{
+            right: 150px;
+            /* position absolute li wajah se sabhi dibbe ek ke uper ek the lekin Dabba-3 pr right property ko 150px ki value dene pr vo right se 150px left ki oor chla gya h. */
+        }
+        .Dabba-2{
+            top: 300px;
+            /* ye top se bottom ki oor 300px khisak gya h. */
+        }
+        .Dabba-1{
+            bottom: 200px;
+        }
+        .Dabba-4{
+            left: 300px;
+        }
+
+        .fix{
+            background: #b4b464;
+            height: 80px;
+            width: 80px;
+            text-align: center;
+            margin: 20px;
+        }
+        .fix-2{
+            position: fixed;
+        /* fix-2 ko position fixed diya gya h mtlb ye content ke sath hi chlega. */
+        }
+    </style>
+    <!-- ek aur position sticky nam ki hoti h ye relative aur fixed ke mixture jaise kam krta h. -->
+</head>
+<body>
+     <div class="box-set">
+        <div class="box box-1">box 1</div>
+        <div class="box box-2">box 2</div>
+        <div class="box box-3">box 3</div>
+        <div class="box box-4">box 4</div>
+     </div>
+     <br><br><br>
+     <div class="Dabba-set">
+        <div class="Dabba Dabba-1">Dabba 1</div>
+        <div class="Dabba Dabba-2">Dabba 2</div>
+        <div class="Dabba Dabba-3">Dabba 3</div>
+        <div class="Dabba Dabba-4">Dabba 4</div>
+     </div>
+     <div class="fix-set">
+        <div class="fix fix-1">fix 1</div>
+        <div class="fix fix-2">fix 2</div>
+        <div class="fix fix-3">fix 3</div>
+        <div class="fix fix-4">fix 4</div>
+     </div>
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, assumenda iure repellat minima hic quaerat deserunt voluptates placeat dolores neque omnis quia animi. Nisi repellat dolorum, sapiente ut inventore numquam fuga. Tempora itaque commodi hic omnis nisi quo dignissimos veniam provident, sunt deserunt quae! Dicta dolorem facilis enim corrupti assumenda? Soluta nesciunt cupiditate expedita. Nobis perspiciatis rem exercitationem fuga ab atque dolore illum incidunt ipsam eius recusandae, dolorum at perferendis totam quas delectus placeat amet fugit. Esse corporis voluptate officia dolor quod, inventore perferendis quam dolores, sint eveniet, at cum facere eos ipsam nemo incidunt hic sequi in ullam non! Sed quo nam, quae nesciunt quasi molestias numquam, necessitatibus, facilis nulla odit officia fugit maiores odio. Quod, est veniam sequi excepturi blanditiis voluptas! Quasi vel consectetur tempora natus. Repudiandae suscipit a maiores maxime ullam veritatis rerum laudantium praesentium dolor porro totam enim, assumenda laboriosam consequuntur debitis fuga nihil temporibus, tenetur inventore, labore dolorem? Qui sapiente beatae quos, dolor tempora quisquam, in cumque amet officiis sunt ut quidem. Possimus recusandae, blanditiis qui expedita fugit labore quo voluptatum harum quisquam facilis fuga asperiores dolor consequuntur accusamus repellendus, eius a consectetur deserunt maiores optio! Hic totam, velit dolor ducimus porro aut eligendi architecto obcaecati accusantium ipsam, quam, ea repudiandae tenetur. Id tempora eligendi nostrum laboriosam nemo repellendus, praesentium, voluptas aliquam quae itaque ea laudantium perferendis esse reprehenderit odio sit! Odio nesciunt expedita quos? Adipisci amet quia ex incidunt enim ipsam excepturi atque rerum, consequuntur aliquam optio possimus accusantium qui maxime eligendi, repudiandae aperiam asperiores unde dolore ullam eos debitis laborum illo nobis. Facere officiis vero, sed sint laudantium qui aliquam, accusamus perferendis eaque nemo placeat alias repudiandae necessitatibus blanditiis possimus dignissimos animi. Dolorem dicta voluptate maiores ab quidem neque aperiam. Fugit atque impedit excepturi tenetur aspernatur facilis similique ad molestiae provident assumenda! Ab porro praesentium dolorem adipisci officiis aliquid ut quasi aut. Cum, natus quos sed, earum corrupti distinctio ut minima provident ab quam inventore odio totam expedita reprehenderit? Dolores impedit debitis in reprehenderit! Itaque repudiandae fugiat laboriosam magnam esse eaque perferendis veritatis doloremque, optio minus alias excepturi iure aliquid quis dicta veniam ullam cumque voluptatum, soluta aliquam. Facilis eaque in error tempora nihil voluptatibus dignissimos obcaecati provident ratione debitis minima excepturi neque delectus repellendus a incidunt optio, dolorem asperiores eos nostrum. Voluptatibus, laboriosam. Suscipit repellendus voluptate maxime exercitationem ratione. Cumque tempore cum, dolores obcaecati rem reiciendis odit voluptate, ducimus illo, molestias officia fugiat explicabo libero aliquam sit illum beatae nesciunt commodi ut harum. Optio expedita incidunt, nam quae deserunt obcaecati? Autem placeat, eaque sapiente asperiores deleniti libero? Asperiores unde voluptatibus nisi cumque incidunt ipsa corporis aut quia ipsum cupiditate consequuntur molestiae, repellat illum molestias illo dolores? Corrupti dolores at ratione itaque. Similique ad, ab incidunt est error in. Corporis perspiciatis sit consequuntur sequi vel, ipsum debitis vitae! Nostrum ipsum dolor mollitia quaerat ad? Molestias, delectus tempora fugiat, hic, tenetur possimus aperiam dolorum temporibus alias atque enim dolore facilis mollitia quo porro aliquam nisi nobis id harum magni! Tempore fugit placeat quibusdam, adipisci illo corrupti expedita quo veniam tenetur esse amet! Accusamus modi libero voluptatum expedita nam. Sit, natus nulla voluptates neque vel iusto perferendis eaque reiciendis! Perspiciatis porro facilis est quia aspernatur voluptas cum incidunt voluptatum assumenda excepturi. Doloremque adipisci laborum architecto minima nemo reprehenderit cum omnis ut sapiente sed necessitatibus ratione vitae, quo ea optio delectus? Rerum iure ea a tempora qui. Voluptatibus, laboriosam. Nisi sunt id iste accusantium veniam eaque impedit eos officiis cupiditate. Officia et natus odit non at, rem quod quis ipsa sed corporis debitis veniam! Veniam, minus. Quidem autem impedit cupiditate a labore culpa, accusantium dicta esse illum perferendis architecto debitis est velit assumenda quis exercitationem vitae eveniet fugit. Voluptas eum cum modi. Rerum repudiandae perferendis vel veniam placeat hic adipisci rem nesciunt corrupti enim, earum error voluptates eveniet iure asperiores. Consectetur, eaque. Dicta doloremque quos incidunt culpa reiciendis nulla hic. Eum dicta architecto cupiditate, assumenda, magnam molestias adipisci minima mollitia id modi pariatur soluta! Dolorum deserunt aut excepturi, pariatur maiores maxime vitae praesentium temporibus odit cupiditate tempora voluptatibus inventore explicabo nisi, repellendus eaque. Assumenda, voluptatem. Esse perspiciatis repellendus neque eos quasi facilis tenetur corrupti recusandae sapiente quo. Quae fugit voluptatem eum vel quasi culpa animi omnis exercitationem quas assumenda nulla saepe velit corrupti a quos, debitis dicta dignissimos distinctio dolores at. Ducimus, eligendi nisi sequi ratione odit aliquid animi adipisci exercitationem accusantium molestias doloribus architecto illo, eum quidem dicta hic. Quod ea distinctio maiores, nisi, quia quasi animi reprehenderit voluptates dolore, veritatis dignissimos. Voluptatibus unde, recusandae, explicabo earum pariatur quisquam rem maxime nihil soluta commodi non illo. Totam libero eaque aliquid dicta. Repellendus nemo, doloribus illum aliquam, unde, assumenda sit nulla explicabo sunt sequi in. Eaque nulla et asperiores, doloribus voluptatem repudiandae a, ipsa delectus molestiae, assumenda amet voluptas nam quisquam voluptatibus tempore. Libero neque excepturi cupiditate reiciendis consequatur dolores nostrum harum amet odit cum, ipsa quibusdam at expedita qui inventore, modi fuga, corporis nihil error possimus rerum sint quasi architecto veritatis. Deserunt nam quos consequuntur, velit iusto eligendi nulla eum ut mollitia illo reiciendis, asperiores sed autem, dolorem amet sequi dolore perferendis eveniet maxime assumenda saepe laboriosam. Iste, deleniti. Nobis accusantium molestiae, ducimus modi non harum vitae doloremque voluptates debitis, obcaecati eveniet fuga earum exercitationem vero beatae itaque dolorum cupiditate, voluptas autem in velit quos ipsa deleniti. Veniam, sed eaque alias in atque quisquam repudiandae aperiam corrupti explicabo natus, autem repellat obcaecati vel praesentium libero. Architecto veritatis, quae labore ad, eum sint ea fugit rerum tempore veniam autem dolor eius doloribus fuga adipisci fugiat. Quibusdam fugiat fugit velit repellat facilis ratione sunt earum possimus omnis accusantium enim, ea in rerum distinctio! Impedit deserunt ea quaerat, aperiam cum perferendis quod vitae dolorem? Eaque atque non facere ea culpa, modi praesentium magnam quam alias dolor necessitatibus debitis quasi dicta ducimus similique accusamus et blanditiis laudantium sed totam laborum numquam? Consequuntur repudiandae obcaecati, commodi aperiam deserunt odit aut ex explicabo dicta perferendis consequatur in libero debitis ipsum recusandae dolorem necessitatibus fugiat ad molestiae iusto quo. Aperiam, corrupti.</p>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Position In CSS</title>
+    <style>
+        .box{
+            border: 2px solid red;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        #box3{
+            position: fixed;
+            right: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html> -->

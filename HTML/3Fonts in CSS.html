@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+<!-- iss font family ki link ko google se copy kiya h aur use mta tag ke neeche hi paste kre isse aap computer ko phle hi iss font family ke bare me bta rhe ho. -->
+    <title>Fonts in CSS</title>
+    <style>
+        h1{
+            font-size:80px ;
+            font-family:  'Croissant One', arial,helvetica;
+            /*  yaha comma-comma jo lga h iska mtlb agar browser ke pas 1st font nhi hua to 2nd wala agar 2nd wala nhi hua to 3rd isi trh se next run hoga */
+            /* 1. web safe fonts - aise fonts jo kisi nhi operating system me preinstalled aate h.
+            2. web fonts - aise fonts jo operating system me preinstalled nhi aate unhe web fonts kahte h inhe import kiya jata h. */
+
+            font-style: italic;
+        }
+        p{
+            font-weight: 900;
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+<body>
+    <h1>this is a heading</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde animi amet provident. Natus tempore ullam eius. Iste libero nihil, unde voluptatum eligendi quo at veniam veritatis quae assumenda culpa. Voluptate.</p>
+</body>
+</html>

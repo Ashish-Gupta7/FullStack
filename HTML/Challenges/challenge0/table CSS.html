@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+    <style>
+        table,tr,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            border-spacing: 5px;
+        }
+        th{
+            background-color: rosybrown;
+        }
+        td{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <!-- koi bhi table banane ke liye hmm table tag ka use krte h, table me headings dene ke liye thead tag ka use krte h aur uss heading ke details ko tbody ke andar likhte h, har ek row ke liye tr tag ka use krte h jo represent krta h table row ko aur uss cell ka data td tag me likhte h lekin heading wale cell ko th tag ke andar likhte h, rows ka sum ya kuchh aur jise ek sath darsana ho to hmm rowspan tag ka use krte h aur isi prakar colomn ke liye colspan ka use krte h, tfoot ka use last me kuchh darsane ke liye hota h -->
+    
+    <Table>
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Theory</th>
+                <th>Practical</th>
+                <th>Total Marks</th>
+                <th>Grades</th>
+                <th>Overall Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>English</td>
+                <td>75</td>
+                <td>---</td>
+                <td>75</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Maths</td>
+                <td>80</td>
+                <td>---</td>
+                <td>80</td>
+                <td>A</td>
+            </tr>   
+            <tr>
+                <td>Science</td>
+                <td>74</td>
+                <td>24</td>
+                <td>98</td>
+                <td>A</td>
+            </tr>   
+            <tr>
+                <td>Hindi</td>
+                <td>83</td>
+                <td>---</td>
+                <td>83</td>
+                <td>A</td>
+            </tr>   
+            <tr>
+                <td>Computer Science</td>
+                <td>70</td>
+                <td>24</td>
+                <td>94</td>
+                <td>A</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="5">Result:Pass</th>
+            <th rowspan="5">430</th>
+        </tfoot>
+    </Table>
+</body>
+</html>

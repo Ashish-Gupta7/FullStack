@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        ul#sty li .fav{
+            color: aqua;
+            font-weight: bold;
+        }
+        ul#Sty li{
+            font-size: 12px;
+            color: blueviolet;
+            font-weight: lighter;
+        }
+
+        h2{
+            color: royalblue !important;
+        }
+        h3{
+            color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- yaha aap ul#sty li .fav aur ul#sty li pr hover karenge to selector specificity ka option dikhega jiski bhi specificity jyada hogi uske attributes run ho jaege jaise yaha ul#sty li .fav ki specificity jyada thi to vo run ho gya h kyuki dono selector me se sirf ek me font size h isliye vo jarur run hoga chahe specificity kuchh bhi ho. -->
+    <ul id="Sty">
+        <li>Amazon</li>
+        <li class="fav">Google</li>
+        <li>TCS</li>
+    </ul>
+    <br>
+    <!-- inline styling ki specificity sbse jyada hoti h lekin hmne h2 wale tag ko uper style krte smy important keyword ka use kiya h isliye h2 me inline ki styling work nhi ki h. -->
+    <h3 style="color: rosybrown;">imp</h3>
+    <h2 style="color: rosybrown;">important keyword</h2>
+</body> 
+</html>

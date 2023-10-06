@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2+p{
+            color: crimson;
+        }
+        header{
+        text-align: center;
+        text-decoration: underline;
+        font-size: 30px;
+        color: royalblue;
+        font-weight: bolder;
+        }
+        table{
+            text-align: center
+        }
+
+
+        p{
+            color: green;
+            font-size: 25px;
+            font-weight: 800;
+        }
+        a{
+            color: peru;
+        }
+        li{
+            list-style-type: georgian;
+        }
+        .special{
+            color: blueviolet;
+            font-weight: 900;
+        }
+        i.special{
+            color: brown;
+        }
+        li i{
+            color: yellow;
+        }
+        h4+p{
+            color: darkorange;
+        }
+        /* h4 ke just baad yadi p tag nhi hota to ye code       work nhi krta */
+        a:hover{
+            text-decoration: none;
+            color: blue;
+        }
+        body h3 .special{
+            color: indigo;
+            background-color: burlywood;
+            padding: 5px;
+        }
+        li#heading{
+            color: dimgray;
+        }
+        b[class]{
+            font-size: 25px;
+            color: brown;
+        }
+        b[class="bold2"]{
+            font-weight: 100;
+        }
+        /* isme jaha bhi b tag ke andar class attribute ho      aur usme bold2 value ho uska font weight 100 ho     jaega */
+        b[class~="m"]{
+            color: powderblue;
+        }
+        /*isme jaha kahi bhi b tag ke andar class attribute         ho aur usme m value ho to uska color powderblue ho      jaega */
+        
+    </style>
+</head>
+<body>
+    <h2>what is CSS :-</h2>
+    <ol>
+        <li>CSS gives style to raw HTML.</li>
+        <li>CSS stands for Cascading Style Sheets.</li>
+        <li>CSS is used to give style to our web pages.</li>
+        <li>CSS is used to make websites responsive.</li>
+        <li>html is used to structure a website.</li>
+        <li>CSS takes responsibility of design.</li>
+    </ol>
+
+    <h2 style="color: cadetblue;">CSS - Cascading Style Sheet</h2>
+    <p>CSS ki madad se kisi bhi web page ko design krte h, aur html ka use website ko structure krne ka hota h</p>
+    <p>
+        <h3>Syntax of CSS - Selector{Property:Values}</h3>
+        <h4>Selector - ye vo jagah h jaha pr css ki property aur value apply hogi.</h4>
+        <h4>property ke andar - color, font family, text align etc. aate h</h4>
+        <h4>values ke andar - koi color dena, koi font family ko choose krna, koi text align ko choose krna etc. ye property pr depend krta h</h4>
+    </p>
+    <p>
+        <h3>Link CSS in HTML</h3>
+        3 ways to add CSS to the markup(html code) - 1. Inline, 2. Internal, 3. External
+        <h4>1. Inline - comment out</h4>
+        <!-- <tagname style="property:value"> isme style nam ke attribute ke andar apni property aur values ko likh skte h. Ex- hamne h2 tag ke andar style attribute ki madad se css - cascading style sheet ko royalblue color diya h. sabse jyada specificity isi ki hoti h. -->
+        <h4>2. Internal - comment out</h4>
+        <!-- internal way ko hm head tag ke andar likhte h wo bhi style tag ke andar isme jis bhi tag ya attribute ko style krna ho use select krte h -->
+        <h4>3. External - comment out</h4>
+        <!-- external css me css ki ek file banate h aur jo bhi website ko style deni ho uska code us css ke file me hi likhte h aur use html ke file se link kr dete h. internal aur external me specificity ka division order ke hisab se hota h jo baad me likha jaega uski specificity jyada hogi. -->
+    </p>
+
+    <header>Selectors in CSS</header>
+    <br><br><br>
+    1. css selectors are used to find the elements whose property will be set. <br>
+    2. selectors are used to target the html elements. <br>
+    3. selectors makes it easy for us to easily target single/multiple HTML elements in the markup.
+    <br><br>
+    <table>
+        <thead>
+            <tr>
+                <th>Selector</th>
+                <th>Example</th>
+                <th>Learn CSS Tutorial</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1. Type Selector</td>
+                <td>h1 {}</td>
+                <td>Type Selectors</td>
+            </tr>
+            <tr>
+                <td>2. Universal Selector</td>
+                <td>* {}</td>
+                <td>The Universal Selectors</td>
+            </tr>
+            <tr>
+                <td>3. Class Selector</td>
+                <td>.box {}</td>
+                <td>Class Selectors</td>
+            </tr>
+            <tr>
+                <td>4. Id Selector</td>
+                <td>#unique {}</td>
+                <td>Id Selectors</td>
+            </tr>
+            <tr>
+                <td>5. Attribute Selector</td>
+                <td>a[title] {}</td>
+                <td>Attribute Selectors</td>
+            </tr>
+            <tr>
+                <td>6. Pseudo-class Selector</td>
+                <td>p:first-child {}</td>
+                <td>Pseudo-classes</td>
+            </tr>
+            <tr>
+                <td>7. Pseudo-element Selector</td>
+                <td>p::first-line {}</td>
+                <td>Pseudo-elements</td>
+            </tr>
+            <tr>
+                <td>8. Descendant combinator</td>
+                <td>article p</td>
+                <td>Descendant combinator</td>
+            </tr>
+            <tr>
+                <td>9. Child combinator</td>
+                <td>article > p</td>
+                <td>Child combinator</td>
+            </tr>
+            <tr>
+                <td>10. Adjacent sibling combinator</td>
+                <td>h1 + p</td>
+                <td>Adjacent sibling</td>
+            </tr>
+            <tr>
+                <td>11. General sibling combinator</td>
+                <td>h1 ~ p</td>
+                <td>General sibling</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <!--CSS Syntax- h1 {color:blue;font-size:12px}
+        isme h1 ek selector h color aur font-size property h, blue aur 12px ye dono values h, aur jo curly bracket ke andar likha h vo poora h1 ka declaration h -->
+    <p><b><u>How to use Selectors</u></b></p>
+    <br>
+    <a href="universal selector CSS.html"></a>
+    <a href="https://youtu.be/sqJ6xZ9mUwE?si=4QYDgAIvVp_Mp6ag">Link</a>
+    <h1>Lorem ipsum dolor sit amet <span class="special">hllo</span> consectetur adipisicing elit.</h1>
+    <h2>Lorem ipsum dolor sit amet <i class="special">italic</i> consectetur, adipisicing elit. Quod consequuntur, distinctio rem velit voluptas quo voluptate accusantium.</h2>
+    <h3>Lorem ipsum dolor <u class="special">selectors</u> sit amet, consectetur adipisicing.</h3>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam.</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis modi necessitatibus tempore?</p>
+    <ul>
+        <li class="special">Samsung</li>
+        <li id="heading">Blackberry</li>
+        <li><i>Boat</i>Google pixel</li>
+    </ul>
+    <b>Bold</b><br>
+    <b class="bold1">italic</b><br>
+    <b class="bold2">Bold</b><br>
+    <b class="bold3">underline</b><br>
+    <b class="bold3 n">emphasize</b><br>
+    <b class="bold3 m">bracket</b><br>
+    <b class="bold3 mn">infinity</b><br>
+    <b class="bold3 m n">endgame</b>
+
+    
+    <h3>Developer Tools :- inspact elements- <a href="https://www.youtube.com/watch?v=buxedopZbKM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=16&pp=iAQB">Codewithharry- WD playlist 16th lecture.</a></h3>
+    <h3>Pseudo selectors :- <a href="https://youtu.be/WwUM7qOimbo?si=XgRalnycDMurEigj"></a> <br>
+    <a href="https://youtu.be/P-hZDC5YkJE?si=wFenTF26A3HIxIMy"></a> <br>
+    <a href="https://youtu.be/PlKG1fooswU?si=okAjkfwYy5eOgxuv"></a></h3>
+
+</body>
+</html>

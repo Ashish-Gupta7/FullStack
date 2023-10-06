@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+</head>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{
+            background-color: royalblue;
+        }
+        #box2{
+            /* default roop se visibility visible hoti h lekin use hidden krne se vah element hide ho jati h lekin vo jagah nhi chhodti h */
+            /* visibility: hidden; */
+            /* agar hm display none krte h to vah element hide ho jata h agar jagah bhi chhod deta h */
+            /* display: none; */
+            background-color: rosybrown;
+        }
+        #box3{
+            background-color: lightcyan;
+        }
+        #box4{
+            background-color: lightseagreen;
+        }
+    </style>
+<body>
+    <!-- .box#box$*4 -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
+
+<br><br><br><br><br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+</head>
+    <style>
+        /* z-index keval position property pr kam krta h lekin position static ko chhod kr, mtlb z-index ka use krna h to position property use krni hogi. */
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{
+            position: relative;
+            z-index: 35;
+            top: 45px;
+            background-color: royalblue;
+        }
+        #box2{
+            position: relative;
+            z-index: 67;
+            top: 13px;
+            right: 45px;
+            background-color: rosybrown;
+        }
+        #box3{
+            background-color: lightcyan;
+        }
+        #box4{
+            background-color: lightseagreen;
+        }
+    </style>
+<body>
+    <!-- .box#box$*4 -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
