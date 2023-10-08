@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .main{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 30px;
+            padding: 20px;
+            border: 3px solid black;
+            height: 300px;
+            position: relative;
+        }
+        .box{
+            border: 2px dashed blue;
+            height: 250px;
+            width: 250px;
+            padding: 20px;
+        }
+        .box-1{
+            animation-name: ani1;    /* animation-name dene se keyframes ki madad se animation de skte h, ye nam kuchh bhi de skte h */
+            animation-duration: 3s;   /* animation-duration ka mtlb animation kitni der tk chlega */
+            animation-delay: 2s;      /* animation-delay ka mtlb animation kitni der se start hoga */
+            animation-iteration-count: 3;    /* animation-iteration-count ka mtlb animation kitni baar chlega */
+
+            /* animation shorthand - animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction animation-fill-mode animation-play-state and animation-timeline.  */
+        }
+        /* @keyframes identifier - animation ko kaha se kaha tk chlana h iski jankari keyframes me likhte h aur identifier ki jagah animation-name name ko likha jata h */
+        @keyframes ani1 {
+            from{
+                width: 200px;
+                /* iska mtlb box-1 ki width jb 200px ho to use 1200px tk animate kr do */
+            }
+            to{
+                width: 1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box box-1">Box-1</div>
+    </div>
+</body>
+</html>
