@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid Tutorial</title>
+    <style>
+    .container{
+        display: grid;
+        /* grid-template-columns: 300px 100px 100px; */
+        /* grid-template-columns: 300px auto 100px; */
+        /* grid-template-columns: 1fr 4fr 1fr;  fr - fraction ye ratio jaisa hi h */
+        grid-template-columns: repeat(5, auto);
+        grid-gap: 2rem;
+    }
+    .item{
+        /* height: 100px;
+        width: 100px; */
+        background-color: red;
+        border: 2px solid black;
+        padding: 15px 5px;
+    }
+    </style>
+</head>
+<body>
+    <!-- shorthand - .item{This is item-$}*20 -->
+    <div class="container">
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-10</div>
+        <div class="item">This is item-11</div>
+        <div class="item">This is item-12</div>
+        <div class="item">This is item-13</div>
+        <div class="item">This is item-14</div>
+        <div class="item">This is item-15</div>
+        <div class="item">This is item-16</div>
+        <div class="item">This is item-17</div>
+        <div class="item">This is item-18</div>
+        <div class="item">This is item-19</div>
+        <div class="item">This is item-20</div>
+    </div>
+</body>
+</html>
