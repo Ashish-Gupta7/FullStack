@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-image: url(vecteezy_greeting-card-holiday-background-vector-illustration_6748658.jpg);
+    background-position: center;
+    background-size: cover;
+    color: rgb(85, 190, 255);
+    overflow: hidden;
+}
+.main{
+    width: 45%;
+    height: 100%;
+    background-color: rgb(193, 207, 212);
+    margin: auto;
+    padding: 10px;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1521133573892-e44906baee46?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI3fHxjYXJkJTIwZGFyayUyMGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3DD);
+    background-size: cover;
+    background-position: center;
+    padding-top: 160px;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.first .circle{
+    display: flex;
+    gap: 25px;
+}
+h1{
+    font-size: 85px;
+    font-weight: 600;
+    font-family: Dancing Script;
+}
+.first .circle .shasvi, .img1{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-image: url();
+    background-color: aquamarine;
+    border: 2px solid rgba(195, 117, 202, 0.732);
+}
+.first .circle .shasvi{
+    background-image: url(WhatsApp\ Image\ 2023-10-20\ at\ 01.18.10_559b65be12345678.jpg);
+    padding-top: 50px;
+    background-size: cover;
+    background-position: center;
+    
+}
+.first .circle .img1{
+    background-image: url(Screenshot_20230920_051726_WhatsApp.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.second{
+    width: 660px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 70px;
+    font-weight: 900;
+}
+i{
+    font-size: 40px;
+    font-weight: 200;
+}
+.ri-calendar-2-line, .ri-calendar-2{
+    color: navy;
+}
+.ri-star-s-line, .ri-star-s{
+    color: yellow;
+}
+.ri-alarm-line, .ri-alarm{
+    color: black;
+}
+.ri-hospital-fill, .ri-hospital{
+    color: rgb(15, 88, 15);
+}
+h4{
+    color: rgb(5, 33, 56);
+}
+.img3+h5{
+    color: rgb(60, 69, 9);
+}
+.img4+h5{
+    color: rgb(146, 22, 0);
+}
+
+.second .cs{
+    width: 120px;
+    height: 140px;
+    margin-bottom: 53px;
+}
+.second .ahf{
+    margin: 35px 175px 0 0;
+}
+.second .ahf .img2{
+    background-image: url(father-mother-with-daughter-happy-family_96037-103-removebg-preview.png);
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    margin: 10px 0 0 55px;
+}
+.second .wr{
+    position: absolute;
+    margin: 0 0 65px 440px;
+}
+.second .wr .img3{
+    background-image: url(—Pngtree—weighing\ vector\ icon\ material_4490082.png);
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    margin-left: 5px;
+}
+.second .wr .img4{
+    background-image: url(pngwing.com\ \(1\).png);
+    width: 45px;
+    height: 45px;
+    background-position: center;
+    background-size: cover;
+    margin: 10px 0 0 12px;
+}

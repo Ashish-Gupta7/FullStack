@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(97, 219, 219);
+}
+#main{
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    margin: auto;
+}
+.first{
+    padding: 25px;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+.first i{
+    color: rgb(0, 0, 0);
+    margin-right: 8px;
+    font-size: 25px;
+    font-weight: 100;
+}
+.first .id{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(24, 21, 21, 0.912);
+}
+.inf{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: rgb(45, 42, 42);
+    font-size: 14px;
+    width: 100%;
+    height: 40px;
+    padding: 25px;
+    background-color: rgba(201, 221, 255, 0.849);
+    border: 2px solid rgb(200, 220, 235);
+}
+.inf .box{
+    display: flex;
+    align-items: center;
+}
+.inf .box i{
+    color: rgb(0, 119, 255);
+    margin-right: 8px;
+    font-size: 25px;
+    font-weight: 100;
+}
+.inf .box a{
+    color: rgb(0, 119, 255);
+    padding-right: 4px;
+}
+.inf .box .text{
+    color: rgba(37, 34, 34, 0.923);
+}
+.inf .iconclose{
+    background-image: url(close-line.png);
+    width: 18.6px;
+    height: 18.6px;
+}
+.fav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.trip{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.iconfav{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.fav i{
+    color: pink;
+    font-size: 25px;
+    font-weight: 100;
+}
