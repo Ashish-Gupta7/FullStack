@@ -8,10 +8,10 @@ html,body{
     width: 100%;
     height: 100%;
     background-color: rgb(97, 219, 219);
+    font-weight: 600;
 }
 #main{
     width: 500px;
-    height: 600px;
     background-color: white;
     margin: auto;
 }
@@ -31,14 +31,12 @@ html,body{
 }
 .first .id{
     font-size: 20px;
-    font-weight: 600;
     color: rgba(24, 21, 21, 0.912);
 }
 .inf{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: 600;
     color: rgb(45, 42, 42);
     font-size: 14px;
     width: 100%;
@@ -51,11 +49,16 @@ html,body{
     display: flex;
     align-items: center;
 }
-.inf .box i{
+.inf .box .inform{
     color: rgb(0, 119, 255);
+    width: 20px;
+    height: 20px;
     margin-right: 8px;
-    font-size: 25px;
-    font-weight: 100;
+    background-color: lightblue;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: .4px;
+    border: 2px solid;
 }
 .inf .box a{
     color: rgb(0, 119, 255);
@@ -64,17 +67,15 @@ html,body{
 .inf .box .text{
     color: rgba(37, 34, 34, 0.923);
 }
-.inf .iconclose{
-    background-image: url(close-line.png);
-    width: 18.6px;
-    height: 18.6px;
+.inf .box+i{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.399);
 }
 .fav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
-    font-weight: 600;
+    padding: 15px;
     font-size: 14px;
 }
 .trip{
@@ -91,4 +92,110 @@ html,body{
     color: pink;
     font-size: 25px;
     font-weight: 100;
+    margin-left: 12px;
+}
+
+
+.second{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    color: white;
+    background-color: rgb(7, 22, 132);
+}
+.second .exp{
+    font-size: 17.5px;
+}
+.second .exp .gen{
+    color: rgb(99, 99, 99);
+    font-size: 12px;
+    word-spacing: 2.8px;
+    margin: 5px 0 9px 0;
+}
+.second a{
+    font-size: 13.5px;
+    color: rgb(0, 157, 255);
+}
+
+.journey{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.journey .time{
+    font-size: 29px;
+    letter-spacing: 2px;
+}
+.journey .to{
+    text-align: right;
+}
+.journey .ds{
+    font-size: 15px;
+    word-spacing: 4px;
+}
+.journey .ds1{
+    font-size: 14px;
+}
+.journey .mid{
+    text-align: center;
+}
+.journey .mid .duration{
+    font-size: 13.5px;
+    color: rgba(0, 0, 0, 0.298);
+}
+.journey .mid .hr{
+    width: 80px;
+    height: 1.5px;
+    background-color: rgba(0, 0, 0, 0.298);
+}
+.dashedline{
+    color: rgba(0, 0, 0, 0.298);
+    letter-spacing: 2.2px;
+    position: relative;
+    bottom: 22px;
+}
+.details{
+    display: flex;
+    gap: 20px;
+    padding: 0 0 0 15px;
+    position: relative;
+    bottom: 5px;
+}
+.details .iconuser{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(man.png);
+    background-size: cover;
+    background-position: center;
+}
+.details .age{
+    color: rgba(0, 0, 0, 0.536);
+    padding-top: 3px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.status{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    line-height: 24px;
+}
+.status .text{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.571);
+}
+.status .text1{
+    font-size: 17px;
+}
+.status .check{
+    display: flex;
+    gap: 2px;
+}
+.status i{
+    color: rgb(81, 225, 160);
+    font-size: 22px;
+    font-weight: 200;
 }
