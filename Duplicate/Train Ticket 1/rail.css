@@ -11,6 +11,8 @@ html,body{
     font-weight: 600;
 }
 #main{
+    position: relative;
+    top: 100px;
     width: 500px;
     background-color: white;
     margin: auto;

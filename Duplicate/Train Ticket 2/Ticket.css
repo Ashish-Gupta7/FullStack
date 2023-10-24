@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(229, 229, 229);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main{
+    position: relative;
+    top: 100px;
+    width: 450px;
+    background-color: #fff;
+    margin: auto;
+    padding: 23px 20px;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+}
+.left .urjno{
+    display: flex;
+    gap: 3px;
+}
+.exp{
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.expno{
+    color: #000000a2;
+}
+.time{
+    font-size: 13px;
+    font-weight: 400;
+    word-spacing: 2px;
+    color: #000000e0;
+}
+.journey{
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 14px;
+}
+.right .pnrno{
+    display: flex;
+}
+.right .pnrno .no{
+    color: red;
+    font-weight: 500;
+}
+.right i{
+    position: relative;
+    font-size: 20px;
+    margin-left: 90px;
+    bottom: 3px;
+    color: orange;
+}
+.right .journey{
+    text-align: right;
+}
+.left .journey{
+    position: relative;
+    top: 6.5px;
+}
+
+.passenger{
+    width: 90%;
+    background-color: rgb(229, 229, 229);
+    text-align: center;
+    font-size: 11px;
+    word-spacing: 3px;
+    font-weight: 500;
+    color: #000000e0;
+    padding: 6px;
+    margin: 15px 0 0 20px;
+}
+.line{
+    width: 109%;
+    right: 20px;
+    top: 17px;
+    height: .5px;
+    background-color: #00000064;
+    position: relative;
+}
+.detail{
+    margin-top: 37px;
+    display: flex;
+    gap: 10px;
+}
+.detail .pass{
+    font-weight: 500;
+}
+.detail .time{
+    position: relative;
+    top: 3.5px;
+    word-spacing: .5px;
+}
+.status{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13.5px;
+    margin-top: 17px;
+}
+.status .stat{
+    color: #000000a2;
+}
+.status .cs{
+    text-align: right;
+}
+.status .rc{
+    font-weight: 500;
+}
