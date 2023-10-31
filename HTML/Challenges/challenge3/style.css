@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-style: gilroy;
+    color: white;
+}
+.main .start1{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgba(10, 45, 75, 0.726);
+    height: 50vh;
+    padding: 110px;
+}
+.main .start1 .shoe .name{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    font-size: 17px;
+}
+.main .start1 .shoe .name .line{
+    height: 15px;
+    width: 3px;
+}
+.main .start1 .shoe1 .name .line{
+    background-color: orangered;
+}
+.main .start1 .shoe2 .name .line{
+    background-color: red;
+}
+.main .start1 .shoe3 .name .line{
+    background-color: black;
+}
+.box{
+    display: flex;
+    margin-top: 60px;
+    width: 260px;
+    height: 185px;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: red
+}
+img{
+    position: absolute;
+    bottom: -40px;
+    rotate: -6deg;
+    width: 265px;
+    height: 265px;
+}

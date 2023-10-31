@@ -19,6 +19,11 @@ html,body{
     margin: auto;
     padding: 10px;
 }
+audio{
+    position: absolute;
+    bottom: 50vh;
+    right: 7vw;
+}
 .card{
     width: 100%;
     height: 100%;
