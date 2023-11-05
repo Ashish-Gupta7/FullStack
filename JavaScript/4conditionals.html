@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log("Conditionals");
+        // conditionals ke 3 type hote h - (1.) If, else, else-if 90% time inhi ka use krte h, (2.) Ternary operator - 9% time uses in react JS, (3.) Switch case - 1% time use.
+        // If Else Else-if. jab bhi baat agar magar pr ayegi ya phir baat aayegi ki aisa hua to ye karo vaisa hua to vo karo tb conditionals ka use hota h.       SYNTAX - 
+        //        If(condition){
+        //             _ _ _ _ _ _ _ _ _ jo kuchh bhi true ki condition me print karana ho.
+        //        }
+        //        else{
+        //             _ _ _ _ _ _ _ _ _ jo kuchh bhi false ki condition me print karana ho.
+        //        }
+        // (condition) - iske andar sirf true ya false ho skta h likhne ke tarike alag alag ho skte h lekin vo bhi true ya false me hi convert ho jata h.  eg.- 1. true - 12>10, 14<18, 17=17... ye sb true h isliye if ki value print hogi.
+        //            2. false - 9>10, 15<7, 15=17... ye sb false h isliye else ki value print hogi.
+        // condition ke andar koi bhi word likh skte h aur code tb bhi run karega lekin true ya false ke base pr nhi balki truthy ya falsy ke base pr.
+        if (12 > 9) {
+            console.log("Condition true h");
+        }
+        else {
+            console.log("Condition false h");
+        }
+
+        if (12 > 13) {
+            console.log("Condition 1");
+        }
+        else if (14 < 12) {
+            console.log("Condition 2");
+        }
+        else if (15 > 99) {
+            console.log("Condition 3");
+        }
+        else {
+            console.log("Condition 4");
+        }
+
+        console.log("Truthy & Falsy");
+        // JS me kuchh bhi likho wo mainly 2 prakar me se kisi ek me belong krti h aur wo h - Truthy & Falsy.
+        // Falsy values - 0, false, undefined, null, NaN(not a number), document.all
+        // Truthy values - Falsy values ke alawa sabhi truthy values h.
+
+        console.log("Scope");
+        // Global scope => kisi bhi bracket ke bahar bne var,let,const ka scope global hota h mtlb usey hm poore code me kahi bhi use kr skte h.
+        // Local scope => kisi bhi bracket ke andar bne var,lt,const ka scope local hota h mtlb usey sirf hm uss bracket ke andar hi use kr skte h. eg.-
+        var a = 15;
+        let b = 12;
+        const c = 121;
+        function asdf(){
+            var a = 17;    // iss pr hover karege to local var likha dikhega.
+            console.log(a);
+            let b = 19;
+            console.log(b);
+            const c = 89;
+            console.log(c);
+        }
+        asdf();             // yaha pr var a bracket ke andar tk hi seemit h isliye value 17 print hui.
+        console.log(a);     
+        console.log(b);
+        console.log(c);
+        // yaha pr var a poore code me kahi bhi use kr skte h isliye value 15 print hui. aur var a update bhi nhi hua.
+        // let aur const ke liye hr baar alag alag diclaration hona chahiye lekin global aur local scope ki wajah se let ko globaly aur local bhi dono tarah se b se diclair kiya h aur isi prakar const ko bhi c se diclair kiya h.
+
+        console.log("Switch case");
+        var num = 77;
+        switch (num) {
+            case 7:
+                console.log("helloooo");
+                break;
+            case 76:
+                console.log("helo");
+                break;
+            case 77:
+                console.log("hllo");
+                break;
+        
+            default:
+                console.log("HELLO");
+                break;
+        }
+        // num jo ek key h uski value yadi 7, 76, 77 ke alava kuchh aur hoti to default me jo bhi likha h vo printho jata, lekin num ki value 77 h jo case 77 se match krti h isliye hllo print ho gya h. mtlb key ki value jis bhi case se match krti h wahi case print hoga. yadi aapne sabhi me se break ko hata diya to case ke andar ka data chalne ke baad aur jo kuchh bhi print ho skta h sb print ho jaega, agar aap chahte ho ki value jis bhi case se match kare keval wahi case print ho to break lagana jaroori h.
+    </script>
+</body>
+
+</html>

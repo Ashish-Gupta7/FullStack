@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log("Operators in JavaScript");
+        // Operand - entities on which operators operate.
+        // in 3 + 4, '+' is the operator and 3,4 are operands.
+
+        // unary operator - it hassingle operand. Eg.-
+        z = 123;
+        z = -z
+        console.log(z);
+
+        // binary operator - it has two operands. Eg.- 
+        p = 123 + 78;
+        console.log(p);
+
+        // (1.) Arithmetic operator - Eg.-
+        var num1 = 10;
+        var num2 = 5;
+        console.log("The value of num1 + num2 is" + (num1 + num2));  // (a) Addition
+        console.log("The value of num1 - num2 is" + (num1 - num2));  // (b) Subtraction
+        console.log("The value of num1 * num2 is" + (num1 * num2));  // (c) Multiplication
+        console.log("The value of num1 / num2 is" + (num1 / num2));  // (d) Division
+        console.log("The value of num1 % num2 is" + (num1 % num2));  // (e) Remainder/Modulus
+        console.log("The value of num1 ** num2 is" + (num1 ** num2));  // (f) Exponentiation(power) operator. iska mtlb num1 ki power num2 krdo.
+
+        // (g) Increment(++) operator - use to increase the values. Eg.-
+        var num3 = 22;
+        console.log("The value of num3++ is" + (num3++));  // isme phle num3 print hua aur phir increment.
+        console.log("The value of num3++ is" + (num3++));  // kyuki phle hi ek baar increment ho chuka h isliye iski value 23 print hogi.
+        console.log("The value of ++num3 is" + (++num3));  // num3 ki original value 22 h phli bar increment hua to 23 ho gya phir increment hua to 24 aur abhi last me 25 ho gya h. isme phle value increment hogi phir value print hogi.
+        console.log("The value of (num3++), (num3) is" + (num3++), (num3));  // isme phle value print hogi phir increment hoga uske baad phir se value print hogi.
+
+        // (h) Decrement(--) operator - use to decrease the values. Eg.-
+        var num4 = 54;
+        console.log("The value of num4-- is" + (num4--));  // isme phle num4 print hua aur phir decrement.
+        console.log("The value of num4-- is" + (num4--));  // kyuki phle hi ek baar decrement ho chuka h isliye iski value 53 print hogi.
+        console.log("The value of --num4 is" + (--num4));  // num4 ki original value 54 h phli bar decrement hua to 53 ho gyi phir decrement hua to 52 aur abhi last me 51 ho gyi h. isme phle value decrement hogi phir value print hogi.
+        console.log("The value of (num4--), (num4) is" + (num4--), (num4));  // isme phle value print hogi phir decrement hoga uske baad phir se value print hogi.
+
+        // (2.) Assignment operator - iss operator ka use kisi variable ko value assign krne ke liye use krte h.
+        // (a) Simple assignment '='            Eg.- a = 7, means a ki value 7 h.
+        // (b) Addition assignment '+='           Eg.- a += 7, means a = a + 7.
+        // (c) Subtraction assignment '-='        Eg.- a -= 7, means a = a - 7.
+        // (d) Multiplication assignment '*='     Eg.- a *= 7, means a = a * 7.
+        // (e) Division assignment '/='           Eg.- a /= 7, means a = a / 7.
+        // (f) Remainder assignment '%='          Eg.- a %= 7, means a = a % 7.
+        // (g) Exponentiation assignment '**='    Eg.- a **= 7, means a = a ** 7.
+
+        // (3.) Logical operators - iss operator ka use return boolean value ko true ya false ke liye kiya jata h.
+        // (a) &&(Logical AND) Operator - eg.- ( X && Y ) X ya Y me se koi bhi ek false hota h to output false hi aayega ye logical AND ki condition h ki dono hi true ho tabhi vah output true dega.
+        var qa = 0, az = 1, qz;
+        qz = qa && az;
+        console.log(qz);
+
+        // (b) ||(Logical OR) Operator - eg.- ( X || Y ) X ya Y me se koi bhi ek true hota h to output true hi aayega ye logical OR ki condition h ki dono hi false ho tabhi vah output false dega.
+        var qaz = 0, azq = 1, qza;
+        qza = qaz || azq;
+        console.log(qza);
+
+        // (c) Ternary operator - SYNTAX - 
+        // <condition> ? <true> : <false>
+        // phle hm ek condition dete h phir khte h ki agar condition true h to true ki jagah jo bhi likha jaye usey print karo aur agar condition false h to false ki jagah jo likha jaye usey print karo.
+        var k, g = 6, h = 9;
+        k = g <= h ? "yes" : "no"
+        console.log(k);
+
+        // (4.) Comparision operators - Ye do operands ke beech me comparision karega aur true/false me ans dega.
+        var e = 10, r = 5;
+        console.log(e > r);    // Greater than 
+        console.log(e < r);    // Less than
+        console.log(e == r);   // Equal
+        console.log(e != r);   // Not Equal
+        console.log(e >= r);   // Greater than or Equal to
+        console.log(e <= r);   // Less than or Equal to
+
+        // (5.) Bitwise operators -
+    </script>
+</body>
+
+</html>

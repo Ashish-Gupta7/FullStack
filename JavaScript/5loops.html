@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log("Loops");     // For, While, forEach, forin, forof, do-while ye loop h. Loop ka mtlb repeat hota h. mainly for and forEach ka sabse jada use krte h. if aur for ki madad se hm while ke structure ka bhi use kr skte h isliye while bhi khm use hota h.
+        // 1,1,1,1,1,1,1...  - isey kuchh iss tarah se padhege, print1, print1, print1 and so on...   yaha number aur print dono cheeje repeat ho rhi h.
+        // 1,2,3,4,5,6,7...  - isey kuchh iss tarah se padhege, print1, print2, print3 and so on...   yaha sirf print repeat ho rha h.
+        // lekin yaha ye dono hi loop h kyuki values ke repeatition pr dhyan nhi diya jata print pr dhyan dete h isliye dono hi loop h.
+        // Ek ya ek se jada baar kuchh bhi print ya perform krna ho to waha loop use hota h. eg.- yadi 3 baar harsh print krne ko kaha jaye to ye console.log ki madad se print krna jada easy h wahi yadi ye kaha jaye ki 30 baar harsh print karo to loop ka use krna jada sahi ho aur easy bhi.
+        // (1)A loop is used to repeat a block of code until the specified condition is met.  (2)when similar task is needed to be done again and again.   (3)save time and leads to code reusability.
+
+        // 1. For ka SYNTAX -       for(start; end; change){
+        //                              console.log();
+        //                          }    
+
+        for (var i = 0; i < 11; i++) {
+            console.log(i);
+        }                                // isme ek variable i banaya gya jiski value 0 di gayi h aur usey kaha gya ki iski value 11 se kam honi chahiye aur isey lagatar tb tk badhate(++) rho jab tk ki i ki value less than 11 ke highest value tk nhi pahuch jati h.
+
+        // 2. While ka SYNTAX -     while(condition){
+        //                               _ _ _ _ _ _ _ _     isme condition true ya false ke base pr rakhi jati h. A while loop is to execute a statement or code block  repeatedly as long as condition is true. Once the condition becomes false, the loop terminates.
+        //                          }
+
+        var j = 12;
+        while (j < 20) {
+            j++;
+            console.log(j);
+        }
+
+        // 3. forEach ka SYNTAX - ye sirf array ke liye chalta aur uske hr ek value pr ek sath kam krta h. forEach kabhi bhi main array me changes nhi krta h ye array ki temporary copy pr apply hota h mtlb array ki actual value same hoti h.
+        //                         array.forEach(element => {
+        //                   
+        //                         });                 
+        var k = [11, 12, 34, 24544, 234]
+        k.forEach(function (val) {
+            console.log(val + 2);
+        });
+
+        // 4. forin ka SYNTAX - sirf objects pr loop krne ke liye forin use hota h. 
+        //                         for (const key in object) {
+        //                             if (Object.hasOwnProperty.call(object, key)) {
+        //                                 const element = object[key];                             
+        //                             }
+        //                         }
+        var obj = {                             // obj nam ka variable banaya.
+            name: "Ashish",                    // is obj ki details likh di.
+            age: 22,
+            city: "Shahdol"
+        }
+        for (var key in obj) {                    // yaha phir se ek variable key banaya aur forin ke element in ko obj se add kiya.
+            console.log(key, obj[key]);         // yadi console pr sirf key likhte to name, age, city hi print hota aur yadi sirf obj[key] likhte to Ashish, 22, Shahdol hi print hota.
+        }
+        // 5. for-of - 
+        // 6. do-while
+
+        // contonue statement - kisi value/execution part ko skip krne ke liye continue statement ka use krte h. eg.-
+        for (var m = 0; m < 14; m++) {
+            if (m == 10) {
+                continue;
+            }
+            console.log(m);
+        }
+        // yadi m ki value 10 ho to usey skip krke aage badhe. other eg.-
+        for (var n = 0; n < 14; n++) {
+            if (n % 2 == 0) {
+                continue;
+            }
+            console.log(n);
+        }    // only odd
+        for (var p = 0; p < 14; p++) {
+            if (p % 2 == 1) {
+                continue;
+            }
+            console.log(p);
+        }    // only even
+
+        // Break statement - The break statement is used to break the execution of current loop or switch case. As soon as it is encountered the flow of the program goes to next statement of loop or switch case. It is also a keyword.     SYNTAX - break;
+        for (var k = 0; k < 14; k++) {
+            if (k == 11) {
+                break;
+            }
+            console.log(k);
+        }   // value ko 10 tk print karo value jb 11 ho jae to uske baad break ki madad se poore loop se bahar aa jao.
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // String operator - iss operator me '+' operator ka use aap ek, do ya adhik strings ko jodne ke liye kr skte h. ek, do ya adhik strings ko jb joda jata h to ise concatenation operator bhi kahte h ya iss process ko concatenation kahte h. string ko double ya single qoutes ke ander likhte h.
+
+        var a = "50";                // string
+        var b = 10;                  // number
+        var c = 20;                  // number
+        var d = "hello";             // string
+
+        console.log(a+b);            // output => 5010     string => concatenation ho rha h.
+        console.log(typeof(a+b));
+
+        console.log(a-b);            // output => 40       number => plus symbol ki jagah kisi aur operator ka use karege to waha pas ek number output aayega.
+        console.log(typeof(a+b));
+
+        console.log(b+c+a);          // output => 3050     string => b+c=30 ye ek number h lekin 30+"50" = 3050 ye concatenation hokr string bn jata h.
+        console.log(typeof(b+c+a));
+
+        console.log(a+b+c);          // output => 501020   string => "50"+10=5010 string, then "5010"+20=501020 ye bhi string h.
+        console.log(typeof(a+b+c));
+
+        console.log(b+c);            // output => 30       number => simple addition kyuki yaha dono operands me se koi bhi string nhi h.
+        console.log(typeof(b+c));
+
+        console.log(a+d);            // output => 50hello  string => concatenation
+        console.log(typeof(a+d));
+
+        console.log(d+a);            // output => hello50  string => concatenation
+        console.log(typeof(d+a));
+
+        console.log(b+d);            // output => 10hello  string => concatenation
+        console.log(typeof(b+d));
+
+        console.log(d+b);            // output => hello10  string => concatenation
+        console.log(typeof(d+b));
+
+        // ab yadi in sabhi me + ki jagah kisi aur operator ka use hota to actual uss operator ka jo kam hota h wo work krta lekin string ke sath + concatenation krta h ye addition nhi krta h. eg.-
+        console.log(c-b);            // output => 10      Number
+        console.log(typeof(c-b));
+
+        console.log(a-b);            // output => 40      Number
+        console.log(typeof(a-b));
+
+        console.log(b-a);            // output => -40     Number
+        console.log(typeof(b-a));
+
+        console.log(b-d);            // output => NaN     Number
+        console.log(typeof(b-d));
+
+        console.log(d-b);            // output => NaN     Number
+        console.log(typeof(d-b));
+        
+        console.log("Result: " + b + c);    //   yaha concatenation ho rha h ye ek string h.
+        console.log(b + c + "Result: ");    //   b+c tk addition phir concatenation ho rha h, ye ek string banega.
+
+        // String to Number conversion - Number() function ki madad se string ko number me convert kr skte h.
+
+        var g = "123"    // ye string h.
+        console.log(Number(g));   // ye number h
+
+        var h = Number("helloooo");
+        console.log(h);     // helloooo ko number me convert nhi kr skte h isliye ye NaN output de rha h.
+        console.log(typeof(h));
+
+        var i = Number("436")
+        console.log(i);    // ye number h
+        console.log(typeof(i));
+
+        // Number to String conversion - String() function ki madad se number ko string me convert kr skte h.
+
+        var j = 123432;    // ye number h
+        console.log(String(j));   // ye string bn jaega
+
+        var k = String(536);
+        console.log(k);
+        console.log(typeof(k));
+
+
+        var txt1 = "AS";
+        var txt2 = "Ashish";
+        var txt3 = txt1 + txt2;
+        console.log(txt3);
+
+        var txt3 = txt1 + " " + txt2;
+        console.log(txt3);
+
+        var txt3 = "" + txt2;
+        console.log(txt3);
+
+        var txt3 = "     " + txt2;   // yaha string ke beech ki space ko bhi gina j rha h.
+        console.log(txt3);
+
+        var txt4 = `${txt1} 'hllo' iam "good" ${txt2}`   // aap chahte ho ki aapka data ek string ho aur uske ander single/double qoutes use kr ske to aap backtick ka use kr skte h. ${txt1} ye string ki value print kr deta h.
+        console.log(txt4);
+        var txt5 = txt2.concat(' New string');  // iska mtlb txt2 me New string ko concat krdo. ye hm + ki jagah use kr skte h.
+        console.log(txt5);
+
+        var len = txt2.length;
+        console.log(`Length of txt2 is ${len}`);  // txt2 ki value me 6 characters h isliye uski length 6 h.
+
+        // string ke ander word ko locate/target krne ke liye - 
+
+        var str = "This is a string";
+        console.log(str);
+
+        console.log(str.charAt(8));  // charAt() ki madad se hm str ke 8th index pr jo value h, jo ki 'a' h usey print kr dega.
+
+        var position = str.indexOf('is')
+        console.log(position);           // iss indexOf() function ki madad se kisi bhi word/letter ko target kr skte h, ye first occurence of a substring h.
+        // index ki ginti zero se start hoti h. jaise - t(0th index pr h), h(1st index), i(2nd index), s(3rd index) ab yaha indexOf() me is 2nd index se start ho rahi h isliye 2 print hoga.
+
+        position = str.lastIndexOf('is')
+        console.log(position);           // iss lastIndexOf() function ki madad se kisi bhi word/letter ko target kr skte h,, ye last occurence of a substring h.
+        // t(0th index pr h), h(1st index), i(2nd index), s(3rd index), space(4th index), i(5th index), s(6th index) ab yaha lastIndexOf() me is 5th index se start ho rahi h isliye 5 print hoga.
+
+        // substring from a srting - 
+        // SYNTAX - slice/substring(start, end) - isme keval integer value put kr skte h.
+        var sbst = str.slice(1, 6);   // yaha 1 se lekar 5 tk ke letters ko print karega.
+        console.log(sbst);
+        sbst = str.substring(1, 6);   // yaha bhi 1 se lekar 5 tk ke letters ko print karega.
+        console.log(sbst);
+        // difference b/w substring and slice - substring ke start me yadi end se jada value put krte h to ye value aapas me swap ho jate h. eg.- substring(9,3) to ye swap hokr => substring(3,9) ho jaega.
+        sbst = str.substring(9, 3);
+        console.log(sbst);
+
+        var rpld = str.replace('string', 'MS Dhoni');
+        console.log(rpld);   // string word ki jagah MS Dhoni likha hoga.
+        console.log(str);    // replace method ki wajah se str variable ko koi ferk nhi padega.
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        // kyuki ye ek function h isliye isme extra small bracket bhi lga h jo pink color ka h.
+
+        var extra = "     this contain     whitespaces      "
+        console.log(extra);
+        console.log(extra.trim());  // start ke phle aur end ke baad ke sabhi spaces ko hatane ka kaam trim krta h.
+
+    </script>
+</body>
+
+</html>

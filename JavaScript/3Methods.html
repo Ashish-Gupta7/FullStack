@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log("WELCOME in JavaScript");
+        // writes information to the browser console, good for debugging purposes.
+        // console.log() JavaScript me kuchh bhi print krne ke liye use hota h.
+
+        var hello = "123"
+        console.error(hello);
+        // console.error(hello) ye variable hello ke andar ki value 123 ko error show karega.
+
+        var warning = "98"
+        console.warn(warning);
+        // console.error(warning) ye variable warning ke andar ki value 98 ko warning show karega.
+
+        alert("Hello! I am an alert box!!");
+        // window pr alert show krne ke liye.Alert ka mtlb user ko kuchh batana ya alert krna.
+
+        var prt = prompt("Enter your name");
+        console.log(prt);
+        prompt("Enter your age");
+        // prompt ka mtlb user se kuchh poochna. Prompt user se jb bhi kuchh mangta h to output/console me string wali value milti h aapko us string ko number me change krna chahiye hme aisa kyu krna chahiye ye hm string to number conversion me padhenge, abhi hm yaha iska example nhi dekhege. hmne ek variable prt banaya aur usey prompt ki value dedi aur prompt ki madad se user se kaha Enter your name user ne jaise hi apna nam enter kiya usey console.log(prt) ki madad se print kr liya gya. hmne ek aur prompt banaya aur kaha Enter your age lekin ise hm print nhi krna chahte to aise hi rahne dege.
+
+        var cnfm = confirm("Login to Sheryians");
+        // open's up a confirm/cancel dialog and return's true/false depending on user's click.when user click ok then output is true or user click cancel then output is false.
+        console.log(cnfm);
+
+        document.write("Use JS to write in Html page.");
+        document.write(" <h1> Use JS to write in Html page. </h1> ");
+        // write directly to the HTML document.
+    </script>
+</body>
+
+</html>

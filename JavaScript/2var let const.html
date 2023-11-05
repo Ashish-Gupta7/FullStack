@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // JS me mainly 2 version hote h. (1.)es5 - isme sirf var(variable) tha. (2.)es6 - isme let aur const(constant) ko intruduce kiya gya. hm JS me es5 aur es6 dono version ko mix krke padhte h, isiliye var let const in teeno ko use kr pate h.
+
+        // (1.) var VS const - kisi bhi variable ko ek baar value dene ke baad me us value ko reset ya update kr skte h lekin contant ko ek baar value dene ke baad usey update ya reset nhi kr skte h. eg.-
+        // JS case sensitive hota h iska sabse accha example variable banate samay pta chalta h. eg.-hmne var qwe banaya to is qwe ke case ko change kr kr ke kai sare other variable bhi same naam pr bana skte h. eg.-
+        var demo = 12;
+        var Demo = 112;
+        var dEmo = 1122;
+        var deEo = 738;
+        var demO = 28;
+        var DEmo = 82;
+        // in sb ka nam same h lekin JS case sensitive hota h isliye ye sabhi ek dusre se different variable h.
+        var a = 12;        // hmne ek variable banaya aur usey initialize aur declare dono kr diya var a mtlb declaration aur a = 12 ka mtlb initialization hota h.
+        a = 15;            // yaha a ki value ko update/reset kiya gya h.
+        console.log(a);    // a ko console pr print kr do.
+
+        const b = 13;      // same ek const b banaya.
+        // b = 17;         // aur usey update/reset kiya lekin yaha error show karega kyuki const ki value update nhi ki ja skti h. aur ye error show karega isliye b = 17 ko comment kr dete h aage aur bhi cheeje samajhne ke liye kyuki JS ko interpreter run krta h to usey jaha bhi error milega wo ussey aage nhi badhega jb tk ki wo error theek n ho jae.
+        console.log(b);
+
+        // (2.) var VS let & const - 
+        // (a.) var old JS version es5 me tha. let & const new JS version es6 me h.
+        // (b.) var function scoped hota h, mtlb var apne nearest parent function ke andar kahi bhi use ho skta h. let & const braces(curly bracket) scoped hota h.
+        //                 function qwer(){
+        //                     for(var i = 1; i<12; i++){
+        //                         console.log(i);
+        //                     }
+        //                 console.log(i);
+        //                 }
+        //                 qwer();
+        // hmne ek function qwer() banaya iske andar for loop banaya aur iss for loop me ek variable i banai aur console.log ki madad se output print kiya kyuki ye var h isliye for loop ke bahar wale console.log ki value bhi print hogi kyuki ye sb var ke nearest function qwer() ke andar h.
+        function qwer() {
+            for (var i = 1; i < 12; i++) {
+                console.log(i);
+            }
+            console.log(i);
+        }
+        qwer()
+
+        //                 function asdf(){
+        //                     for(let j = 1; j<12; j++){
+        //                         console.log(j);
+        //                     }
+        //                 console.log(j);
+        //                 }
+        //                 qwer();
+        // hmne ek function asdf() banaya iske andar for loop banaya aur iss for loop me ek let i banai iski jagah const bhi bana skte h aur console.log ki madad se output print kiya kyuki ye let h isliye for loop ke bahar wale console.log ki value print nhi hogi kyuki ye sb let braces scoped hota h let/const ka use unke braces ke bahar nhi kr skte h isliye for loop ke bahar wala console.log error show karega.
+        function asdf() {
+            for (let j = 0; j < 12; j++) {
+                console.log(j);
+            }
+            // console.log(j);        // kyuki ye error print hoga isliye ise comment kr diya h jisse inetpreter aage badh ske.
+        }
+        asdf();
+
+        // (c.) var adds itself to the window object but let & const dosen't adds to the window object.
+        // JS language me hm kuchh aise features ka bhi use krte h jo JS language me nhi hoti h, JS browser ki madad se un sabhi features ko use kr pta h jo JS languege me nhi hoti h. Window object wo object h jiske browser se related features dale hote h aur in features ko JS use kr skta h. eg.- JS ke part nhi h alert, prompt, console...           JS ke part h var, if, else, let...
+        // go to console and write 'window' isi me aapko sabhi vo features dekhne ko milte h jo JS ke pas nhi hota h lekin JS in features ko use kr skta h.
+        // c. number me hmne bataya h ki var khud ko window me add krta h lekin let/const khud ko add nhi krte h. iske eg. ke liye uper jitne bhi var use hue h wo sabhi aapko window ke andar likhe mil jaege lekin let/const nhi milege.
+
+        console.log("Hoisting");
+        var c = 10;
+        c = 12;
+        console.log(c);
+        // JavaScript ise (var c) aur (c = 10) do part me badal deta h. var c, ko Declaration kahte h aur (c = 10), ka mtlb c ki value 10 h aur isi ko Initialization kahte h aur (c = 12), ko update ya resetting kahte h kyuki hmne c ki value ko update kr diya h.
+        // JS (var c) ko uper bhej deta h aur (c = 10) ko usi jagah pr rhne deta h yahi prakriya Hoisting kahlati h.
+        // Definition - Variable and Function are Hoisted which means their Declaration is moved on the top of the code.
+        // eg. - Hmne likha -
+        //                   1. 
+        //                   2. console.log(d);
+        //                   3. var d = 15;
+        //                   4. console.log(e);
+        //                   5. 
+
+        // Lekin JS ise convert krta h -
+        //                   1. var d;
+        //                   2. console.log(d);
+        //                   3. d = 15;
+        //                   4. console.log(e);
+        //                   5. 
+        // kyuki code line by line chalta h isliye 1st line pr JS ko ye pta h ki d ek variable h, 2nd line pr ye pta h ki d ki value ko print krna h lekin 2nd line tk JS ko ye pta hi nhi h ki d ki value kya h isliye JS undefine output dega. 
+        // hmne e ko n to var n hi let aur n hi const bataya h isliye console.log(e) ke liye JS not define output dega kyuki JS ko e ke baare me kuchh bhi pta nhi h to vo e ki value kaise de skta h isliye not define output deta h.
+        // aur yadi sirf kisi ko value de aur usey print krne ki kosis kare to vo print ho jaega. eg ke liye vbn ko dekh skte h.
+        // Aisa kuchh bhi jiski existance h pr value kya h pta nhi h vha undefine hoga aur jiski existance hi n ho vahan pr Not Define hoga.
+
+        console.log(d);
+        var d = 15;
+        // console.log(e);
+        vbn = 16;
+        console.log(vbn);
+
+        // hm var ko ek hi naam se kai baar diclair kr skte h aur jo aakhri wala diclaration hoga wahi chalega kyuki value ek tarah se hr baar update hoti ja rahi h lekin let ya const ke sath aisa nhi h inhe aise diclair krne pr error show hoga, isliye same diclaration se bachne ke liye let ka use krne ke liye kaha jata h lekin aap diclaration time dhyan rakhe to ye galtiya nhi hogi jisse aap var use kr skege.  eg.-
+        // var zx = 12;    let aur const error show karege.
+        // var zx = 15;
+        // let cv = 111;
+        // let cv = 1178;
+        // const bn = 78;
+        // const bn = 789;
+
+        // (1.) var declarations are globally scoped or function scoped while let and const are block scoped.
+        // (2.) var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared.
+        // (3.) They are all hoisted to the top of their scope, but while var variables are initializad with undefined, let and const variables are not initializad.
+        // (4.) While var and let can be declared without being initializad, const must be initializad during declaration.
+
+    </script>
+</body>
+
+</html>

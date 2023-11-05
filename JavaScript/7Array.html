@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log("Array");
+        // [] => Array
+        console.log(typeof([]));      // output - object, [] ka type object h pr ise Array padhte h. reason - 
+        var a = [2,12,31,33,11,65];   // yaha a ek array h, lekin JavaScript ise object me convert kr deta h -
+        var a = {
+            0: 2,
+            1: 12,
+            2: 31,
+            3: 33,
+            4: 11,
+            5: 65
+        }   // 0th index pr 2, 1st index pr 12, 2nd index pr 31... h. a = {...} aur var a = {...} ye dono equal h.
+
+        var arr1 = [121,122,332,442,257];
+        arr1.forEach(function(val1){
+            console.log(arr1);
+        });
+
+        var arr2 = [12,14,43,41,22];
+        arr2.forEach(function(val2){
+            console.log(val2);
+        });
+
+        var arr3 = [2,4,3,6,7];
+        arr3.forEach(function(val3){
+            console.log(arr3);
+            console.log(val3);
+        });
+
+        var arr4 = [12, "hello", 'hllo', `hii`, null, NaN, undefined, true, false, ("fgh"), {}, function name(params) {}, [], [121212,434434,789870]]
+        console.log(arr4);
+        console.log(typeof(arr4));
+        // mtlb JS me Array ke andar kuchh bhi likh skte h.
+
+
+
+                
+        // Array is a group of continuous memory locations.
+        // Array ke andar jitni values hoti h utni hi uski size/length hoti h.
+        // Arrays - hm ek variable me ek value store kr pate h pr jb hme ek se jada value store krni ho tb phir array ka use hota h. eg.- (1.) var k = 1,2,3,4;     ye galat tareeka h.ek variable ko kai sari values dene ka.
+        //           (2.) var k = [1,2,3,4];   ye sahi tareeka h.ek variable ko kai sari values dene ka. Square bracket ke andar ek se jada value de skte h yahi array hota h. ab hm kah skte h ki k array h.    ARRAY = GROUP OF VALUES.
+        // Array ki counting - var l = [12,16,10,89];           12- 0th index pr h, 16- 1st index pr h, 10- 2nd index pr h, 89- 4th index pr h            Index array ki counting kahlati h.        Array ki counting oth index se start hoti h.
+        // 12 ko target krne ke liye l[0] ka use krte h.
+        // 16 ko target krne ke liye l[1] ka use krte h.
+        // 10 ko target krne ke liye l[2] ka use krte h.
+        // 89 ko target krne ke liye l[3] ka use krte h.
+
+        var l = [12, 16, 10, 89];  // var l = []  isey declaration kahte h Array ke liye, hm [] ki jagah new Array() bhi likh skte h.     l = [12,16,10,89]  ye initialisation kahlata h Array ke liye.
+        l[1] = 987;
+        l[3] = 10297;
+        console.log(l);
+
+
+        console.log("Push, Pop, Shift, Unshift, Splice");
+        // Push - Array ke end me ek value add karne ke liye.            eg.- var m = [1,2,3,4];
+        //                                                                    m.push(999);
+        //                                                                    console.log(m);
+
+        // Pop - Array ke end me se ek value hatane ke liye.             eg.- var n = [1,2,3,4];
+        //                                                                    n.pop();
+        //                                                                    console.log(n);
+
+        // shift - Array ke start me se ek value hatane ke liye.         eg.- var o = [1,2,3,4];
+        //                                                                    o.shift();
+        //                                                                    console.log(o);
+
+        // Unshift - Array ke start me ek value add karne ke liye.       eg.- var p = [1,2,3,4];
+        //                                                                    p.unshift(23456);
+        //                                                                    console.log(p);
+
+        // Splice - Array me kahi se kahi tk ki value ko hatane ke liye. eg.- var q = [1,2,3,4,5,6,7,8];
+        //                                                                    q.splice(3, 4);
+        //                                                                    iska mtlb 3rd index se 4 values ko hta do
+        //                                                                    console.log(q);
+
+        var m = [1, 2, 3, 4];
+        m.push(999);
+        console.log(m);
+
+        var n = [1, 2, 3, 4];
+        n.pop();
+        console.log(n);
+
+        var o = [1, 2, 3, 4];
+        o.shift();
+        console.log(o);
+
+        var p = [1, 2, 3, 4];
+        p.unshift(23456);
+        console.log(p);
+
+        var q = [1, 2, 3, 4, 5, 6, 7, 8];
+        q.splice(3, 4);
+        console.log(q);
+
+        console.log("Object");
+        // ek se jada ki baat ki to array aur kisi ek ke baare sari baat ki to object hota h. object h kisi ek ki details ko hold krna.
+
+    </script>
+</body>
+
+</html>
