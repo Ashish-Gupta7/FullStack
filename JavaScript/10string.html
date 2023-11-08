@@ -9,7 +9,15 @@
 
 <body>
     <script>
-        // String operator - iss operator me '+' operator ka use aap ek, do ya adhik strings ko jodne ke liye kr skte h. ek, do ya adhik strings ko jb joda jata h to ise concatenation operator bhi kahte h ya iss process ko concatenation kahte h. string ko double ya single qoutes ke ander likhte h.
+        // String - iss operator me '+' operator ka use aap ek, do ya adhik strings ko jodne ke liye kr skte h. ek, do ya adhik strings ko jb joda jata h to ise concatenation operator bhi kahte h ya iss process ko concatenation kahte h. string ko double ya single qoutes ke ander likhte h.
+        // string ka mtlb koi bhi text se h.
+        // wrong string => var text = helllooo;   isme qoutes nhi lga h isliye ye galat h.
+        // wrong string => var text = 'hello, i'am Ashish.';  
+        var text1 = 'hello, i\'am Ashish.';   // backslash use karne ki wajah se i ke sath single qoute use kr skta hu.
+        var text2 = `hello, i\'am Ashish.`;   // backtick ke use se bhi sentence ke beech me single qoute ka use kr skte h.
+        // kisi bhi variable ko string ke ander use krna chahte h to backtick ke ander ${} iss curly braces ke ander hi variable ko likhte h.
+        var text3 = `hii ${text1} ${text2}`
+        console.log(text3);
 
         var a = "50";                // string
         var b = 10;                  // number
@@ -111,10 +119,15 @@
 
         var str = "This is a string";
         console.log(str);
+        console.log(str.length);   // str variable me total kitne letters h space ke sath iska pta lgane ke liye length property ko use krte h.
+        console.log(str[3]);       // ye index ko select krta h ye 3rd aur agla wala 1st index ko console pr print kr dege. indexes zero se start hoti h isliye last index total length se 1 km hoga.
+        console.log(str[1]);
+        console.log(str[15]);   
+        console.log(str[str.length-1]);   // ye 15th index yani last index ko select kr rha h.
 
         console.log(str.charAt(8));  // charAt() ki madad se hm str ke 8th index pr jo value h, jo ki 'a' h usey print kr dega.
 
-        var position = str.indexOf('is')
+        var position = str.indexOf('is')    // ye string ke ander likhe words ko select krta h aur un words ko hi substring kahte h.
         console.log(position);           // iss indexOf() function ki madad se kisi bhi word/letter ko target kr skte h, ye first occurence of a substring h.
         // index ki ginti zero se start hoti h. jaise - t(0th index pr h), h(1st index), i(2nd index), s(3rd index) ab yaha indexOf() me is 2nd index se start ho rahi h isliye 2 print hoga.
 

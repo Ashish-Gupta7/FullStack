@@ -57,8 +57,27 @@
         for (var key in obj) {                    // yaha phir se ek variable key banaya aur forin ke element in ko obj se add kiya.
             console.log(key, obj[key]);         // yadi console pr sirf key likhte to name, age, city hi print hota aur yadi sirf obj[key] likhte to Ashish, 22, Shahdol hi print hota.
         }
+
         // 5. for-of - 
-        // 6. do-while
+        var fo = ["ashish", 1232, undefined];
+        for(var key of fo){
+            console.log(fo);
+        }
+
+        // 6. do-while - iska use bahot kam hota h. iska use kisi bhi statement ko ek baar print krwne ke liye use kiya jata h.
+        var dw = "hello";         // dw ki value hello h.
+        do{
+            console.log(dw);      // ye wala print ho jaega bina kisi condition ko check kiye.
+            dw++;
+        }
+        while(dw == 15);          // yaha condition ye h ki dw ki value 15 ke barabar h kya.
+        
+        // 7. for if - 
+        for(klr = 0; klr < 10; klr++){
+            if(klr%2 == 0){
+                console.log(klr);
+            }
+        }
 
         // contonue statement - kisi value/execution part ko skip krne ke liye continue statement ka use krte h. eg.-
         for (var m = 0; m < 14; m++) {

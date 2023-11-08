@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 210mm;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .address {
+            text-align: left;
+        }
+
+        .date {
+            text-align: right;
+        }
+
+        .bill-content {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="address">
+            <p>Your Hotel Name</p>
+            <p>Your Hotel Address</p>
+            <p>City, State, Zip Code</p>
+        </div>
+        <div class="date">
+            <p>Date: November 5, 2023</p>
+        </div>
+        <div class="bill-content">
+            <h2>Hotel Bill</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Room 101</td>
+                        <td>2 nights</td>
+                        <td>$100/night</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Meals</td>
+                        <td>2</td>
+                        <td>$30/meal</td>
+                        <td>$60</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td></td>
+                        <td></td>
+                        <td>$260</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

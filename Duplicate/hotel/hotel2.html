@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #bill {
+      width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #000;
+    }
+
+    #bill-header {
+      text-align: center;
+    }
+
+    #hotel-logo {
+      max-width: 100px;
+      margin-bottom: 10px;
+    }
+
+    #bill-info {
+      text-align: right;
+    }
+
+    #bill-details {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    #bill-details th, #bill-details td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: center;
+    }
+
+    #bill-details th {
+      background-color: #f2f2f2;
+    }
+
+    #bill-footer {
+      text-align: right;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="bill">
+    <div id="bill-header">
+      <img id="hotel-logo" src="hotel_logo.png" alt="Hotel Logo">
+      <h2>Hotel Name</h2>
+      <p>Address: 123 Hotel Street, City, Zip Code</p>
+      <p>Phone: +1 (123) 456-7890</p>
+    </div>
+
+    <div id="bill-info">
+      <p>Date: 2023-11-05</p>
+      <p>Bill No: 123456</p>
+      <p>Customer Name: John Doe</p>
+      <p>Pin Code: 12345</p>
+    </div>
+
+    <table id="bill-details">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Description</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Room</td>
+          <td>Standard Room</td>
+          <td>1</td>
+          <td>$100.00</td>
+          <td>$100.00</td>
+        </tr>
+        <tr>
+          <td>Restaurant</td>
+          <td>Dinner</td>
+          <td>2</td>
+          <td>$50.00</td>
+          <td>$100.00</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Subtotal</td>
+          <td>$200.00</td>
+        </tr>
+        <tr>
+          <td colspan="4">Tax (10%)</td>
+          <td>$20.00</td>
+        </tr>
+        <tr>
+          <td colspan="4">Total</td>
+          <td>$220.00</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div id="bill-footer">
+      <p>Thank you for choosing our hotel!</p>
+    </div>
+  </div>
+</body>
+</html>

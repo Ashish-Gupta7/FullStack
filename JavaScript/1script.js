@@ -1,8 +1,10 @@
 console.log("WELCOME in JavaScript");
-// Invented in 1995 at Netscape corporation(LiveScript). it wa initially called "LiveScript", lekin us time me Java language bahot popular thi isliye iska naam bhi Java se milta julta rakh diya gya.
+// Invented in 1995 at Netscape corporation(LiveScript).Branden eich is father of JavaScript. it wa initially called "LiveScript", lekin us time me Java language bahot popular thi isliye iska naam bhi Java se milta julta rakh diya gya.
 // JS is an Interpreted, client-side(JS programs are run by an inerpreter built into the user's web browser, mtlb JS ke programsinterpreter ke dwara user ke computer per run ho skta h isliye ise client-side scripting language bhi kahte h), event based, object-oriented scripting language.
 // It is a case sensitive language, mtlb issme upeer case lower case, variables, functions in sabhi ka dhyan rakhna padta h.
-// 
+// JavaScript ko browser me chalane ka kam JavaScript ke engine ka hota h jiska naam 'Spider-Monkey' h.
+// In java => Source code -> compiler -> machine code -> output.
+// Im JavaScript => Source code -> Interpreter -> output.
 // JS me hm semicolon use karen ya n karen isse koi fark nhi padta h.
 // JS me hm single ya double quotes kisi ka bhi use kr skte h koi fark nhi padta h, usey hm string hi kahenge.
 // language 3 tarah ki hoti h, 1. Markup - ise tags ke roop me likhte h, 2. Programming language - ise compiler run krta h, 3. Scripting language - ise interpreter run krta h.
@@ -12,6 +14,7 @@ console.log("WELCOME in JavaScript");
 // JavaScript can execute not only in the browser, but also on the server.
 // We will use JavaScript as a client as well as server side language.
 // ECMA JS ka version h jo 2015 me aaya tha aur ab koi bhi JS ka naya version aata h to ECMA ko update kr diya jata h.
+// JS me jadatr objects hi hota h, jaise Array, String ye objects hi h.
 
 console.log("WHAT CAN IN-BROWSER JAVASCRIPT DO?");
 // JS can dynamically modify an HTML page. JS bina page ko refresh kiye bhi run ho skta h, eg.- kisi page me clock lga hota h vo continue chlta rhta h ye JS ki madad se hota h.
@@ -42,15 +45,56 @@ console.log("Internal and External JS");
 // External - ise bhi html ki body ke ander likhte h.
 // <script src=""></script>
 
+// defer attribute - iska use external JS me krte h jb html aur css ko phle run krwana ho aur JS ko baad me aisa krne pr aap script tag ko html me kahi bhi likh skte ho jb tk html aur css load nhi hogi tb tk JS run nhi hoga.
+// Async attribute - Aap chahte ho ki DOM ke sath sath hi JS bhi load ho jae to Async attribute ko use krte h.
+
 console.log("Word Vs Keyword");
 // Word Vs Keyword - Aisa kuchh bhi jiska JS me kuchh bhi mtlb nhi h vo word hoga aur jiska JS me kuchh mtlb hoga vo keyword hoga. Eg.- chacha, money, man, are... ye sb words h aur var, let, const, for, while, if, else... ye sb keywords h.
 
+console.log("Comments");
+// single line comment ke liye => double slash '//' ka use krte h.
+// multi line comment ke liye => /* ... */ ka use krte h, jaha ... iska mtlb multi line code se h.
 
-
+// JavaScript Dynamically typed language h iska mtlb other language me pratyek value ko define krna hota h lekin JS me sirf var/let/const ka use krte h jisse pratyek tarah ki values define ho jati h JS ko values ke Data type ke baare me nhi batana padta h, wahi doosri aoor c, c++, java... jaisi languages me values ke data type ko batana padta h.
 
 
 console.log("TypesInJavaScript");
-// 1. Primitive - Number, String, null, undefined, boolean, NaN(not a number)
+// 1. Primitive - Number, String, null, undefined, Boolean(true=1, false=0), NaN(not a number), BigInt
+/* (a) Boolean => ye 2 tarah ki values ko represent krta h - true or false in dono me se koi ek hi ek time pr aayega.
+(b) Undefined => jab bhi variable ko initialise nhi kiya gya ho tb vo variable undefined hota h.
+(c) null => A null means absence of a value. */
+console.log(typeof(undefined));   // undefined
+console.log(typeof(null));   // object
+console.log(typeof(NaN));   // number
+console.log(typeof(true));   // boolean
+console.log(typeof(false));   // boolean
+console.log(typeof(""));   // string
+console.log(typeof(''));   // string
+console.log(typeof(``));   // string, backtick esc ke neeche.
+console.log(typeof(1232));   // number
+console.log(typeof(abcd));   // undefined, kyuki abcd naam ka koi variable nhi h yadi abcd naam ka koi variable banate h to abcd ka type vahi hoga jo uski value ka type hoga.
+console.log(typeof(BigInt));  // function, JS pr use hone wala sabse bada number 9007199254740991 h, agar aapko JS me isse bada koi number use krna h to bigint function ka use krna hoga. 2 ki power 53 minus 1 equal to 9007199254740991 hoti h. ise ES2020 me introduce kiya gya h. eg.-
+var maxnum = Number.MAX_SAFE_INTEGER;
+console.log(maxnum);
+console.log(maxnum++);
+console.log(maxnum++);
+console.log(maxnum++);
+console.log(maxnum++);  // ek badhne ke baad ye ruk gya h.
+
+var bint = 90071992547409914567n;   // 1st method to use bigint, last me n laga dena.
+console.log(bint);
+console.log(typeof(bint));     // bigint
+var bint1 = BigInt(90071992547409914567);    // ye last me zeros ko add kr deta h. bigint function ke dwara.
+console.log(bint1);
+console.log(typeof(bint1));   // bigint
+var bint2 = BigInt('90071992547409914567');    // bigint itne bade wale number ke string ko number me convert kr deta h.
+console.log(bint2);
+console.log(typeof(bint2));    // bigint
+
+
+
+
+
 // 2. Reference - (), {}, []  - kahi pas bhi brackets dikhe to waha pas reference hota h aur brackets n ho tb primitive type JS hota h.
 // Aisi koi bhi value jise copy karne pr real copy nhi hota h sirf value refer hoti h usey reference type JS kahte h aur jisme real copy ho jae usey Primitive type JS kahte h.
 // 1. eg.- var f = 12;    -> f ki apni value 12 h.
