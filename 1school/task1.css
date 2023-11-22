@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#bulb{
+    margin: auto;
+    margin-top: 150px;
+    width: 200px;
+    height: 200px;
+    border: 6px solid black;
+    border-radius: 50%;
+    padding: 90px 84px;
+    color: royalblue;
+    font-size: small;
+    font-weight: 900;
+}
+#btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: calc(100% - 53%);
+}

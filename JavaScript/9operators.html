@@ -13,10 +13,11 @@
         // Operand - entities on which operators operate.
         // in 3 + 4, '+' is the operator and 3,4 are operands.
 
-        // unary operator - it hassingle operand. Eg.-
+        // unary operator - it has single operand. Eg.-
         z = 123;
         z = -z
         console.log(z);
+        // increment and decrement ye dono unary operator h.
 
         // binary operator - it has two operands. Eg.- 
         p = 123 + 78;
@@ -32,19 +33,31 @@
         console.log("The value of num1 % num2 is" + (num1 % num2));  // (e) Remainder/Modulus
         console.log("The value of num1 ** num2 is" + (num1 ** num2));  // (f) Exponentiation(power) operator. iska mtlb num1 ki power num2 krdo.
 
-        // (g) Increment(++) operator - use to increase the values. Eg.-
+        // (a) se leker (f) tk sabhi ko do operands ki jarurat padti h lekin increment aur decrement ka kam sirf ek hi operands se ho jata h.
+
+        // (g) Increment(++) operator - use to increase the values. Eg.- a++ is equal to, a = a + 1 mtlb a ki value ko ek se badhakar a me hi save kr do.
+
+
+        // a++ me ++ a ke baad me lga h isliye isey post increment kahte h.
+        // ++a me ++ a ke pahle me lga h isliye isey pre increment kahte h.
         var num3 = 22;
         console.log("The value of num3++ is" + (num3++));  // isme phle num3 print hua aur phir increment.
         console.log("The value of num3++ is" + (num3++));  // kyuki phle hi ek baar increment ho chuka h isliye iski value 23 print hogi.
         console.log("The value of ++num3 is" + (++num3));  // num3 ki original value 22 h phli bar increment hua to 23 ho gya phir increment hua to 24 aur abhi last me 25 ho gya h. isme phle value increment hogi phir value print hogi.
         console.log("The value of (num3++), (num3) is" + (num3++), (num3));  // isme phle value print hogi phir increment hoga uske baad phir se value print hogi.
 
-        // (h) Decrement(--) operator - use to decrease the values. Eg.-
+        // (h) Decrement(--) operator - use to decrease the values. Eg.- a-- is equal to, a = a - 1 mtlb a ki value ko ek se ghatakar a me hi save kr do.
+
+        // a-- me -- a ke baad me lga h isliye isey post decrement kahte h.
+        // --a me -- a ke pahle me lga h isliye isey pre decrement kahte h.
         var num4 = 54;
         console.log("The value of num4-- is" + (num4--));  // isme phle num4 print hua aur phir decrement.
         console.log("The value of num4-- is" + (num4--));  // kyuki phle hi ek baar decrement ho chuka h isliye iski value 53 print hogi.
         console.log("The value of --num4 is" + (--num4));  // num4 ki original value 54 h phli bar decrement hua to 53 ho gyi phir decrement hua to 52 aur abhi last me 51 ho gyi h. isme phle value decrement hogi phir value print hogi.
         console.log("The value of (num4--), (num4) is" + (num4--), (num4));  // isme phle value print hogi phir decrement hoga uske baad phir se value print hogi.
+
+        
+        // post value ko baad me change krta h lekin pre value ko pahle hi change kr deta h.
 
         // (2.) Assignment operator - iss operator ka use kisi variable ko value assign krne ke liye use krte h.
         // (a) Simple assignment '='            Eg.- a = 7, means a ki value 7 h.
@@ -66,7 +79,13 @@
         qza = qaz || azq;
         console.log(qza);
 
-        // (c) Ternary operator - SYNTAX - 
+        // (c) !(Logical NOT) Operator - agar value true h to false ans karega aur value false h to true ans karega.
+        var n1 = 31, n2 =14, n3 = 31;
+        console.log("!(n1 > n2) =", !(n1 > n2));
+        console.log("!(n1 < n3) =", !(n1 > n3));
+        console.log("!(n1 >= n3) =", !(n1 >= n3));
+
+        // (d) Ternary operator - SYNTAX - 
         // <condition> ? <true> : <false>
         // phle hm ek condition dete h phir khte h ki agar condition true h to true ki jagah jo bhi likha jaye usey print karo aur agar condition false h to false ki jagah jo likha jaye usey print karo.
         var k, g = 6, h = 9;
@@ -74,11 +93,25 @@
         console.log(k);
 
         // (4.) Comparision operators - Ye do operands ke beech me comparision karega aur true/false me ans dega.
-        var e = 10, r = 5;
+        var e = 10, r = 5, s = 10, p = "10";
+
+        console.log(e == r);   // Equal to
+        console.log(e === r);  // Equal to and check data type
+
+        console.log(e == s);   // Equal to
+        console.log(e === s);  // Equal to and check data type
+
+        console.log(e == p);   // Equal to
+        console.log(e === p);  // Equal to and check data type
+
+        console.log(e != r);   // Not Equal
+        console.log(e !== r);  // Not equal to and ckeck data type
+        console.log(e !== s);  // Not equal to and ckeck data type
+        console.log(e !== p);  // Not equal to and ckeck data type
+
         console.log(e > r);    // Greater than 
         console.log(e < r);    // Less than
-        console.log(e == r);   // Equal
-        console.log(e != r);   // Not Equal
+
         console.log(e >= r);   // Greater than or Equal to
         console.log(e <= r);   // Less than or Equal to
 

@@ -38,12 +38,10 @@ console.log("JS frameworks and libraries");
 // Angular, React, jQuery, Vue.js, Ext.js, Ember.js, Node.js, Polymer, Aurelia, Backbone.js
 
 console.log("Internal and External JS");
-// Internal - ise html ki body ke ander likhte h.
-// <script text="text/javascript">
-//       
-// </script>
-// External - ise bhi html ki body ke ander likhte h.
+// External - ise html ki body ke ander likhte h.
 // <script src=""></script>
+// Internal - ise bhi html ki body ke ander likhte h.
+// <script></script>
 
 // defer attribute - iska use external JS me krte h jb html aur css ko phle run krwana ho aur JS ko baad me aisa krne pr aap script tag ko html me kahi bhi likh skte ho jb tk html aur css load nhi hogi tb tk JS run nhi hoga.
 // Async attribute - Aap chahte ho ki DOM ke sath sath hi JS bhi load ho jae to Async attribute ko use krte h.
@@ -90,9 +88,6 @@ console.log(typeof(bint1));   // bigint
 var bint2 = BigInt('90071992547409914567');    // bigint itne bade wale number ke string ko number me convert kr deta h.
 console.log(bint2);
 console.log(typeof(bint2));    // bigint
-
-
-
 
 
 // 2. Reference - (), {}, []  - kahi pas bhi brackets dikhe to waha pas reference hota h aur brackets n ho tb primitive type JS hota h.
