@@ -87,10 +87,28 @@
 
         // (d) Ternary operator - SYNTAX - 
         // <condition> ? <true> : <false>
-        // phle hm ek condition dete h phir khte h ki agar condition true h to true ki jagah jo bhi likha jaye usey print karo aur agar condition false h to false ki jagah jo likha jaye usey print karo.
+        // phle hm ek condition dete h phir khte h ki agar condition true h to true ki jagah jo bhi likha jaye usey print karo aur agar condition false h to false ki jagah jo likha jaye usey print karo. Iska use hm nhi krte h kyuki ye if-else ka compact version ke jaisa hi h.
         var k, g = 6, h = 9;
         k = g <= h ? "yes" : "no"
         console.log(k);
+
+        if (g<=h) {
+            console.log("yes");
+        }else{
+            console.log("no");
+        }
+
+        var Result, age = 123;
+        // console.log( age >= 18 ? "Adult" : "Not Adult" );      console pr print krane ka alag tareeka.
+        // age >= 18 ? console.log("Adult") : console.log("Not Adult")  console pr print krane ka alag tareeka.
+        Result = age >= 18 ? "Adult" : "Not Adult"
+        console.log(Result);
+
+        if (age >= 18) {
+            console.log("Adult");
+        } else {
+            console.log("Not Adult");
+        }
 
         // (4.) Comparision operators - Ye do operands ke beech me comparision karega aur true/false me ans dega.
         var e = 10, r = 5, s = 10, p = "10";

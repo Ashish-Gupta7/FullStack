@@ -7,19 +7,51 @@
 </head>
 <body>
     <script>
-        const a = [1,2,3];
-        a[5] = 6;
-        console.log(a);
-        
-        const profile = {
-            username : "shradhakhapra",
-            button1 : "follow",
-            button2 : "message",
-            posts : 195,
-            followers : 569,
-            following : 4,
-            name : "Shradha Khapra",
+        // practice1 => array index
+        // const a = [1,2,3];
+        // a[5] = 6;
+        // console.log(a);
+
+        // practice2 => using prompt for multiplication
+        // var num = prompt("Enter a number");
+        // console.log(num);
+        // if (num % 5 == 0) {
+        //     console.log(num, "is multiple of 5");
+        // } else {
+        //     console.log(num, "is not a multiple of 5");
+        // }
+
+        // practice3 => print grade.
+        // var grade, result = prompt("Enter your Marks (0 - 100)");
+        // console.log(result);
+        // if (result >= 85 && result <= 100) {
+        //     grade = "A";
+        // } else if (result >= 70 && result <= 84) {
+        //     grade = "B";
+        // } else if (result >= 60 && result <= 69) {
+        //     grade = "C";
+        // } else if (result >= 50 && result <= 59) {
+        //     grade = "D";
+        // } else if (result >= 0 && result <= 49) {
+        //     grade = "E";
+        // } else {
+        //     grade = "Please enter valid result !";
+        // }
+        // console.log("According to your result, your grade was =>", grade);
+
+        // practice4 => Calculate sum of 0 to n numbers.
+        n = prompt("Enter a number");
+        sum = 0;
+        console.log("Initial value of sum =", sum);
+        for(var i = 0; i <= n; i++ ){
+            sum = sum + i;
+            console.log("i =", i);
+            console.log("sum + i =", sum, "=> sum");
         }
+        console.log("The last value of i =", i);
+        console.log("sum =", sum);
+
+
     </script>
 </body>
 </html>
