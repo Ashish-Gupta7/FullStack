@@ -1,6 +1,6 @@
 console.log("WELCOME in JavaScript");
-// Invented in 1995 at Netscape corporation(LiveScript).Branden eich is father of JavaScript. it wa initially called "LiveScript", lekin us time me Java language bahot popular thi isliye iska naam bhi Java se milta julta rakh diya gya.
-// JS is an Interpreted, client-side(JS programs are run by an inerpreter built into the user's web browser, mtlb JS ke programsinterpreter ke dwara user ke computer per run ho skta h isliye ise client-side scripting language bhi kahte h), event based, object-oriented scripting language.
+// Invented in 1995 at Netscape corporation(LiveScript).Branden eich is father of JavaScript. it was initially called "LiveScript", lekin us time me Java language bahot popular thi isliye iska naam bhi Java se milta julta rakh diya gya.
+// JS is an Interpreted, client-side(JS programs are run by an inerpreter built into the user's web browser, mtlb JS ke programs interpreter ke dwara user ke computer per run ho skta h isliye ise client-side scripting language bhi kahte h), event based, object-oriented scripting language.
 // It is a case sensitive language, mtlb issme upeer case lower case, variables, functions in sabhi ka dhyan rakhna padta h.
 // JavaScript ko browser me chalane ka kam JavaScript ke engine ka hota h jiska naam 'Spider-Monkey' h.
 // In java => Source code -> compiler -> machine code -> output.
