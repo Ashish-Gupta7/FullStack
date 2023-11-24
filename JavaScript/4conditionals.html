@@ -10,7 +10,7 @@
 <body>
     <script>
         console.log("Conditionals");
-        // conditionals ke 3 type hote h - (1.) If, else, else-if 90% time inhi ka use krte h, (2.) Ternary operator - 9% time uses in react JS, (3.) Switch case - 1% time use.
+        // conditionals ke 3 type hote h - (1.) If, else, else-if, (2.) Ternary operator, (3.) Switch case
         // If Else Else-if. jab bhi baat agar magar pr ayegi ya phir baat aayegi ki aisa hua to ye karo vaisa hua to vo karo tb conditionals ka use hota h.       SYNTAX - 
         //        If(condition){
         //             _ _ _ _ _ _ _ _ _ jo kuchh bhi true ki condition me print karana ho.
@@ -45,27 +45,6 @@
         // JS me kuchh bhi likho wo mainly 2 prakar me se kisi ek me belong krti h aur wo h - Truthy & Falsy.
         // Falsy values - 0, false, undefined, null, NaN(not a number), document.all
         // Truthy values - Falsy values ke alawa sabhi truthy values h.
-
-        console.log("Scope");
-        // Global scope => kisi bhi bracket ke bahar bne var,let,const ka scope global hota h mtlb usey hm poore code me kahi bhi use kr skte h.
-        // Local scope => kisi bhi bracket ke andar bne var,lt,const ka scope local hota h mtlb usey sirf hm uss bracket ke andar hi use kr skte h. eg.-
-        var a = 15;
-        let b = 12;
-        const c = 121;
-        function asdf(){
-            var a = 17;    // iss pr hover karege to local var likha dikhega.
-            console.log(a);
-            let b = 19;
-            console.log(b);
-            const c = 89;
-            console.log(c);
-        }
-        asdf();             // yaha pr var a bracket ke andar tk hi seemit h isliye value 17 print hui.
-        console.log(a);     
-        console.log(b);
-        console.log(c);
-        // yaha pr var a poore code me kahi bhi use kr skte h isliye value 15 print hui. aur var a update bhi nhi hua.
-        // let aur const ke liye hr baar alag alag diclaration hona chahiye lekin global aur local scope ki wajah se let ko globaly aur local bhi dono tarah se b se diclair kiya h aur isi prakar const ko bhi c se diclair kiya h.
 
         console.log("Switch case");
         var num = 77;

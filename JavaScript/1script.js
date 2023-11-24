@@ -43,8 +43,6 @@ console.log("Internal and External JS");
 // Internal - ise bhi html ki body ke ander likhte h.
 // <script></script>
 
-// defer attribute - iska use external JS me krte h jb html aur css ko phle run krwana ho aur JS ko baad me aisa krne pr aap script tag ko html me kahi bhi likh skte ho jb tk html aur css load nhi hogi tb tk JS run nhi hoga.
-// Async attribute - Aap chahte ho ki DOM ke sath sath hi JS bhi load ho jae to Async attribute ko use krte h.
 
 console.log("Word Vs Keyword");
 // Word Vs Keyword - Aisa kuchh bhi jiska JS me kuchh bhi mtlb nhi h vo word hoga aur jiska JS me kuchh mtlb hoga vo keyword hoga. Eg.- chacha, money, man, are... ye sb words h aur var, let, const, for, while, if, else... ye sb keywords h.
@@ -52,8 +50,6 @@ console.log("Word Vs Keyword");
 console.log("Comments");
 // single line comment ke liye => double slash '//' ka use krte h.
 // multi line comment ke liye => /* ... */ ka use krte h, jaha ... iska mtlb multi line code se h.
-
-// JavaScript Dynamically typed language h iska mtlb other language me pratyek value ko define krna hota h lekin JS me sirf var/let/const ka use krte h jisse pratyek tarah ki values define ho jati h JS ko values ke Data type ke baare me nhi batana padta h, wahi doosri aoor c, c++, java... jaisi languages me values ke data type ko batana padta h.
 
 
 console.log("TypesInJavaScript");
@@ -119,6 +115,9 @@ console.log("How to copy Reference");
 //         b.pop();             b array ke last me se ek value ko hta dega. kyuki value copy ho chuki h isliye a ko koi ferk nhi padega.
 // ...a ki jagah a ki value 1,2,3,4,5 rakh di jaegi isi tarah se ye copy hota h.
 
+
+
+
 console.log("Browser Context API");
 // iske andar 3 cheeje aati h (1.)window object, (2.)stack, (3.)heap memory.
 // (1.)window object - var VS let & const ke (c.) point me iski details h.
@@ -135,11 +134,16 @@ console.log("Execution Context");
 // Lexical Environment - Ye ek chart jaisa h jisme likha hota h ki aapka particular function kin cheejo ko access kr skta h aur kin cheejo ko access nhi kr skta h. isey technically scope bhi kahte h isliye iski definition - It holds it's scope and scope chain. eg.-
 
 //                function ash(){
-//                     var a = 12;
-//                     function asdfg(){
+    //                     var a = 12;
+    //                     function asdfg(){
 //                          var b = 15;
 //                     }
 //                }
 // variable apne nearest function tk hi access ho skta h isiliye ash() var b ko use nhi kr skta h. jb koi function bnta h to uska execution context bhi banta h aur uske ander hi variable, children function aur lexical environment aata h.
 // yaha function ash() ka execution context banega aur isi ke andar variable a, function asdfg() aur ash() ka lexical environment bhi aayega.
 
+
+// JavaScript Dynamically typed language h iska mtlb other language me pratyek value ko define krna hota h lekin JS me sirf var/let/const ka use krte h jisse pratyek tarah ki values define ho jati h JS ko values ke Data type ke baare me nhi batana padta h, wahi doosri aoor c, c++, java... jaisi languages me values ke data type ko batana padta h.
+
+// defer attribute - iska use external JS me krte h jb html aur css ko phle run krwana ho aur JS ko baad me aisa krne pr aap script tag ko html me kahi bhi likh skte ho jb tk html aur css load nhi hogi tb tk JS run nhi hoga.
+// Async attribute - Aap chahte ho ki DOM ke sath sath hi JS bhi load ho jae to Async attribute ko use krte h.

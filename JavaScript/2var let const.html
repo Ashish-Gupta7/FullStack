@@ -34,21 +34,15 @@
         // (2.) var VS let & const - 
         // (a.) var old JS version es5 me tha. let & const new JS version es6 me h.
         // (b.) var function scoped hota h, mtlb var apne nearest parent function ke andar kahi bhi use ho skta h. let & const braces(curly bracket) scoped hota h.
-        //                 function qwer(){
-        //                     for(var i = 1; i<12; i++){
-        //                         console.log(i);
-        //                     }
-        //                 console.log(i);
-        //                 }
-        //                 qwer();
+                        // function qwer(){
+                        //     for(var i = 1; i<12; i++){
+                        //         console.log(i);
+                        //     }
+                        // console.log(i);
+                        // }
+                        // qwer();
+                        // console.log(i);
         // hmne ek function qwer() banaya iske andar for loop banaya aur iss for loop me ek variable i banai aur console.log ki madad se output print kiya kyuki ye var h isliye for loop ke bahar wale console.log ki value bhi print hogi kyuki ye sb var ke nearest function qwer() ke andar h.
-        function qwer() {
-            for (var i = 1; i < 12; i++) {
-                console.log(i);
-            }
-            console.log(i);
-        }
-        qwer()
 
         //                 function asdf(){
         //                     for(let j = 1; j<12; j++){
@@ -70,6 +64,11 @@
         // JS language me hm kuchh aise features ka bhi use krte h jo JS language me nhi hoti h, JS browser ki madad se un sabhi features ko use kr pta h jo JS languege me nhi hoti h. Window object wo object h jiske browser se related features dale hote h aur in features ko JS use kr skta h. eg.- JS ke part nhi h alert, prompt, console...           JS ke part h var, if, else, let...
         // go to console and write 'window' isi me aapko sabhi vo features dekhne ko milte h jo JS ke pas nhi hota h lekin JS in features ko use kr skta h.
         // c. number me hmne bataya h ki var khud ko window me add krta h lekin let/const khud ko add nhi krte h. iske eg. ke liye uper jitne bhi var use hue h wo sabhi aapko window ke andar likhe mil jaege lekin let/const nhi milege.
+
+        // var aaa1 = "hhhh";
+        // let aaaa2 = "qqq";
+        // const aaaaa3 = "zzz"
+        // go to console and enter window.
 
         console.log("Hoisting");
         var c = 10;
