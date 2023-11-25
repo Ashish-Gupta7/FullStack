@@ -6,12 +6,16 @@
 html,body{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to right, white, blue, blue);
+    background-image: linear-gradient(to right, rgb(255, 78, 78), blue, blue);
 }
-.container{
+.cricket{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container1, .container2, .container3{
     padding-top: 20vh;
 }
-.main{
+.main1, .main2, .main3{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -21,17 +25,17 @@ html,body{
     gap: 12px;
     text-align: center;
 }
-span{
+.span1, .span2, .span3{
     color: rgb(255, 255, 255);
     font-weight: 900;
     font-size: 17px;
 }
-img{
+.img1, .img2, .img3{
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
-.name{
+.name1, .name2, .name3{
     font-size: 25px;
     font-weight: 900;
     background-image: linear-gradient(to bottom, #FF9933, #FFFFFF, #128807);
@@ -42,15 +46,15 @@ img{
     -webkit-background-clip: text;
     color: transparent;
 }
-.about{
+.about1, .about2, .about3{
     color: rgb(138, 208, 231);
 }
-.frnd{
+.frnd1, .frnd2, .frnd3{
     font-size: 19px;
     color: rgb(255, 194, 103);
     font-weight: 900;
 }
-button{
+.button1, .button2, .button3{
     border: none;
     border-radius: 10px;
     width: 115px;
