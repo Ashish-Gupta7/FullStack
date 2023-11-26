@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    background-image: linear-gradient(to right, rgb(130, 184, 238), rgb(0, 136, 255));
+}
+.main{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(144, 238, 164));
+}
+button{
+    width: 130px;
+    height: 35px;
+    border: none;
+    background-image: linear-gradient(to right, red, red, blue, blue);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    color: white;
+}
+
+.rect{
+    clip-path: polygon(0 35%, 100% 35%, 100% 74%, 0 74%);
+}
+.tri{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.rho{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+circle{
+    clip-path: circle(50% at 50% 50%);
+}

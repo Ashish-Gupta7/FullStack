@@ -24,6 +24,7 @@ html,body{
     padding: 20px 10px;
     gap: 12px;
     text-align: center;
+    border: solid 2px;
 }
 .span1, .span2, .span3{
     color: rgb(255, 255, 255);

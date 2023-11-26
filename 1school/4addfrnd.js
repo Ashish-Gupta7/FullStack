@@ -27,5 +27,3 @@ btn1.addEventListener("click", function () {
         }, 2000)
     }
 })
-
-
