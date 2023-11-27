@@ -12,22 +12,22 @@ body{
     justify-content: center;
     align-items: center;
     gap: 150px;
-    background-image: linear-gradient(to right, rgb(130, 184, 238), rgb(0, 136, 255));
+    background-image: linear-gradient(to right, #535878, #9db0ce, #b8d8d8, #fee1dd, #e9c2c5, #cea0aa);
 }
 .main{
     width: 200px;
     height: 200px;
-    background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(144, 238, 164));
+    background-image: linear-gradient(to bottom, #F0F3FA, #D5DEEF, #B1C9EF, #8AAEE0, #638ECB, #395886);
 }
 button{
     width: 130px;
     height: 35px;
     border: none;
-    background-image: linear-gradient(to right, red, red, blue, blue);
+    background-image: linear-gradient(to right, #E9F5DB, #CFE1B9, #B5C9CA, #97A97C, #87986A, #718355);
     font-size: 15px;
     font-weight: 600;
     border-radius: 20px;
-    color: white;
+    color: whitesmoke;
 }
 
 .rect{
@@ -39,6 +39,15 @@ button{
 .rho{
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
-circle{
+.circle{
     clip-path: circle(50% at 50% 50%);
+}
+.star{
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.msg{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+.close{
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
 }
