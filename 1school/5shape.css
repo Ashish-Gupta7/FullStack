@@ -17,7 +17,8 @@ body{
 .main{
     width: 200px;
     height: 200px;
-    background-image: linear-gradient(to bottom, #F0F3FA, #D5DEEF, #B1C9EF, #8AAEE0, #638ECB, #395886);
+    background-color: rgb(233, 161, 189);
+    /* background-image: linear-gradient(to bottom, #F0F3FA, #D5DEEF, #B1C9EF, #8AAEE0, #638ECB, #395886); */
 }
 button{
     width: 130px;
@@ -32,22 +33,29 @@ button{
 
 .rect{
     clip-path: polygon(0 35%, 100% 35%, 100% 74%, 0 74%);
+    background-color: #ff0000;
 }
 .tri{
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    color: rgb(0, 0, 0);
 }
 .rho{
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-color: rgb(0, 17, 255);
 }
 .circle{
     clip-path: circle(50% at 50% 50%);
+    background-color: rgb(0, 255, 34);
 }
 .star{
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background-color: tomato;
 }
 .msg{
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    background-color: rgb(71, 206, 255);
 }
 .close{
     clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    background-color: rgb(178, 71, 255);
 }
