@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+.main{
+    overflow: hidden;
+}
+.page0{
+    height: 100%;
+    width: 100%;
+    padding: 30px 60px 30px 30px;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 172px;
+    position: relative;
+}
+.logo .name{
+    font-size: 40px;
+    font-weight: 100;
+    color: rgb(255, 91, 32);
+}
+.logo .name span{
+    font-weight: 700;
+    top: -13px;
+    position: relative;
+    color: black;
+}
+.sun{
+    height: 58px;
+    width: 58px;
+    background-image: linear-gradient(orangered,  red, orangered);
+    position: absolute;
+    border-radius: 50%;
+    top: 22px;
+    left: 110px;
+    z-index: -1;
+}
+.info{
+    width: 320px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+button{
+    height: 45px;
+    border: .5px solid rgb(193, 165, 165);
+    border-radius: 24px;
+    font-size: 17px;
+    background-color: transparent;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.button1{
+    width: 88px;
+}
+.button2{
+    width: 98px;
+}
+.button3{
+    width: 108px;
+}
+.button1, .button2, .button3{
+    background: linear-gradient(to bottom, transparent 50%, #000000 50%);
+    background-size: 100% 200%;
+}
+.button1:hover, .button2:hover, .button3:hover{
+    color: white;
+    background-position: bottom;
+}
+.second{
+    display: flex;
+    justify-content: space-between;
+}
+.second h3{
+    padding-top: 460px;
+    width: 430px;
+    font-size: 26px;
+    font-weight: 700;
+}
+.second h1{
+    padding-top: 82px;
+    width: 600px;
+    font-size: 150px;
+    font-weight: 700;
+    text-align: right;
+}
+#space{
+    position: relative;
+    top: 70px;
+}
+#that{
+    position: relative;
+    top: 35px;
+}
+.bottomborderline{
+    padding-top: 25px;
+    border-bottom: 1px solid rgb(177, 159, 159);
+}
+
+
+
+
+
+
+.page1{
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+    /* position: relative; */
+    /* overflow: hidden; */
+}
+.page2{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: lightcoral; */
+    position: relative;
+}
+.circle1{
+    height: 500px;
+    width: 900px;
+    background-image: linear-gradient(rgb(255, 0, 0), rgb(255, 42, 0), rgb(255, 0, 0));
+    border-radius: 40%;
+    filter: blur(40px);
+    position: absolute;
+    top: 650px;
+    right: -150px;
+    animation: ani1 4s ease-in-out infinite alternate;
+    z-index: 9;
+}
+@keyframes ani1 {
+    from{
+        transform: translate(0px) rotate(0deg) skewX(0deg);
+    }
+    to{
+        transform: translate(-150px, 0px) rotate(2deg) skewX(-8deg);
+    }
+}
+.circle1cover1{
+    height: 400px;
+    width: 300px;
+    background-image: linear-gradient(to bottom, rgb(255, 38, 0), rgb(255, 38, 0), red);
+    filter: blur(50px);
+    position: absolute;
+    top: 640px;
+    left: 1300px;
+    border-radius: 40%;
+    animation: cover1 3s ease-in-out infinite alternate;
+}
+@keyframes cover1 {
+    from{
+        transform: translateY(0) rotate(0deg);
+    }
+    to{
+        transform: translateY(-90px) rotate(-20deg);
+    }
+}
+.circle1cover2{
+    height: 400px;
+    width: 300px;
+    background-image: linear-gradient(to bottom, rgb(255, 38, 0), rgb(255, 30, 0), red);
+    position: absolute;
+    filter: blur(60px);
+    border-radius: 40%;
+    top: 630px;
+    left: 1120px;
+    animation: cover2 3s ease 4s infinite alternate;
+}
+@keyframes cover2 {
+    from{
+        transform: translate(0deg) rotate(0deg) skew(0deg);
+    }
+    to{
+        transform: translate(-70px, -70px) rotate(240deg) skew(-20deg, 20deg);
+    }
+}
+.circle1cover3{
+    height: 400px;
+    width: 400px;
+    border-radius: 40%;
+    filter: blur(50px);
+    background-image: linear-gradient(to bottom, rgb(255, 38, 0), rgb(255, 30, 0), red);
+    position: absolute;
+    top: 650px;
+    left: 850px;
+    animation: cover3 3s ease-in-out 8s infinite alternate;
+}
+@keyframes cover3 {
+    from{
+        transform: translate(0px) rotate(90deg) skew(0deg);
+    }
+    to{
+        transform: translate(-100px, -100px) rotate(90deg) skew(8deg, 8deg);
+    }
+
+}
+.circle2{
+    height: 400px;
+    width: 400px;
+    background-image: linear-gradient(orangered,  red, orangered);
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(30px);
+    top: 300px; 
+    left: 400px;
+    animation: 3s linear 1s infinite alternate ani2;
+}
+@keyframes ani2 {
+    from{
+        transform: translate(90px, -100px) rotate(0) skew(0deg);
+    }
+    to{
+        transform: translate(0px, 0px) rotate(90deg) skew(8deg);
+    }
+}

@@ -35,6 +35,7 @@ html,body{
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    object-fit: cover;
 }
 .name1, .name2, .name3{
     font-size: 25px;

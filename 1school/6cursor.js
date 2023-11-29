@@ -10,7 +10,7 @@ main.addEventListener("mousemove", function(kuchhbhi){
 });
 text1.addEventListener("mouseenter", function(){
     cursor.style.scale = 3.6;
-    text1.style.color = "red";
+    // text1.style.color = "red";   
 });
 text1.addEventListener("mouseleave", function(){
     cursor.style.scale = 1;
