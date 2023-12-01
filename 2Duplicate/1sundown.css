@@ -12,8 +12,8 @@ html,body{
     overflow: hidden;
 }
 .page1{
-    height: 200vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     position: relative;
     padding: 30px 60px 30px 30px;
 }
@@ -85,7 +85,7 @@ button{
     justify-content: space-between;
 }
 .second h3{
-    padding-top: 460px;
+    padding-top: 465px;
     width: 430px;
     font-size: 26px;
     font-weight: 700;
@@ -104,10 +104,6 @@ button{
 #that{
     position: relative;
     top: 35px;
-}
-.bottomborderline{
-    padding-top: 25px;
-    border-bottom: 1px solid rgb(177, 159, 159);
 }
 
 .bubble{
@@ -131,7 +127,7 @@ button{
     top: 650px;
     right: -150px;
     animation: ani1 4s ease-in-out infinite alternate;
-    z-index: 9;
+    z-index: -9;
 }
 @keyframes ani1 {
     from{
@@ -199,15 +195,109 @@ button{
     }
 
 }
-.circle2{
-    height: 400px;
-    width: 400px;
+.bottomborderline{
+    border: 1px solid rgba(156, 142, 142, 0.47);
+    position: relative;
+    bottom: 725px;
+    z-index: -1;
+}
+video{
+    top: 780px;
+    right: 15px;
+    width: 1450px;
+    border-radius: 20px;
+    margin: 30px;
+    position: absolute;
+}
+.continuecontainer{
+    overflow: hidden;
+}
+.continue{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 150px;
+    position: relative;
+    padding-top: 300px;
+    font-weight: 700;
+    white-space: nowrap;
+    animation: conti 12s linear infinite;
+}
+@keyframes conti {
+	0% {
+		left: 100%;
+	}
+	100% {
+        left: -100%;
+    }
+}
+.ecesun{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-left: 40px;
+}
+.surya{
+    height: 80px;
+    width: 80px;
     background-image: linear-gradient(orangered,  red, orangered);
+    border-radius: 50%;
+}
+.third{
+    display: flex;
+    position: relative;
+}
+.third h1{
+    width: 1020px;
+    font-size: 66px;
+    font-weight: 700;
+    padding: 100px 0 0 70px;
+}
+.third .leftcorner{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 290px 0 0 10px;
+}
+.third .leftcorner .smallsun{
+    width: 8px;
+    height: 8px;
+    background-image: linear-gradient(orangered,  red, orangered);
+    border-radius: 50%;
+}
+.third .leftcorner h4{
+    font-size: 14px;
+    font-weight: 500;
+}
+.third .right{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 260px 0 0 90px;
+
+}
+.third .right img{
+    width: 300px;
+    border-radius: 10px;
+}
+.third .right h5{
+    width: 300px;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.circle2{
+    height: 560px;
+    width: 560px;
+    background-image: linear-gradient(orangered,  rgb(255, 60, 0), orangered);
     border-radius: 50%;
     position: absolute;
     filter: blur(30px);
     top: 300px; 
-    left: 400px;
+    z-index: -9;
+    left: 300px;
     animation: 3s linear 1s infinite alternate ani2;
 }
 @keyframes ani2 {
@@ -215,6 +305,67 @@ button{
         transform: translate(90px, -100px) rotate(0) skew(0deg);
     }
     to{
-        transform: translate(0px, 0px) rotate(90deg) skew(8deg);
+        transform: translate(0px, 0px) rotate(90deg) skew(11deg);
     }
+}
+.forth{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    /* background-color: lightblue; */
+}
+.hoverimg{
+    display: flex;
+    /* background-color: lightcoral; */
+    justify-content: space-between;
+    height: 125px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid rgb(182, 169, 169);
+}
+.hoverimg .left{
+    font-size: 55px;
+    word-spacing: -7px;
+    font-weight: 700;
+    padding: 0 30px 0 30px;
+}
+.hoverimg .right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
+    padding: 0 30px 0 30px;
+}
+.hoverimg .right .right1st{
+    font-size: 17px;
+    font-weight: 100;
+}
+.hoverimg .right .right2nd{
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(168, 153, 153);
+}
+.forth .hoverimg .effect{
+    height: 100%;
+    width: 100%; 
+    position: absolute;
+    top: -100%;
+    background-color: rgb(255, 137, 34);
+    transition: all ease 0.2s;
+    z-index: -99;
+}
+.forth .hoverimg:hover .effect{
+    top: 0;
+}
+.dataimghover{
+    width: 300px;
+    height: 400px;
+    background-color: aquamarine;
+    position: absolute;
+    object-fit: cover;
+    z-index: 898;
+    border-radius: 10px;
+    /* display: none; */
+    left: 800px;
 }
