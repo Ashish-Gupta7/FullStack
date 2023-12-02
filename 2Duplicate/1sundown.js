@@ -1,12 +1,25 @@
 var forth = document.querySelector(".forth");
-var dataimghover = document.querySelector(".dataimghover");
-var hoverimg = document.querySelectorAll(".hoverimg");
+var fixedimg = document.querySelector(".fixedimg");
 
-    
-hoverimg.forEach(function(e){   
-    e.addEventListener("mouseenter", function(){
-        var img = e.getAttribute("data-img");
-        dataimghover.style.backgroundImage = `url(${img})`;
-        console.log(e);
+forth.addEventListener("mouseenter", function(){
+    fixedimg.style.display = "block";
+});
+forth.addEventListener("mouseleave", function(){
+    fixedimg.style.display = "none";
+});
+
+var hoverimg = document.querySelectorAll(".hoverimg");
+hoverimg.forEach(function(kuchh){
+    // console.log("hhh");     // loop ka size 7 h to ye 7 bar chlega.
+    // console.log(kuchh);
+    kuchh.addEventListener("mouseenter", function(){
+        var dataimg = kuchh.getAttribute("data-img");
+        // console.log(dataimg);
+        fixedimg.style.backgroundImage = `url(${dataimg})`;
     });
 });
+var vid1 = document.querySelector("#vid1");
+vid1.addEventListener("mouseenter", function(){
+    var vid1video = vid1.getAttribute("data-img");
+    fixedimg.style.autoplay = `url(${dataimg})`;
+})
