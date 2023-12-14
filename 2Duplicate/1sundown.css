@@ -319,6 +319,7 @@ video{
     /* background-color: lightcoral; */
     justify-content: space-between;
     height: 125px;
+    /* z-index: -19; */
     align-items: center;
     position: relative;
     overflow: hidden;
@@ -359,14 +360,13 @@ video{
     top: 0;
 }
 .fixedimg{
+    z-index: 999;
     width: 380px;
     height: 460px;
     position: fixed;
-    z-index: 9;
     left: 50%;
     top: 150px;
     border-radius: 30px;
-    background-color: orangered;
     display: none;
     background-position: center;
     background-size: cover;

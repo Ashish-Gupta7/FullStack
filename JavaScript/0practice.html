@@ -9,7 +9,7 @@
     <script>
         // practice1 => array index
         // const a = [1,2,3];
-        // a[5] = 6;
+        // a[6] = 6;
         // console.log(a);
 
         // practice2 => using prompt for multiplication
@@ -85,6 +85,61 @@
         // 2nd method
         // var output = "@" + name + name.length;
         // console.log(output);
+
+        // Practice8 => For a given array with marks of students -> [85,97,44,37,76,60]. Find the average marks of the entire class.
+
+        // let marks = [85,97,44,37,76,60];
+        // for( let i = 0; i < marks.length; i++){
+        //     console.log(`${marks[i]}`);
+        // }
+
+        // let sum = marks[0]+marks[1]+marks[2]+marks[3]+marks[4]+marks[5];
+        // console.log("sum of marks =", sum);
+        // console.log("Average of marks =", sum / marks.length);
+        // Agar jada students hoge to iss tareeke se bahot time lagega isliye iska best method ye h.
+
+        // let sum = 0;
+        // for(let i of marks){
+        //     sum += i;
+        // }
+        // console.log(`Total marks = ${sum}`);
+        // let average = sum / marks.length;
+        // console.log(`Average marks of the students = ${average}`);
+
+        // Practice9 => For a given array with prices of 5 items -> [250,645,300,900,50]. All items have an offer of 10% OFF on them. Change the array to store final price after applying offer.
+        // let prices = [250, 645, 300, 900, 50];
+
+        // let i = 0;
+        // for(let val of prices){
+        //     let offer = val / 10;
+        //     prices[i] = prices[i] - offer;
+        //     console.log(`value after offer = ${prices[i]}`);
+        //     i++;
+        // }
+        // isse accha aap for loop use kare iske liye.
+        // for(let i = 0; i < prices.length; i++){
+        //     let offer = prices[i] / 10;
+        //     prices[i] -= offer;
+        // }
+        // console.log(prices);
+        
+        // Practice10 => Create an array to store companies -> "Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"
+
+        // const companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+
+        // A. Remove the first company from the array.
+        // companies.shift();
+        // console.log(companies);
+
+        // B. Remove Uber & Add Ola in its place.
+        // companies.splice(2, 1, "Ola");
+        // console.log(companies);
+        
+        // C. Add Amazon at the end.
+        // companies.push("Amazon");
+        // console.log(companies);
+
+
 
 
     </script>
