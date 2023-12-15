@@ -139,6 +139,136 @@
         // companies.push("Amazon");
         // console.log(companies);
 
+        // Practice11 => Create a fnc using the "fnc" keyword that takes a string as an argument & returns the number of vowels in the string.
+        // function numOfVowels(string){
+        //     let totalVowels = 0;
+        //     for(const letters of string){
+        //         console.log(letters);
+        //         if(letters === "a" ||
+        //            letters === "e" || 
+        //            letters === "i" || 
+        //            letters === "o" || 
+        //            letters === "u" ||
+        //            letters === "A" ||
+        //            letters === "E" || 
+        //            letters === "I" || 
+        //            letters === "O" || 
+        //            letters === "U"
+        //         ) {
+        //             totalVowels++;
+        //             console.log(letters);
+        //         };
+        //     };
+        //     console.log(totalVowels);
+        // };
+        // numOfVowels("Hello i am Ashish Gupta");
+
+        // Practice12 => Create your code same as practice11 using of Arrow function.
+        // const vowels = (str) => {
+        //     numOfVowels = 0;
+        //     for(const char of str){
+        //         console.log(char);
+        //         if(char === "a" ||
+        //            char === "e" || 
+        //            char === "i" || 
+        //            char === "o" || 
+        //            char === "u" ||
+        //            char === "A" ||
+        //            char === "E" || 
+        //            char === "I" || 
+        //            char === "O" || 
+        //            char === "U"
+        //         ) {
+        //             numOfVowels++;
+        //         };
+        //     };
+        //     console.log(numOfVowels);
+        // };
+        // vowels("Hello Sheryinas Coding School");
+
+        // Practice13 => For a given array of numbers, print the square of each value using the forEach loop.
+        // let numbers = [1, 2, 3, 4, 5];
+
+        // numbers.forEach((element) => {
+        //     console.log(element);
+        //     let power = element * element;    // 1st method
+        //     let power = element ** 2    // 2nd method
+        //     console.log(power);
+        // });
+
+        // Practice13 => Find the largest number in the Array.
+        // let nums = [12, 93, 32, 65, 0.393, 93.1, 38, 93, 53];
+        // let largest = nums.reduce((prev, curr) => {
+        //     return prev > curr ? prev : curr;
+        // });
+        // console.log(largest);
+
+        // Practice14 => We are given array of marks of students. Filter our of the marks of students that scored 90+.
+        // let stdMarks = [82, 91, 76, 90, 93, 97, 100, 83];
+        // let filteredStd = stdMarks.filter((val) => {
+        //     return val > 90;
+        // });
+        // console.log(filteredStd);
+
+        // Practice15 => Take a number n as input from user.Create an array of numbers from 1 to n.
+        // (A) Use the reduce method to calculate sum of all numbers in the array.
+        // (B) Use the reduce method to calculate product of all numbers in the array.
+
+        // let n = prompt("Enter a number :");
+        // let arr = [];
+        // for(i = 1; i <= n; i++){
+        //     arr[i - 1] = i;
+        // };
+        // console.log(arr);
+        // (A) =>
+        // let sum = arr.reduce((prev, curr) => {
+        //     return prev + curr;
+        // });
+        // console.log(sum);
+        // (B) =>
+        // let multiplication = arr.reduce((prev, curr) => {
+        //     return prev * curr;
+        // });
+        // console.log(multiplication);
+
+        // Practice16 => Create a h2 heading element with text - "Hello JavaScript".Append "from Sheryians Coding School students" to this text using JS.
+        // let body = document.querySelector("body");
+        // body.innerHTML = "<h2> Hello JavaScript </h2>";
+        // let h2 = document.querySelector("h2");
+        // h2.textContent = "Hello JavaScript from Sheryians Coding School students!";
+        // h2.textContent = h2.textContent + " from Sheryians Coding School students!";
+        // h2.innerText = "Hello JavaScript from Sheryians Coding School students!";
+        // h2.innerText = h2.innerText + " from Sheryians Coding School students!";
+
+        // Practice17 => Create 3 divs with common class name - "box". Access them & add some unique text to each of them.
+        // let body = document.querySelector("body");
+        // body.innerHTML = `<div class="box">1st box</div> \n <div class="box">2nd box</div> \n <div class="box">3rd box</div>`
+        // let box = document.querySelectorAll(".box");
+        // console.log(box);
+        // console.log(box[0]);
+        // box[0].innerText = box[0].innerText + " Sheryians";
+        // console.log(box[1]);
+        // box[1].innerText = box[1].innerText + " Coding";
+        // console.log(box[2]);
+        // box[2].innerText = box[2].innerText + " School";
+        
+        // using loop =>
+        // let idx = 1;
+        // for(let dabba of box){
+        //     dabba.innerText = `New unique value ${idx}`;
+        //     idx++;
+        // }
+
+        // Practice18 => Create a new button element. Give it a text "Click me", background color of red & text color of white. Insert the button as the first element inside the body tag.
+        // let body = document.querySelector("body");
+        // let btn = document.createElement("button");
+        // btn.innerText = "Click me";
+        // btn.style.backgroundColor = "red";
+        // btn.style.color = "white";
+        // body.prepend(btn);
+
+        
+
 
 
 
