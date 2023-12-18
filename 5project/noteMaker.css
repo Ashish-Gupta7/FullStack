@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.container{
+    padding: 20px 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+#makeRememberBtn{
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    padding: 8px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #717171b0;
+    user-select: none;
+    position: relative;
+}
+#nofilehere{
+    position: absolute;
+    top: 210px;
+    padding: 60px 80px;
+    border: dashed 2px #717171b0;
+    border-radius: 8px;
+}
+.typeHere{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titleLine{
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    align-items: center;
+    width: 70vh;
+    user-select: none;
+}
+.ri-close-line{
+    color: white;
+    border: solid 1px white;
+    text-align: center;
+    padding: 9px;
+}
+.makeNotes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70vh;
+    gap: 8px;
+    margin-top: 110px;
+    user-select: none;
+}
+#title, #data{
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border: solid 1px white;
+    background-color: black;
+    color: white;
+    resize: none;
+}
+#title{
+    width: 92%;
+}
+
+.typeHere-Hidden{
+    display: none;
+}
+.center-Hidden{
+    display: none;
+}
