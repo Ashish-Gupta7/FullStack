@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="noteMaker.css">
+    <link rel="stylesheet" href="1noteMaker.css">
 </head>
 <body>
     <div class="container">
-        <h3>Remember</h3>
-        <button id="makeRememberBtn">Make New Remember +</button>
+        <h3 id="remember">Remember</h3>
+        <h3 id="makeRememberBtn">Make New Remember +</h3>
     </div>
     <div class="center">
         <div id="nofilehere">No Files Here</div>
@@ -22,11 +22,14 @@
                 <i class="ri-close-line"></i>
             </div>
             <textarea name="data" id="data" cols="30" rows="18" placeholder="Type here ..."></textarea>
-            <div class="make">Make</div>
+            <div class="btnMakeReset">
+                <div class="reset-Btn">Reset</div>
+                <div class="make-Btn">Make</div>
+            </div>
         </div>
     </div>
 
-    <script src="noteMaker.js"></script>
+    <script src="1noteMaker.js"></script>
 </body>
 </html>
 

@@ -7,6 +7,9 @@ html, body{
     height: 100%;
     width: 100%;
     background-color: black;
+    font-family: monospace;
+    letter-spacing: 1px;
+    user-select: none;
 }
 .container{
     padding: 20px 30px;
@@ -14,20 +17,23 @@ html, body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    user-select: none;
+}
+#remember{
+    font-size: 18px;
 }
 #makeRememberBtn{
     background-color: black;
+    font-size: 16px;
     color: white;
     border: solid 1px white;
-    padding: 8px;
+    padding: 7px;
+    font-weight: 700;
 }
 .center{
     display: flex;
     justify-content: center;
     align-items: center;
     color: #717171b0;
-    user-select: none;
     position: relative;
 }
 #nofilehere{
@@ -41,6 +47,7 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 .titleLine{
     display: flex;
@@ -48,13 +55,12 @@ html, body{
     gap: 2px;
     align-items: center;
     width: 70vh;
-    user-select: none;
 }
 .ri-close-line{
     color: white;
     border: solid 1px white;
     text-align: center;
-    padding: 9px;
+    padding: 8.8px;
 }
 .makeNotes{
     display: flex;
@@ -64,7 +70,6 @@ html, body{
     width: 70vh;
     gap: 8px;
     margin-top: 110px;
-    user-select: none;
 }
 #title, #data{
     padding: 10px;
@@ -74,14 +79,20 @@ html, body{
     background-color: black;
     color: white;
     resize: none;
+    overflow: hidden;      /* Scrollbar ko hatane ke liye */
 }
 #title{
     width: 92%;
 }
-
-.typeHere-Hidden{
-    display: none;
+.btnMakeReset{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
 }
-.center-Hidden{
-    display: none;
+.reset-Btn, .make-Btn{
+    color: white;
+    border: solid 1px white;
+    padding: 6px 109.1px;
+    font-size: 14px;
 }
