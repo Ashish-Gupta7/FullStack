@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding-top: 2.5rem;
+}
+h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    background: linear-gradient(to right, red, blue);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-family: cursive;
+    text-shadow: 0 0 50px rgba(255, 0, 0, 0.502);
+    animation: anime 2s infinite alternate;
+}
+@keyframes anime{
+    100%{
+        text-shadow: 0 0 50px rgb(0, 17, 255);
+    }
+}
+.selections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+    width: 12rem;
+}
+img:hover{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    background-color: #ffffff;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    border-radius: 50%
+}
+#rock{
+    padding: 1.4rem;
+}
+#scissor{
+    padding: 0 12px 12px 0;
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    gap: 6rem;
+}
+#user, #comp{
+    font-size: 3rem;
+}
+.msg-container{
+    height: 10rem;
+    line-height: 10rem;
+    font-size: 3rem;
+    display: inline;
+    color: crimson;
+}
+
+/* .msg-containerUserWin{
+    background: linear-gradient(to right, #163020,#304D30,#B6C4B6,#EEF0E5);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 40px #ffffff;
+    animation: anime1 2s infinite alternate;
+}
+@keyframes anime1{
+    100%{
+        text-shadow: 0 0 40px #00ff00;
+    }
+} */
+/* .msg-containerDraw{
+    background: linear-gradient(to right, #607274,#FAEED1,#DED0B6,#B2A59B);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 40px #ffffff;
+    animation: anime1 3s infinite alternate;
+}
+@keyframes anime1{
+    100%{
+        text-shadow: 0 0 40px #607274;
+    }
+} */
+/* .msg-containerCompWin{
+    background: linear-gradient(to right, #7D0A0A,#BF3131,#EAD196,#F3EDC8);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 40px #ffffff;
+    animation: anime1 2s infinite alternate;
+}
+@keyframes anime1{
+    100%{
+        text-shadow: 0 0 40px #7D0A0A;
+    }
+} */

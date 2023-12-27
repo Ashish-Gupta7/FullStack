@@ -10,6 +10,38 @@ let makeBtn = document.querySelector(".make-Btn");
 let title = document.querySelector("#title");
 let data = document.querySelector("#data");
 
+makeRememberBtn.addEventListener("mouseover", function(){
+    makeRememberBtn.style.opacity = ".4";
+    makeRememberBtn.style.cursor = "pointer";
+});
+makeRememberBtn.addEventListener("mouseleave", function(){
+    makeRememberBtn.style.opacity = "1";
+});
+
+closeLine.addEventListener("mouseover", function(){
+    closeLine.style.opacity = ".4";
+    closeLine.style.cursor = "pointer";
+});
+closeLine.addEventListener("mouseleave", function(){
+    closeLine.style.opacity = "1";
+});
+
+resetBtn.addEventListener("mouseover", function(){
+    resetBtn.style.opacity = ".4";
+    resetBtn.style.cursor = "pointer";
+});
+resetBtn.addEventListener("mouseleave", function(){
+    resetBtn.style.opacity = "1";
+});
+
+makeBtn.addEventListener("mouseover", function(){
+    makeBtn.style.opacity = ".4";
+    makeBtn.style.cursor = "pointer";
+});
+makeBtn.addEventListener("mouseleave", function(){
+    makeBtn.style.opacity = "1";
+});
+
 makeRememberBtn.addEventListener("click", function(){
     typeHereHidden.style.display = "grid";
     centerHidden.style.display = "none";

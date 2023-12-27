@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: monospace;
+    user-select: none;
+}
+
+#navBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 55px 0 55px;
+}
+#main{
+    display: flex;
+    gap: 25px;
+}
+.nav, .navBtn{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+h3{
+    font-size: 17px;
+    font-weight: 100;
+}
+i{
+    padding: 2px 6px 0 0;
+}
+.menu{
+    font-size: 20px;    
+}
+#hiddenMenu{
+    background-color: rgba(233, 233, 233);
+    position: fixed;
+    width: 25rem;
+    padding: 40px 32px 64px 40px;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    right: -400px;
+}
+#top-hiddennav-main{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 56px;
+}
+#top-hiddennav-closeBtn{
+    display: flex;
+    gap: 1px;
+}
+.top-hiddennav-icon{
+    display: flex;
+    gap: 1px;
+    cursor: pointer;
+}
+.top-hiddennav-icon i{
+    font-weight: 700;
+    font-size: 17.4px;
+}
+#top-navigation i{
+    padding-top: 3.5px;
+}
+#top-hiddennav{
+    height: 100%;
+    display: flex;
+    gap: 35px;
+}
+#bottom-hiddennav{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.bottom-hiddennav-button{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    font-weight: 700;
+    border: none;
+    width: 105px;
+    height: 30px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.196), inset  -10px -10px 30px rgba(220, 20, 60, 0.832);
+}
+.bottom-hiddennav-button:hover{
+    box-shadow: inset 10px 10px 30px rgba(0, 0, 0, 0.813),  -10px -10px 30px rgba(255, 255, 255, 0.816);
+}
