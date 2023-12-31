@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main{
+    width: 320px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#loding-text{
+    display: flex;
+    gap: 60px;
+    font-size: 40px;
+    color: #606c38;
+}
+#loding-line{
+    height: 12px;
+    width: 300px;
+    background-color: #a3b18a;
+}
+#loding-line-inner{
+    background-color: green;
+    width: 120px;
+    height: 12px;
+}
