@@ -1,68 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GSAP Navigation Animation</title>
-  <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
-  <style>
-    /* Add some basic styles for the navigation */
-    nav {
-      background-color: #333;
-      padding: 10px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark/Light Mode Toggle</title>
+    <style>
+        body {
+            background-color: #fff;
+            color: #333;
+        }
 
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-
-    nav li {
-      margin-right: 20px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      /* transition: color 0.3s ease-in-out; */
-    }
-
-    nav a:hover {
-      color: #66ccff;
-    }
-  </style>
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
+  <input type="checkbox" id="mode">
 
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+    <script>
+            const mode = document.getElementById('mode');
+            const body = document.body;
 
-  <script>
-    // Wrap your code in a function to ensure it runs after the DOM has loaded
-    document.addEventListener("DOMContentLoaded", function () {
-      // Target the navigation elements
-      const navItems = document.querySelectorAll("nav li");
-
-      // Create a timeline
-      const tl = gsap.timeline({ defaults: { duration: 0.5, ease: "power2.inOut" } });
-
-      // Animate each navigation item
-      tl.from(navItems, { opacity: 0, y: -20, stagger: 0.2 });
-
-      // Play the timeline
-      tl.play();
-    });
-  </script>
-
+            mode.addEventListener('change', function() {
+                body.classList.toggle('dark-mode', mode.checked);
+            });
+    </script>
 </body>
 </html>
