@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    padding: 30px 20px;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    height: 60px;
+    width: 250px;
+}
+#nav-middle{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-middle a{
+    color: white;
+    text-decoration: none;
+}
+#nav-last{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-last button{
+    text-transform: uppercase;
+    padding: 17px 25px;
+    font-weight: 600;
+}
+#center-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+#text{
+    font-size: 110px;
+    text-align: center;
+    width: 850px;
+    margin-top: 50px;
+}
+#center-text #text span{
+    position: relative;
+    bottom: 25px;
+    font-size: 25px;
+    background-color: brown;
+    padding: 30px 55px;
+    font-weight: 600;
+    border-radius: 50px;
+}
+#center-text #center-text-video{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 310px;
+    padding-top: 20px;
+}
+#center-text #center-text-video button{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    color: black;
+    font-size: 35px;
+    border: none;
+}
+#social-media{
+    display: flex;
+    gap: 500px;
+    align-items: center;
+    margin-top: 100px;
+}
+#social-media-icon{
+    font-size: 25px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-left: 20px;
+}
+.ri-facebook-fill{
+    color: black;
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+}
+#center-scroll{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+}
