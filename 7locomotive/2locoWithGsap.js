@@ -1,3 +1,4 @@
+// yaha bhi ussi parent ko select krna hota h, jaisa ki 1locoBasic me kiya h.
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector("#container"),
   smooth: true
@@ -25,7 +26,7 @@ ScrollTrigger.scrollerProxy("#container", {
     // backgroundColor: "lightseagreen",
     scrollTrigger: {
         trigger: "#page2",
-        scroller: "#container",
+        scroller: "#container",   // yaha bhi ussi parent ko select krna hota h, jaisa ki 1locoBasic me kiya h.
         scrub: 2,
         pin: true,
         markers: true,
