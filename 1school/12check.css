@@ -7,7 +7,7 @@ html, body{
     height: 100%;
     width: 100%;
 }
-#box{
+.loader{
     height: 300px;
     width: 300px;
     background-color: red;
