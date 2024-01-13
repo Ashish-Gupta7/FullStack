@@ -773,5 +773,22 @@
 // var newstr = string.replace(reg, "blue");
 // console.log(newstr);
 
-// Que.49 => Program to reverse a string using for loop.
+
+//Que.49 => Add two numbers without using any Arithmetic Operator.
+function addWithoutArithmeticOperators(a, b) {
+    while (b !== 0) {
+        // Calculate the carry
+        let carry = a & b;
+        // XOR to get the sum without carry
+        a = a ^ b;
+        // Left shift carry to add it to the sum in the next iteration
+        b = carry << 1;
+    }
+    return a;
+}
+// Example usage
+const result = addWithoutArithmeticOperators(5, 7);
+console.log(result); // Output: 12
+
+// Que.50 => Program to reverse a string using for loop.
 var string = prompt("Enter a string: ")
