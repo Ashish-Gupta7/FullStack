@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="3portfolio1.css">
+</head>
+<body>
+    <div id="main">
+        <div id="details">
+            <h2>Job Application (Web)</h2>
+            <div class="flex" id="name">
+                <div class="first-name">
+                    <h3>First name</h3>
+                    <input type="text" name="firstName" id="firstName" placeholder="Enter First Name...">
+                </div>
+                <div class="Last-Name">
+                    <h3>Last Name</h3>
+                    <input type="text" name="lastName" id="lastName" placeholder="Enter Last Name...">
+                </div>
+            </div>
+            <div class="flex" id="email-jobRole">
+                <div class="email">
+                    <h3>Email</h3>
+                    <input type="email" name="email" id="email" placeholder="Enter Email...">
+                </div>
+                <div class="jobRole">
+                    <h3>Job Role</h3>
+                    <select name="job" id="job">
+                        <option value="back-end">Backend Developer</option>
+                        <option value="front-ent">Frontend Developer</option>
+                        <option value="react">React JS</option>
+                        <option value="figma">Figma</option>
+                    </select>
+                </div>
+            </div>
+            <div id="address">
+                <h3>Enter Address</h3>
+                <textarea name="address" id="addressLine" cols="30" rows="10" placeholder="Enter Address..."></textarea>
+            </div>
+            <div class="flex" id="city-pin">
+                <div class="city">
+                    <h3>city</h3>
+                    <input type="text" name="cityName" id="cityName" placeholder="Enter City...">
+                </div>
+                <div class="pincode">
+                    <h3>Pincode</h3>
+                    <input type="text" name="pinCode" id="pinCode" placeholder="Enter Pincode...">
+                </div>
+            </div>
+            <div class="flex" id="date-cv">
+                <div class="date">
+                    <h3>Start Date</h3>
+                    <input type="date" name="dateSelect" id="dateSelect">
+                </div>
+                <div class="cv">
+                    <h3>Upload Your CV</h3>
+                    <input type="file" name="file" id="file">
+                </div>
+            </div>
+            <div id="submit">
+                <input type="submit" value="Apply Now" id="applyNow">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #dadada;
+    padding: 70px 240px;
+}
+#main{
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: #fff;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+#address{
+    padding-top: 20px;
+}
+#addressLine{
+    width: 100%;
+    height: 80px;
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.318);
+    border-radius: 5px;
+    resize: none;
+}
+#firstName, #lastName, #email, #job, #cityName, #pinCode, #dateSelect, #file{
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.318);
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+#applyNow{
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 80%;
+}

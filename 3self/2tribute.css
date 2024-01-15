@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    border: 10px solid black;
+    padding: 40px 150px;
+    text-align: justify;
+}
+#first{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#name{
+    text-align: right;
+    letter-spacing: 5px;
+    font-size: 25px;
+    padding-top: 200px;
+}
+#second h1{
+    font-size: 70px;
+    font-weight: 100;
+}
+#forth{
+    padding-top: 12px;
+}
+#last ul{
+    padding: 10px 50px;
+}
+#link{
+    padding-top: 50px;
+    text-align: right;
+}
+#link a{
+    text-decoration: none;
+}
