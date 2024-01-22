@@ -2,15 +2,19 @@
 // JavaScript =>   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 // Css =>   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> 
 
+
 // RemixIcon Cdn ===>>>
 // Css =>    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+
 
 // Lucido Cdn ===>>>
 // <!-- Development version -->
 // <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
+
 // <!-- Production version -->
 // <script src="https://unpkg.com/lucide@latest"></script>
+
 
 // gsap Cdn ===>>>
 
@@ -19,6 +23,7 @@
 
 // scrollTrigger =>
 // <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 // locomotive cdn ===>>>
 
@@ -55,4 +60,13 @@ const locoScroll = new LocomotiveScroll({
     pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"
   });
 
-// bg =======>>>>>>>>>          background: url('https://source.unsplash.com/1600x900/?fireworks') center/cover no-repeat fixed;
+
+// bg =======>>>>?????>>>>          background: url('https://source.unsplash.com/1600x900/?fireworks') center/cover no-repeat fixed;
+
+
+// swiperJS =>
+
+// CSS =>
+// <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+// JS =>
+// <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
