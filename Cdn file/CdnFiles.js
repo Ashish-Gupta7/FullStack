@@ -3,8 +3,12 @@
 // Css =>   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> 
 
 
+
+
 // RemixIcon Cdn ===>>>
 // Css =>    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+
+
 
 
 // Lucido Cdn ===>>>
@@ -16,6 +20,9 @@
 // <script src="https://unpkg.com/lucide@latest"></script>
 
 
+
+
+
 // gsap Cdn ===>>>
 
 // js =>     
@@ -23,6 +30,9 @@
 
 // scrollTrigger =>
 // <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
 
 
 // locomotive cdn ===>>>
@@ -61,7 +71,11 @@ const locoScroll = new LocomotiveScroll({
   });
 
 
+
+
 // bg =======>>>>?????>>>>          background: url('https://source.unsplash.com/1600x900/?fireworks') center/cover no-repeat fixed;
+
+
 
 
 // swiperJS =>
@@ -70,3 +84,30 @@ const locoScroll = new LocomotiveScroll({
 // <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 // JS =>
 // <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+
+// SheryJS =>
+
+// CSS
+// <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+
+// JS =>
+// <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+
+// Required Libraries
+// To successfully run with CDN, you'll need some libraries.
+
+// <!--  Gsap is needed for Basic Effects -->
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+// <!-- Scroll Trigger is needed for Scroll Effects -->
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+// <!-- Three.js is needed for 3d Effects -->
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+// <!-- ControlKit is needed for Debug Panel -->
+// <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>

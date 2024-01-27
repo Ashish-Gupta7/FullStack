@@ -1,37 +1,52 @@
-// (1.) area of a rectangle.
-// var a = Number(prompt("Enter height"));
-// var b = Number(prompt("Enter width"));
-// var c = a*b;
-// console.log(c);
+gsap.registerPlugin(ScrollTrigger);
 
-// (2.) ask user's electricity unit. if unit is 100 or above then 
-// var a = Number(prompt("Enter your electricity units: "));
-// if( a >= 100 ){
-//     console.log(`your electricity bill is ${a * 10} rs.`);
-// } else if(a > 70 && a < 100){
-//     console.log(`your electricity bill is ${a * 8} rs.`);
-// } else if(a <= 70){
-//     console.log(`your electricity bill is ${a * 5} rs.`);
-// }
+/*-- ScrollTrigger 1: sections scroll and snap vertically ------*/
 
-// (3.) 
-// var a = Number(prompt("Enter any number:"));
-// if(a%5 == 0){
-//     console.log("jhanddu baam");
-// }
+let sections = gsap.utils.toArray('section');
+let snap = value => value; // a snapping function that we'll set later in a "refresh" event listener because we need all the ScrollTrigger positions to get calculated first
 
-// var a = Number(prompt("Enter any number:"));
-// for(var i = 1; i < a; i++){
-//     if(i%5 == 0){
-//         console.log("Jhandddddduuuuuu Baaaaam");
-//     }else{
-//         console.log(i);
-//     }
-// }
+// this ScrollTrigger covers the entire page and is just for snapping logic
+ScrollTrigger.create({
+    start: 0,
+    end: "max",
+    snap: {
+        snapTo: (value, self) => snap(value, self.direction),
+        duration: {min: 0.2, max: 0.4},
+        delay: 0,
+    }
+});
 
-// (4.)
-// function greet(user, age){
-//     var remain = 60 - age
-//     console.log(`Hello, ${user} You will live for ${remain} more years. `);
-// }
-// greet("qwer", 20);
+/*---ScrollTrigger 2: horizontal scroll in section ".container" --*/
+
+let panels = gsap.utils.toArray(".container .panel");
+ 
+let panelTween = gsap.to(panels, {
+  xPercent: -100 * (panels.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".container",
+    start: "top top",
+    end: "+=" + (innerWidth * 3),
+    markers: true,
+    pin: true,
+    scrub: 1,
+  }
+});
+
+// we create a ScrollTrigger for each section just so we can figure out where they're positioned (when their top hits the top of the viewport)
+let sectionTriggers = sections.map(section => ScrollTrigger.create({
+  trigger: section,
+  start: "top top",
+  refreshPriority: -1 // just so they get calculated last
+}));
+
+// after ScrollTrigger refreshes, we create a snap function that's directional. 
+ScrollTrigger.addEventListener("refresh", () => {
+  let start = panelTween.scrollTrigger.start,
+      end = panelTween.scrollTrigger.end,
+      each = (end - start) / (panels.length - 1), // each panel takes up a certain distance
+      max = ScrollTrigger.maxScroll(window),
+      sectionPositions = sectionTriggers.map(trigger => trigger.start / max); // snapping values must be in ratios (between 0 and 1)
+  panels.forEach((panel, i) => sectionPositions.push((start + i * each) / max)); // add the panel positions
+  snap = ScrollTrigger.snapDirectional(sectionPositions); // a snapping function that we can just feed a scroll value to and a direction and it'll spit back the closest one (ratio/progress) in that direction
+});

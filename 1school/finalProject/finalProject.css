@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: "Plain Light";
+    background-color: #151515;
+    color: #fff;
+}
+#loader{
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    /* overflow: hidden; */
+}
+#load1{
+    /* background-color: green; */
+    overflow: hidden;
+}
+
+
+
+
+#page1, #page2{
+    height: 100Vh;
+    position: relative;
+    background-color: red;
+}
