@@ -227,3 +227,13 @@ html, body{
     left: 1vw;
     z-index: -11;    
 }
+#page2 #page2-inner #playBtn i{
+    padding: 4vw;
+    top: 0;
+    right: 12vw;
+    background-color: #FFA63D;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 3vw;
+}

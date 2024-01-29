@@ -88,3 +88,19 @@ Shery.mouseFollower({
   duration: .9,
 });
 
+
+var page2inner = document.querySelector("#page2 #page2-inner", {
+  
+})
+var cursorEnterImg = document.querySelector("#page2 #page2-inner img");
+var cursorEnterIcon = document.querySelector("#page2 #page2-inner #playBtn i");
+cursorEnterImg.addEventListener("mousemove", function(elem){
+    cursorEnterIcon.style.left = elem.x + "px"
+    cursorEnterIcon.style.top = elem.y + "px"
+  })
+  
+  // var video = document.querySelector("#page2 #page2-inner video");
+  // var flag = 0;
+  // if(flag = 0){
+  
+  // }
