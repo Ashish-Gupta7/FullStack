@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#page, #page, #page{
+    min-height: 100vh;
+    width: 100%;
+    padding-bottom: 10px;
+    /* background-color: #e5e5e5; */
+    /* overflow: hidden; */
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+}
+#images{
+    height: 42vw;
+    width: 30vw;
+    /* overflow: hidden; */
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+._canvas_container{
+    z-index: 
+    99999 !important;
+}
