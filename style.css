@@ -1,3 +1,7 @@
+:root{
+    --bg: "#fff";
+    --text: "#000"
+}
 * {
     margin: 0;
     padding: 0;
@@ -43,4 +47,77 @@ h1{
 
 ._canvas_container{
     z-index: 999999 !important;
+}
+
+
+
+
+#applebase{
+    height: 300px;
+}
+#apple{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 40px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 30px;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+#apple img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+#apple #text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#apple #text h3{
+    font-weight: 500;
+
+}
+#apple #text h2{
+    font-weight: 600;
+}
+
+
+#search{
+    height: 200px;
+    background-color: red;
+}
+#searchbox{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 100px;
+}
+#search #box1{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+#search #box1 h6{
+    font-weight: 500;
+}
+#search #box2{
+    width: 70px;
+    height: 30px;
+    background-color: rgb(23, 125, 0);
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+#search #box2 i{
+    color: #ffffff;
 }

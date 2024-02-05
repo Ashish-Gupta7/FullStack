@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#main1{
+    width: 100%;
+    height: min-content;
+    padding: 30px 60px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    margin-bottom: 100px;
+}
+.split1{
+    font-size: 100px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#main1 h1{
+    color: white;
+}
+/* jb aap ek sath kai sare elements ko split krte h to phle wale element ko chhod kr baaki sabhi elements ko koi bhi property deni ho to unke span tag ko target karen. */
+#main1 h2{
+    position: absolute;
+    top: 8%;
+}
+#main1 h2 span{
+    opacity: 0;
+    font-family: "Silk Serif";
+    -webkit-text-stroke: 1px #fff;
+    letter-spacing: -7px;
+}
+
+
+#main2{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    padding: 0 60px;
+    background-color: red;
+    position: relative;
+    overflow: hidden;
+}
+#main2 .split2{
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#main2 h2{
+    position: absolute;
+    top: -100%;
+    opacity: 0;
+}
