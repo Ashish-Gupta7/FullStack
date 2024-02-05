@@ -25,20 +25,30 @@ tl1.to("#main1 h2 span", {
 }, "same")
 // Gsap me kisi bhi do elements ko same variable Dene pr vo elements ek hi time pr work krte h. Ye variable un dono ke last me curly bracket ke phle double quotes me likhte h. jaisa ki yaha "same" ko likha gya h.
 
+var flag = false;
+if(!flag){
+    flag = true;
+    var tl2 = gsap.timeline();
+    tl2.from("#main2 h1", {
+        duration: 1,
+        y: -100,
+        onComplete: function(){
+            gsap.set(this._targets[0], {
+                top: "-100%"
+            })
+            flag = false;
+        }
+    })
+    tl2.to("#main2 h1", {
+        delay: .5,
+        duration: 1,
+        opacity: 1
+    }, "scroll")
+    tl2.to("#main2 h1", {
+        delay: 1,
+        duration: 1,
+        y: 50,
+        opacity: 1,
+    }, "scroll")
 
-var tl2 = gsap.timeline();
-tl2.from("#main2 h1", {
-    duration: 1,
-    y: -100,
-})
-tl2.to("#main2 h1", {
-    delay: .5,
-    duration: 1,
-    opacity: 0
-}, "scroll")
-tl2.to("#main2 h1", {
-    delay: 1,
-    duration: 1,
-    y: 50,
-    opacity: 1
-}, "scroll")
+}

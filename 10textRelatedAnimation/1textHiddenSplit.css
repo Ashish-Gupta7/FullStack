@@ -43,16 +43,14 @@ html, body{
     display: flex;
     padding: 0 60px;
     background-color: red;
-    position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 #main2 .split2{
     font-size: 50px;
     font-weight: 500;
     text-transform: uppercase;
 }
-#main2 h2{
-    position: absolute;
+/* #main2 h2{
     top: -100%;
     opacity: 0;
-}
+} */
