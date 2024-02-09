@@ -15,9 +15,6 @@ html, body{
     height: 100%;
     width: 100%;
 }
-#main{
-    width: 100%;
-}
 nav{
     display: flex;
     align-items: center;
@@ -36,12 +33,13 @@ nav a{
     text-transform: uppercase;
     font-weight: 600;
 }
-nav a:nth-child(2){
+nav>a:nth-child(2){
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: .9vw;
+    font-size: 1.2vw;
+    font-weight: 600;
 }
 nav button{
     background-color: var(--bgcolor);
@@ -107,6 +105,7 @@ nav button div{
     width: 29vw;
     height: 75vh;
     position: relative;
+    background-color: transparent;
 }
 #inner2 #texthead{
     position: absolute;
@@ -115,11 +114,14 @@ nav button div{
     background-color: transparent;
 }
 #inner2 #texthead h1{
-    background-color: transparent;
+    background-color: transparent;  
     font-size: 6vw;
     line-height: 10vh;
     letter-spacing: -.2vw;
     font-weight: 500;
+}
+#inner2 #texthead h1 span{
+    background-color: transparent;
 }
 #inner2 img{
     height: 100%;
@@ -155,29 +157,166 @@ nav button div{
 #page2{
     width: 100%;
     height: 400px;
-    background-color: red;    
-    padding: 10vh 12vw;
+    padding: 17vh 17vw;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 #page2 h3{
     font-size: 1.1vw;
     font-weight: 500;
+    opacity: .7;
     text-transform: uppercase;
 }
-#page2 #text{
-    /* text-align: end; */
-    /* width: 40vw; */
-    /* position: absolute;
+#page2 p{
+    padding-top: 4vh;
+    text-align: right;
+    width: 55vw;
+    line-height: 5vh;
+    word-spacing: .1vw;
     font-size: 1.5vw;
-    right: 12vw; */
+}
+#page2 p span{
+    font-weight: 700;
+    margin: 0 .4vw;
+    margin-bottom: -1.2vh;
+    display: inline-block;
+    border-radius: 100px;
+    height: 4vh;
+    width: 3.5vw;
+    background-position: center;
+    background-size: cover;
+}
+#page2 p span:nth-child(3){
+    background-image: url(grass.jpg);
+}
+#page2 p span:nth-child(1){
+    background-image: url(bluegirl.jpg);
+    background-position-y: 55%;
+}
+#page2 p span:nth-child(2){
+    background-image: url(shaljam.jpg);
+    height: 5vh;
+    width: 5vw;
+    margin-bottom: -1.4;
+}
+
+
+#page3 {
+    display: flex;
+    padding: 7vh 17vw 6vh 28vw;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+}
+#page3 #img1, #img2{
+    height: 80vh;
+    width: 23vw;
+}
+#page3 #img2{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+#page3 #img1 img{
+    width: 14vw;
+    height: 43vh;
+    object-fit: cover;
+}
+#page3 #img2 img{
+    width: 20vw;
+    height: 70vh;
+    object-fit: cover;
+}
+#page3 h2{
+    font-size: 2vw;
+    font-weight: 500;
+    margin: 2vh 0;
+}
+#page3 h5{
+    font-weight: 600;
+    font-size: .8vw;
+    width: 14vw;
+    opacity: .8;
+}
+#page3 #img1 h5{
+    width: 13.5vw;
+}
+#page3 #img2 h5{
+    text-align: right;
+}
+
+#page4{
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+    align-items: center;
+    padding-right: 15vw;
+    height: 100vh;
+    width: 100%;
+}
+#page4 #image{
+    height: 85vh;
+    width: 60vw;
+    overflow: hidden;
+}
+#page4 img{
+    width: 100%;
+    height: 100%;
+    object-position: 0% 80%;
+    object-fit: cover;
+}
+#page4 #text{
+    width: 18vw;
+}
+#page4 #text h1{
+    font-size: 2vw;
+    margin-bottom: 3vh;
+    font-weight: 500;
+}
+#page4 #text h3{
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+#page5{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+#page5 h1{
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+#page5 #text{
     display: flex;
     align-items: center;
-    
+    justify-content: center;
+    flex-direction: column;
 }
-#page2 #text span{
-    display: inline-block;
-    border-radius: 10px;
-    height: 3vh;
-    width: 5vw;
-    background-color: peru;
+#page5 h3{
+    padding: 1.4vh 1vw;
+    width: fit-content;
+    margin-top: 2vh;
+    font-size: .8vw;
+    font-weight: 500;
+    background-color: #dadada;
+    border-radius: 100px;
 }
+video{
+    z-index: -12;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: scaleX(1.2);
+    transform: scaleY(1.001);
+    object-position: 10% 0;
+    object-fit: cover;
+}
+/* ._canvas_container{
+    z-index: 999999;
+} */

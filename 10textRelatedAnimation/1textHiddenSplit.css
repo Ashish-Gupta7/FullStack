@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -35,22 +36,3 @@ html, body{
     -webkit-text-stroke: 1px #fff;
     letter-spacing: -7px;
 }
-
-
-#main2{
-    width: 100%;
-    height: max-content;
-    display: flex;
-    padding: 0 60px;
-    background-color: red;
-    /* overflow: hidden; */
-}
-#main2 .split2{
-    font-size: 50px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-/* #main2 h2{
-    top: -100%;
-    opacity: 0;
-} */

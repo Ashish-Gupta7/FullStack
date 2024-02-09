@@ -78,7 +78,7 @@ button{
 }
 .button1:hover, .button2:hover, .button3:hover{
     color: white;
-    background-position: bottom;
+    background-position: bottom;    
 }
 .second{
     display: flex;

@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button{
+    padding: 2vh 3vw;
+    font-size: 1.2vw;
+    font-family: sans-serif;
+    background-color: #fff;
+    border: 1px solid #000;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 15px;
+}

@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+/* 
+#logo {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#logo-slide {
+  display: inline-block;
+  animation: 5s slide infinite linear;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+} */
+
+
+#main{
+    overflow: hidden;
+    white-space: nowrap;
+}
+#main .page{
+    display: inline-block;
+    animation: anime 8s linear infinite;
+}
+#main .page img{
+    height: 200px;
+    width: 200px;
+    margin: 0 50px;
+}
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}

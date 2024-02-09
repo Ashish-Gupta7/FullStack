@@ -17,7 +17,7 @@ html, body{
     position: fixed;
     padding: 11vh 9vw;
 
-    display: none;
+    /* display: none; */
 }
 #load1{
     font-size: 3.4vw;
