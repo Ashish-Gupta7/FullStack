@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#videotext{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+#videotext h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#videotext #circle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: anime1 linear 13s infinite;
+}
+#videotext #circle span{
+    position: absolute;
+    left: 50%;
+    transform-origin: 0 100px;
+    font-size: 1vw;
+    font-family: gilroy;
+    font-weight: 500;
+}
+@keyframes anime1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#videotext h2{
+    text-transform: uppercase;
+    font-size: 2vw;
+}
+#videotext h3{
+    text-transform: uppercase;
+    font-size: 1vw;
+}
