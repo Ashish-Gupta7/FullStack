@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+#page8 {
+  width: 100vw;
+  height: 100%;
+  background-color: black;
+  color: white;
+  padding-top: 10vh;
+
+}
+#p8-first {
+  display: flex;
+  height: fit-content;
+}
+#p8-first > #lef {
+  width: 20vw;
+  padding-left: 12vw;
+  /* background-color: pink; */
+}
+#p8-first > #rig {
+  width: 80vw;
+  display: flex;
+  /* background-color: palevioletred; */
+}
+#p8-first > #rig > h1 {
+  font-size: 8vw;
+  font-weight: 500;
+  font-family: gilroy;
+  /* background-color: aquamarine; */
+  /* font-style: italic; */
+}
+#p8-first > #rig > i {
+  font-size: 8vw;
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+  margin-top: 1vh;
+  margin-left: 2vw;
+  /* background-color: aqua; */
+}
