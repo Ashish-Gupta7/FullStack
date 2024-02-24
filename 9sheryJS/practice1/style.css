@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "gilroy";
     color: #ffffff;
+    overflow: hidden;
 }
 html, body{
     height: 100%;

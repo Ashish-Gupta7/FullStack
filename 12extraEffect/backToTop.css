@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000;
+    color: #dadada;
+    padding: 80px 100px;
+}
+#main h2{
+    font-size: 2vw;
+    margin-bottom: 2vh;
+    text-transform: uppercase;
+}
+#main p{
+    font-family: monospace;
+    font-weight: 100;
+}
+#scroll{
+    text-transform: capitalize;
+    position: fixed;
+    bottom: 800px;
+    right: 40px;
+    height: 5vh;
+    color: red;
+    font-weight: 900;
+    font-size: 3vw;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+#scroll.addedBtn{         /* #scroll ke sath hi .addedBtn h isliye space nhi diya gya h select krte samay. */
+    bottom: 70px;
+    visibility: visible;
+    opacity: 1;
+}

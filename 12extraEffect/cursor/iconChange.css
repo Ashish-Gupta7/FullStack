@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+p{
+    font-size: 2vw;
+    letter-spacing: .3vw;
+    margin-top: 10vh;
+    font-family: monospace;
+}
+p:hover{
+    cursor: url('icons8-cursor-50.png'), auto;
+}
