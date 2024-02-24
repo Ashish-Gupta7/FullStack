@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: #fff;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#main{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+#main #navPage{
+    position: fixed;
+    height: 15vh;
+}
+#main nav{
+    display: flex;
+    align-items: center;
+    gap: 80vw;
+    padding: 5vh 5vw;
+    background-color: transparent;
+}
+#main #menu-click>img {
+    width: 100%;
+    object-fit: auto;
+}
+#main button{
+    height: 5vh;
+    width: 7vw;
+    font-size: 1vw;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 2px;
+}
+#main #menu-click{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    z-index: -19;
+    pointer-events: none;
+}
+#main #menu-click #homePage{
+    position: absolute;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    height: 100%;
+    width: 100%;
+    background-color: peru;
+}
+#main #menu-click #menu-click-inner{
+    display: none;
+    /* z-index: -4567; */
+}
+#main #menu-click .page{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    /* border-radius: 10px; */
+    rotate: -23.5deg;
+    top: 44%;
+    left: 31%;
+}
+#main #menu-click .page1{
+    background-color: peru;
+}
+#main #menu-click .page2{
+    /* rotate: -19deg;
+    top: 36%;
+    left: 33.5%; */
+    background-color: lightblue;
+}
+#main #menu-click .page3{
+    /* rotate: -13.8deg;
+    top: 28.7%;
+    left: 37%; */
+    background-color: lightcoral;
+}
+#main #menu-click .page4{
+    /* rotate: -8.6deg;
+    top: 23%;
+    left: 42%; */
+    background-color: lightgreen;
+}
+#main #menu-click .page5{
+    /* rotate: -3.2deg;
+    top: 19.8%;
+    left: 47%; */
+    background-color: lightseagreen;
+}
+#main #menu-click .page h3{
+    font-size: 1vw;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: absolute;
+    top: -3vh;
+    left: .5vh;
+    opacity: 0;
+}
