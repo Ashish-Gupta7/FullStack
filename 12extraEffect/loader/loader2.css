@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main #load{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#main #load h2{
+    font-size: 2vw;
+}
+#main #load #load-anim{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+#main #load .dot{
+    height: 10px;
+    width: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    animation: anime .4s alternate infinite;
+}
+#main #load .dot:nth-child(1){
+    animation-delay: .1s;
+}
+#main #load .dot:nth-child(2){
+    animation-delay: .2s;
+}
+#main #load .dot:nth-child(3){
+    animation-delay: .3s;
+}
+#main #load .dot:nth-child(4){
+    animation-delay: .4s;
+}
+
+@keyframes anime {
+    from{
+        height: 10px;
+    }
+    to{
+        height: 28px;
+    }
+}
