@@ -51,8 +51,8 @@ function page2Animation() {
 
     videoC.addEventListener("mousemove", function (dets) {
         gsap.to("#play-btn", {
-            left: dets.x - 555,
-            top: dets.y - 200
+            left: dets.x - 505,
+            top: dets.y - 180
         })
     })
 }
