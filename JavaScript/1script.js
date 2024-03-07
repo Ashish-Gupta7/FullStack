@@ -86,6 +86,12 @@ console.log(bint2);
 console.log(typeof(bint2));    // bigint
 
 
+console.log("Truthy & Falsy");
+// JS me kuchh bhi likho wo mainly 2 prakar me se kisi ek me belong krti h aur wo h - Truthy & Falsy.
+// Falsy values - 0, false, undefined, null, NaN(not a number), document.all
+// Truthy values - Falsy values ke alawa sabhi truthy values h.
+
+
 // 2. Reference - (), {}, []  - kahi pas bhi brackets dikhe to waha pas reference hota h aur brackets n ho tb primitive type JS hota h.
 // Aisi koi bhi value jise copy karne pr real copy nhi hota h sirf value refer hoti h usey reference type JS kahte h aur jisme real copy ho jae usey Primitive type JS kahte h.
 // 1. eg.- var f = 12;    -> f ki apni value 12 h.

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter&ForEach</title>
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+            color: white;
+            font-family: monospace;
+        }
+        
+        html, body{
+            width: 100%;
+            height: 100%;
+        }
+        
+        .topic{
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;    
+            text-align: justify;        
+            padding: 4vh 3vw;
+        }
+        h1{
+            width: max-content;
+            color: rgb(225, 65, 65);
+            padding: .5vw 1.3vw;
+            border: .2vw solid rgb(225, 65, 65);
+        }
+        p{
+        font-size: 1.1vw;
+        }
+        span{
+            color: royalblue;
+        }
+    </style>
+
+<body>
+    <div id="main">
+        <div class="topic" id="topic1">
+            <h1>ForEach</h1>
+            <p>forEach ek JavaScript method hai jo array ke har element par iterate karne ke liye use kiya jata hai. Yeh method ek callback function leta hai, jo har element par apply hota hai. Yeh method array ke original array ko modify nahi karta, toh original array ko change nahi karta.
+            <p><span>Syntax : </span>
+                array.forEach(function(currentValue, index, arr), thisValue)</p>
+    
+            <p>currentValue (required): Yeh parameter woh element hai jo currently iterate hua hai.
+                index (optional): Yeh parameter woh index hai jo currently iterate hua element ke liye hai.
+                arr (optional): Yeh parameter woh array hai jo currently iterate hua hai.
+                thisValue (optional): Yeh parameter this keyword ke liye use kiya jata hai callback function mein.</p></p>
+        </div>
+        <div class="topic" id="topic2">
+            <h1>Filter</h1>
+            <p>filter ek JavaScript method hai jo ek array se selected elements ko ek nayi array mein return karta hai. Yeh method ek callback function leta hai, jo har element par apply hota hai. Yeh method sirf woh elements ko select karta hai jo callback function ke through true return karta hai.
+            <p><span>Syntax : </span>
+                array.filter(function(element, index, array), thisValue)</p>
+    
+            <p>element (required): Yeh parameter woh element hai jo currently iterate hua hai.
+                index (optional): Yeh parameter woh index hai jo currently iterate hua element ke liye hai.
+                array (optional): Yeh parameter woh array hai jo currently iterate hua hai.
+                thisValue (optional): Yeh parameter this keyword ke liye use kiya jata hai callback function mein.</p></p>
+        </div>
+        <div class="topic" id="topic3">
+            <h1>Includes</h1>
+            <p>includes ek JavaScript method hai jo ek array ya string mein kisi specific element ya value ke presence ko check karta hai. Yeh method true ya false return karta hai, depend karta hai ki specified element ya value array ya string mein hai ya nahi.
+            <p><span>Syntax : </span>
+                array.includes(element, start)</p>
+    
+            <p>element (required): Yeh parameter woh element hai jo ki check kiya jata hai ki wo array ya string mein hai ya nahi.
+                start (optional): Yeh parameter woh index hai jisme search shuru hoga. Default value 0 hai.</p></p>
+        </div>
+        <div class="topic" id="topic4">
+            <h1>Some</h1>
+            <p>some ek JavaScript method hai jo ek array ke elements par iterate karke check karta hai ki kya kisi bhi element ne specified condition ko satisfy kiya hai ya nahi. Yeh method ek callback function leta hai, jo har element par apply hota hai. Agar kisi bhi element ne condition ko satisfy kiya toh some method true return karta hai, nahi toh false return karta hai.
+            <p><span>Syntax : </span>
+                array.some(function(element, index, array), thisValue)</p>
+    
+            <p>element (required): Yeh parameter woh element hai jo currently iterate hua hai.
+                index (optional): Yeh parameter woh index hai jo currently iterate hua element ke liye hai.
+                array (optional): Yeh parameter woh array hai jo currently iterate hua hai.
+                thisValue (optional): Yeh parameter this keyword ke liye use kiya jata hai callback function mein.</p></p>
+        </div>
+        <div class="topic" id="topic5">
+            <h1>Difference between some() and filter()</h1>
+            <p>some() method sirf check karta hai ki kya array mein kisi bhi element par condition true hoga, aur iske baad true ya false return karta hai.  // filter() method ek naya array return karta hai jismein sirf woh elements hain jo condition par pass hote hain.</p>
+        </div>
+        <div class="topic" id="topic6">
+            <h1>Every</h1>
+            <p>every() ye false ko return krta h new array me. jaise some() true return krta h usi tarah ye false return krta h.</p>
+        </div>
+        <div class="topic" id="topic7">
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="topic" id="topic8">
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="topic" id="topic9">
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="topic" id="topic10">
+            <h1></h1>
+            <p></p>
+        </div>
+    </div>
+
+    <script src="filter&foreach.js"></script>
+</body>
+</html>
