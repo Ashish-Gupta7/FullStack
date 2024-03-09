@@ -63,19 +63,64 @@
 
 // (3.) Make a function which accepts two parameters, array and object and check whether that array contains that object with same values.
 
+// function checkArrayForObject(arr, obj) {
+//     return arr.some(item => Object.keys(obj).every(key => item.hasOwnProperty(key) && item[key] === obj[key]));
+// }
+// var myArray = [{a: 1, b: 2}, {c: 3, d: 4}, {e: 5, f: 6}];
+// var myObject = {c: 3, d: 4};
+// console.log(checkArrayForObject(myArray, myObject));
 
+
+// function checkArrayForObject(array, object) {
+//     // Check if any element of the array matches the object
+//     var compare = array.some(item => {
+//         // console.log(item);
+//         // console.log(Object.keys(obj));      // isme obj ke key aate h.
+//         // Check if all key-value pairs of the object match the current element
+//         return Object.keys(object).every(key => {
+//             // console.log(item[key], "=", object[key]);
+//             // console.log(item.hasOwnProperty(key));
+//             return item.hasOwnProperty(key) && item[key] === object[key];
+//         });
+//     });
+//     return compare;
+// }
+
+// // Example usage:
+// const myArray = [{a: 1, b: 2}, {c: 3, d: 4}, {e: 5, f: 6}];
+// const myObject = {c: 3, d: 4};
+
+// console.log(checkArrayForObject(myArray, myObject)); // Output: true
 
 
 
 // (4.) Make a function which accepts some string and returns an object with following pattern:
 // Hello => {H: 'e', l: 'l', o: null};
+// function object(convert){
+//     let obj = {};
+//     for(i = 0; i < convert.length; i++){
+//         const objKey = convert[i];
+//         const objVal = convert[i + 1];
+//         obj[objKey] = objVal || null;
+//     }
+//     return obj;
+// }
+// console.log(object("Hello"));
 
 
 
 
-
-// (5.) Make a function which accets two strings and returns the string with all the similar letters next to each other.
+// (5.) Make a function which accepts two strings and returns the string with all the similar letters next to each other.
 // example:    hello harsh => 
+// function output(str1, str2){
+//     var newStr = "";
+//     const str2firstVal = str2[0];
+//     // const str2RemainingVal = str2.slice(1);
+//     const str2RemainingVal = str2.substring(1);
+//     newStr = str2firstVal + str1 + str2RemainingVal
+//     console.log(newStr);
+// }
+// output("Hello", "Harsh");
 
 
 

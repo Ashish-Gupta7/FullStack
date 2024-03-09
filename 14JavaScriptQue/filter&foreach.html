@@ -56,10 +56,12 @@
             <p><span>Syntax : </span>
                 array.forEach(function(currentValue, index, arr), thisValue)</p>
 
-            <p><p>currentValue (required): Yeh parameter woh element hai jo currently iterate hua hai.</p>
-                <p>index (optional): Yeh parameter woh index hai jo currently iterate hua element ke liye hai.</p>
-                <p>arr (optional): Yeh parameter woh array hai jo currently iterate hua hai.</p>
-                <p>thisValue (optional): Yeh parameter this keyword ke liye use kiya jata hai callback function mein.</p></p>
+            <p>
+            <p>currentValue (required): Yeh parameter woh element hai jo currently iterate hua hai.</p>
+            <p>index (optional): Yeh parameter woh index hai jo currently iterate hua element ke liye hai.</p>
+            <p>arr (optional): Yeh parameter woh array hai jo currently iterate hua hai.</p>
+            <p>thisValue (optional): Yeh parameter this keyword ke liye use kiya jata hai callback function mein.</p>
+            </p>
             </p>
         </div>
         <div class="topic" id="topic2">
@@ -70,10 +72,12 @@
             <p><span>Syntax : </span>
                 array.filter(function(element, index, array), thisValue)</p>
 
-            <p><p>element (required): Yeh parameter woh element hai jo currently iterate hua hai.</p>
-                <p>index (optional): Yeh parameter woh index hai jo currently iterate hua element ke liye hai.</p>
-                <p>array (optional): Yeh parameter woh array hai jo currently iterate hua hai.</p>
-                <p>thisValue (optional): Yeh parameter this keyword ke liye use kiya jata hai callback function mein.</p></p>
+            <p>
+            <p>element (required): Yeh parameter woh element hai jo currently iterate hua hai.</p>
+            <p>index (optional): Yeh parameter woh index hai jo currently iterate hua element ke liye hai.</p>
+            <p>array (optional): Yeh parameter woh array hai jo currently iterate hua hai.</p>
+            <p>thisValue (optional): Yeh parameter this keyword ke liye use kiya jata hai callback function mein.</p>
+            </p>
             </p>
         </div>
         <div class="topic" id="topic3">
@@ -84,9 +88,11 @@
             <p><span>Syntax : </span>
                 array.includes(element, start)</p>
 
-            <p><p>element (required): Yeh parameter woh element hai jo ki check kiya jata hai ki wo array ya string mein
+            <p>
+            <p>element (required): Yeh parameter woh element hai jo ki check kiya jata hai ki wo array ya string mein
                 hai ya nahi.</p>
-                <p>start (optional): Yeh parameter woh index hai jisme search shuru hoga. Default value 0 hai.</p></p>
+            <p>start (optional): Yeh parameter woh index hai jisme search shuru hoga. Default value 0 hai.</p>
+            </p>
             </p>
         </div>
         <div class="topic" id="topic4">
@@ -98,10 +104,36 @@
             <p><span>Syntax : </span>
                 array.some(function(element, index, array), thisValue)</p>
 
-            <p><p>element (required): Yeh parameter woh element hai jo currently iterate hua hai.</p>
-                <p>index (optional): Yeh parameter woh index hai jo currently iterate hua element ke liye hai.</p>
-                <p>array (optional): Yeh parameter woh array hai jo currently iterate hua hai.</p>
-                <p>thisValue (optional): Yeh parameter this keyword ke liye use kiya jata hai callback function mein.</p></p>
+            <p>
+            <p>element (required): Yeh parameter woh element hai jo currently iterate hua hai.</p>
+            <p>index (optional): Yeh parameter woh index hai jo currently iterate hua element ke liye hai.</p>
+            <p>array (optional): Yeh parameter woh array hai jo currently iterate hua hai.</p>
+            <p>thisValue (optional): Yeh parameter this keyword ke liye use kiya jata hai callback function mein.</p>
+            </p>
+            </p>
+            <span>some ko jaha pass bhi true milta hai ye wahi se return ho jata h.</span>
+            <p><span>Example</span>
+            <p>function checkArrayForObject(arr, obj) {</p>
+            <p>// Check if any element of the array matches the object</p>
+            <p>return arr.some(item => {</p>
+            <p>console.log(item);</p>
+            <p>// Check if all key-value pairs of the object match the current element</p>
+            <p>console.log(Object.keys(obj));</p>
+            <p>return Object.keys(obj).every(key => {</p>
+            <p>return item.hasOwnProperty(key) && item[key] === obj[key];</p>
+            <p>});</p>
+            <p>});</p>
+            <p>}</p>
+
+            <p>// Example usage:</p>
+            <p>const myArray = [{a: 1, b: 2}, {c: 3, d: 4}, {e: 5, f: 6}];</p>
+            <p>const myObject = {c: 3, d: 4};</p>
+
+            <p>(checkArrayForObject(myArray, myObject)); // Output: true</p>
+            <p>yaha myArray aur myObject ki tulna krne pr 1st index pr value match ho jati h iss wajah se uper
+                console.log(item); pr myArray ka last index {e: 5, f: 6} console pr print nhi ho rha h, yadi aap
+                myObject ki value ko {c: 3, d: 4}; isse badalkar {e: 5, f: 6} ise krte ho tb some sabhi ko check karega
+                kyuki ye myArray ki last value h.</p>
             </p>
         </div>
         <div class="topic" id="topic5">
@@ -117,12 +149,14 @@
                 return karta hai, toh every method true return karega. Yani, every method check karta hai ki kya array
                 ke saare elements callback function ke conditions ko satisfy kar rahe hain ya nahi.</p>
             <p><span>Syntax : </span>array.every(function(currentValue, index, arr), thisValue)</p>
-            <p><p>array: Yeh array hai jiska elements check kiya jayega.</p>
-                <p>function(currentValue, index, arr): Yeh ek callback function hai jo har element par apply hota hai.</p>
-                <p>currentValue: Yeh parameter current element ko represent karta hai.</p>
-                <p>index (optional): Yeh parameter current element ke index ko represent karta hai.</p>
-                <p>arr (optional): Yeh parameter array ko represent karta hai.</p>
-                <p>thisValue (optional): Yeh parameter callback function ke this keyword ke liye use hota hai.</p></p>
+            <p>
+            <p>array: Yeh array hai jiska elements check kiya jayega.</p>
+            <p>function(currentValue, index, arr): Yeh ek callback function hai jo har element par apply hota hai.</p>
+            <p>currentValue: Yeh parameter current element ko represent karta hai.</p>
+            <p>index (optional): Yeh parameter current element ke index ko represent karta hai.</p>
+            <p>arr (optional): Yeh parameter array ko represent karta hai.</p>
+            <p>thisValue (optional): Yeh parameter callback function ke this keyword ke liye use hota hai.</p>
+            </p>
         </div>
         <div class="topic" id="topic7">
             <h1>Difference between Some() and Every() =></h1>
@@ -149,20 +183,25 @@
             <p>// var newArr = arr.filter( elm => elm.grades.some( elm => elm > 70 ) )</p>
             <p>// newArr.forEach( elm => {</p>
             <p>// console.log(elm.name);</p>
-            <p>// } )</p></p>
+            <p>// } )</p>
+            </p>
         </div>
         <div class="topic" id="topic8">
             <h1>Reduce</h1>
-            <p>reduce method ek array ke saath kaam karne ke liye use hota hai. Yeh method ek function leta hai jisme hum ek accumulator (acc) aur current element (elm) specify kar sakte hain. Yeh function array ke saath iterate karne ke baad, accumulator mein current element ke value ko add kar deta hai.</p>
+            <p>reduce method ek array ke saath kaam karne ke liye use hota hai. Yeh method ek function leta hai jisme
+                hum ek accumulator (acc) aur current element (elm) specify kar sakte hain. Yeh function array ke saath
+                iterate karne ke baad, accumulator mein current element ke value ko add kar deta hai.</p>
             <p><span>Syntax : </span>
-                <p>array.reduce(function(acc, elm, index, array) {</p>
-                <p>// yeh function har ek element par iterate karne ke baad call hota hai</p>
-                <p>// acc - accumulator, ek variable hai jisme hum result store kar sakte hain</p>
-                <p>// elm - current element, array ke saath iterate karne wale element</p>
-                <p>// index - current element ke index</p>
-                <p>// array - original array</p>
-                <p>return acc + elm; // yeh example hai, jisme hum accumulator mein current element ko add kar rahe hain</p>
-                <p>}, initialValue); // initialValue - yeh optional hai, jisme hum accumulator ke initial value specify kar sakte hain</p></p>
+            <p>array.reduce(function(acc, elm, index, array) {</p>
+            <p>// yeh function har ek element par iterate karne ke baad call hota hai</p>
+            <p>// acc - accumulator, ek variable hai jisme hum result store kar sakte hain</p>
+            <p>// elm - current element, array ke saath iterate karne wale element</p>
+            <p>// index - current element ke index</p>
+            <p>// array - original array</p>
+            <p>return acc + elm; // yeh example hai, jisme hum accumulator mein current element ko add kar rahe hain</p>
+            <p>}, initialValue); // initialValue - yeh optional hai, jisme hum accumulator ke initial value specify kar
+                sakte hain</p>
+            </p>
         </div>
         <div class="topic" id="topic9">
             <h1></h1>
