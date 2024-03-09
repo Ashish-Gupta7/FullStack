@@ -301,16 +301,172 @@
 // arr.map( elm => !obj[elm] ? obj[elm] = 1 : obj[elm]++ )
 
 // 5th method = using for loop.
-function num(arr){
-    let count = {};
-    for(i = 0; i < arr.length; i++){
-        if(!count[arr[i]]){
-            count[arr[i]] = 1;
-        } else{
-            count[arr[i]]++;
-        }
-    }
-    return count;
-}
-var array = [1,1,1,2,3,4,3,5,6,3,54,6,3,2,4,5,2,1,1,3,6,7,8,6,5,4,3,5];
-console.log(num(array));
+// function num(arr){
+//     let count = {};
+//     for(i = 0; i < arr.length; i++){
+//         if(!count[arr[i]]){
+//             count[arr[i]] = 1;
+//         } else{
+//             count[arr[i]]++;
+//         }
+//     }
+//     return count;
+// }
+// var array = [1,1,1,2,3,4,3,5,6,3,54,6,3,2,4,5,2,1,1,3,6,7,8,6,5,4,3,5];
+// console.log(num(array));
+
+
+// (9.) Ek array mein objects hain, jinmein 'age' property hai. Sirf woh objects ko filter karein jinmein age 18 se zyada ho.
+// var arr = [
+//     {age: 19},
+//     {age: 15},
+//     {age: 18},
+//     {age: 23},
+//     {age: 12},
+//     {age: 44},
+//     {age: 18},
+// ]
+// var newArr = arr.filter( elm => elm.age > 18 );
+// console.log(newArr);
+
+
+// (10.) Ek array hai jismein strings hain, unmein se sirf woh strings filter karein jo 'a' se start hoti hain.
+// var arr = ["shibbu", "ashish", 'ash', "Ankit", "shiva", "kapil", "akash", "sahil", 'abhi'];
+// var newArr = arr.filter( elm => elm.startsWith("a") );
+// console.log(newArr);
+
+
+// (11.) Ek array mein objects hain, jinmein price aur quantity fields hain. Sirf woh objects ko filter karein jinmein price 1000 se zyada hai aur quantity 5 se zyada hai. Fir har filtered object ka price aur quantity ka product calculate karein aur sabhi products ka sum nikalein.
+// var arr = [
+//     {price: 700, quantity: 6},
+//     {price: 1700, quantity: 3},
+//     {price: 7000, quantity: 6},
+//     {price: 1500, quantity: 10},
+//     {price: 600, quantity: 2},
+//     {price: 1600, quantity: 8},
+//     {price: 2100, quantity: 9}
+// ]
+// var newArr = arr.filter( elm => elm.price > 1000 && elm.quantity > 5 )
+// var total = 0;
+// newArr.forEach( elm => {
+//     total = total + elm.price * elm.quantity;
+// } )
+// console.log(total);
+
+
+// (12.) Ek array hai jismein objects hain, jinmein 'grade' field hai. Sirf woh objects ko filter karein jinmein grade 'A' hai aur unke corresponding marks print karein.
+// var arr = [
+//     {id: 123456, grade: "A", marks: 100},
+//     {id: 123457, grade: "A", marks: 90},
+//     {id: 123458, grade: "B", marks: 70},
+//     {id: 123459, grade: "A", marks: 95},
+//     {id: 123450, grade: "C", marks: 50}
+// ]
+// var newArr = arr.filter( elm => elm.grade === "A" );
+// 1st = direct print in console.
+// newArr.forEach( elm => {
+//     console.log({grade: elm.grade, marks: elm.marks});
+// } )
+
+// 2nd = create new array. ye map() se bhi ho jayega.
+// var nArr = [];
+// newArr.forEach( elm => {
+//     nArr.push({grade: elm.grade, marks: elm.marks})
+// } )
+// console.log(nArr);
+
+
+// (13.) Ek array hai jismein objects hain, jinmein nested arrays bhi shamil hain. Har object ke andar ek grades field hai, jo ek array hai. Sirf woh objects ko filter karein jinke grades array mein sabhi elements 70 se zyada hain, aur unke name field ko print karein. ek aur banao jisme name na aaye.
+// var arr = [
+//     {name: "Ash 1", grades: [70, 67, 85]},
+//     {name: "Ash 2", grades: [70, 70, 70]},
+//     {name: "Ash 3", grades: [75, 67, 85]},
+//     {name: "Ash 4", grades: [74, 77, 85]},
+//     {name: "Ash 5", grades: [92, 67, 85]},
+//     {name: "Ash 6", grades: [78, 97, 85]}
+// ]
+
+// // 1st = with name.
+// var newArr = arr.filter( elm => { 
+//     return elm.grades[0] > 70 && elm.grades[1] > 70 && elm.grades[2] > 70;
+// } )
+// console.log(newArr);
+
+// // 2nd = without name.
+// var nArr = [];
+// var nnewArr = arr.forEach( elm => {
+//     var newList = {...elm.grades};
+//     nArr.push(newList);
+// } )
+// var nnArr = nArr.filter( elm => elm[0] > 70 && elm[1] > 70 && elm[2] > 70 )
+// console.log(nnArr);
+
+// // 3rd = using every method.
+// var newArr = arr.filter( elm => elm.grades.every( elm => elm > 70 ) )
+// newArr.forEach( elm => {
+//     console.log(elm.name);
+// } )
+
+// // 4th = ye unn naamo ko return krta h jinme koi na koi to 70 se jada wale h.
+// var newArr = arr.filter( elm => elm.grades.some( elm => elm > 70 ) )
+// newArr.forEach( elm => {
+//     console.log(elm.name);
+// } )
+
+
+// (14.) Ek array hai jismein objects hain, jinmein students field hai jo ek array hai. Har student ka ek marks array hai. Sirf woh students ko filter karein jinke sabhi marks ka average 80 se zyada hai, aur unke name field ko print karein.
+// var students = [
+//     {name: "Ashish", marks: [70, 73, 75]},
+//     {name: "Jimit", marks: [79, 83, 95]},
+//     {name: "Shiva", marks: [90, 83, 75]},
+//     {name: "Aman", marks: [60, 93, 75]}
+// ];
+
+// students.filter( elm => (elm.marks[0] + elm.marks[1] + elm.marks[2]) / 3 > 80).forEach( elm => console.log(elm.name) );
+
+
+// (15.) Ek array hai jismein objects hain, jinmein books field hai jo ek array hai. Har book ka ek ratings array hai. Sirf woh books ko filter karein jinke sabhi ratings 4 se zyada hai, aur unke title field ko print karein.
+// var library = [
+//     {title: "book1", ratings: [3, 5, 4]},
+//     {title: "book2", ratings: [4, 5, 4]},
+//     {title: "book3", ratings: [4, 4, 4]},
+//     {title: "book4", ratings: [8, 5, 7]},
+//     {title: "book5", ratings: [9, 5, 4]},
+//     {title: "book6", ratings: [6, 7, 8]}
+// ]
+// var newArr = library.filter( elm => elm.ratings.every( elm => elm > 4 ) )
+// console.log(newArr);
+
+
+// (16.) Ek array hai jismein objects hain, jinmein orders field hai jo ek array hai. Har order ka ek items field hai jo ek array hai. Sirf woh orders ko filter karein jinke sabhi items ka total price 500 se zyada hai, aur unke orderId field ko print karein.
+// var ordersArray = [
+//     { orderId: 1, items: [{ name: "Product 1", price: 200 }, { name: "Product 2", price: 300 }] },
+//     { orderId: 2, items: [{ name: "Product 3", price: 150 }, { name: "Product 4", price: 400 }] },
+//     { orderId: 3, items: [{ name: "Product 5", price: 250 }, { name: "Product 6", price: 350 }] },
+//     { orderId: 4, items: [{ name: "Product 7", price: 400 }, { name: "Product 8", price: 200 }] },
+//     { orderId: 5, items: [{ name: "Product 9", price: 100 }, { name: "Product 10", price: 450 }] },
+//     { orderId: 6, items: [{ name: "Product 11", price: 100 }, { name: "Product 12", price: 250 }] },
+//     { orderId: 7, items: [{ name: "Product 13", price: 100 }, { name: "Product 14", price: 350 }] }
+// ];
+
+// var newArr = ordersArray.filter( elm => {
+//     var total = elm.items.reduce( (acc, elm) => acc + elm.price, 0 )
+//     return total > 500;
+// });
+// newArr.forEach( elm => console.log(elm.orderId));
+
+
+// (17.) Ek array hai jismein objects hain, jinmein employees field hai jo ek array hai. Har employee ka ek projects array hai. Sirf woh employees ko filter karein jinke sabhi projects ke end dates future mein hain, aur unke name field ko print karein.
+// let employees = [
+//     { name: "John", projects: [{ name: "Project 1", endDate: "2025-01-01" }, { name: "Project 2", endDate: "2026-03-15" }] },
+//     { name: "Jane", projects: [{ name: "Project 3", endDate: "2024-12-31" }, { name: "Project 4", endDate: "2023-10-20" }] },
+//     { name: "Doe", projects: [{ name: "Project 5", endDate: "2027-08-10" }, { name: "Project 6", endDate: "2026-06-30" }] },
+//     { name: "Alice", projects: [{ name: "Project 7", endDate: "2025-05-20" }, { name: "Project 8", endDate: "2024-11-15" }] },
+//     { name: "Bob", projects: [{ name: "Project 9", endDate: "2023-09-01" }, { name: "Project 10", endDate: "2024-02-28" }] }
+// ];
+
+// var newArr = employees.filter( elm => {
+//     let dates = elm.projects.every( elm => new Date(elm.endDate) > new Date())
+//     return dates
+// } )
+// newArr.forEach( elm => console.log(elm.name));
