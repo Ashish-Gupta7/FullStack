@@ -9,17 +9,17 @@ loader.to(yellow, {
     bottom: -100,
     height: "-20%",
     duration: 1,
-    delay: 2
+    delay: 1
 })
 loader.to(green, {
     delay: -.5,
     bottom: "-100",
     height: "-20%",
-    duration: .7,
+    duration: .8,
 })
 loader.to(pink, {
     delay: -.4,
     bottom: "-100",
     height: "-20%",
-    duration: .6,
+    duration: .5,
 })

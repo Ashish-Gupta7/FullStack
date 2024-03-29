@@ -1,51 +1,57 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
 }
-html,body{
-  width: 100%;
-  height: 100%;
-}
-#main {
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-}
-#page8 {
-  width: 100vw;
-  height: 100%;
-  background-color: black;
-  color: white;
-  padding-top: 10vh;
 
+html, body{
+    width: 100%;
+    height: 100%;
 }
-#p8-first {
+
+.content__item{
+  height: 100%;
+  width: 100%;
   display: flex;
-  height: fit-content;
+  align-items: center;
+  justify-content: center;
 }
-#p8-first > #lef {
-  width: 20vw;
-  padding-left: 12vw;
-  /* background-color: pink; */
+
+.link {
+  width: 100vw;
+  cursor: pointer;
+  font-size: 18px;
+  position: relative;
+  text-align: center;
+  margin: 3vw;
 }
-#p8-first > #rig {
-  width: 80vw;
-  display: flex;
-  /* background-color: palevioletred; */
+
+.link::before,
+.link::after {
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  background: currentColor;
+  top: 50%;
+  left: 0;
+  pointer-events: none;
 }
-#p8-first > #rig > h1 {
-  font-size: 8vw;
-  font-weight: 500;
-  font-family: gilroy;
-  /* background-color: aquamarine; */
-  /* font-style: italic; */
+a{
+  text-decoration: none;
+  color: #000;
 }
-#p8-first > #rig > i {
-  font-size: 8vw;
-  -webkit-text-stroke: 2px white;
-  color: transparent;
-  margin-top: 1vh;
-  margin-left: 2vw;
-  /* background-color: aqua; */
+.link::before {
+  content: '';
+  /* show by default */
+}
+.link--metis::before {
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s;
+}
+
+.link--metis:hover::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
 }

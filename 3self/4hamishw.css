@@ -1,0 +1,295 @@
+@font-face {
+    font-family: gotham;
+    src: url(gotham-medium-0VT3RO8I.ttf);
+}
+
+:root{
+    --txtColor: #fff;
+    --txtColorSecondary: #a0a0a0;
+    --bgcolorPrimary: #000;
+    --bgcolorSecondary: #00EEFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gotham;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#topZero{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: -100vh;
+    background-color: transparent;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#topZero #tz-nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6vh;
+    padding: 0 2.5vw 0vh 2.5vw;
+}
+#topZero #tz-nav .content_item {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#topZero #tz-nav .content_item .link {
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.05vw;
+    position: relative;
+    text-align: center;
+    margin: 0 3vw;
+}
+#topZero #tz-nav .content_item .link::before,
+#topZero #tz-nav .content_item .link::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: var(--bgcolorSecondary);
+    top: 50%;
+    left: 0;
+    pointer-events: none;
+}
+#topZero #tz-nav .content_item a {
+    text-decoration: none;
+    color: var(--txtColorSecondary);
+}
+#topZero #tz-nav .content_item .link::before {
+    content: '';
+}
+#topZero #tz-nav .content_item .link--metis::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.4s;
+}
+#topZero #tz-nav .content_item .link--metis:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+}
+#topZero #footer{
+    margin-bottom: 5vh;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#topZero #footer #social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+#topZero #footer #social svg:hover{
+    fill: var(--bgcolorSecondary);
+    transition: all ease .5s;
+}
+.mode{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    pointer-events: all;
+}
+.mode svg{
+    fill: #fff;
+}
+.mode:hover .clipBox{
+    opacity: 1;
+    transition: all .5s ease;
+}
+.clipBox{
+    pointer-events: all;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: #3c3c3c42;
+    clip-path: polygon(0% 0%, 100% 0, 100% 75%, 75% 100%, 0% 100%);
+    position: absolute;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    padding: 8vh;
+    color: var(--txtColor);
+    background-color: var(--bgcolorPrimary);
+}
+#main #nav{
+    display: flex;
+    justify-content: space-between;
+}
+#main #nav #menu{
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    z-index: 2;
+}
+#main #nav #menu i{
+    font-size: 1.8vw;
+    color: var(--txtColor);
+}
+#main #nav #menuHover{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#main #nav #menuHover #hoverEffect{
+    height: 100%;
+    width: 100%;
+    background-color: #3c3c3ca0;
+    clip-path: polygon(0% 0%, 100% 0, 100% 75%, 75% 100%, 0% 100%);
+    position: absolute;
+    opacity: 0;
+    transition: all .5s ease;
+}
+#main #nav #menuHover:hover #hoverEffect{
+    opacity: 1;
+    transition: all .5s ease;
+}
+#main #nav #menu i:nth-child(2){
+    position: absolute;
+}
+#main #nav #menu i:nth-child(1){
+    rotate: 45deg;
+    opacity: 0;
+}
+#main #nav svg{
+    fill: var(--txtColor); 
+    z-index: 2;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    transition: all ease .5s;
+}
+#main #nav svg:hover{
+    fill: var(--bgcolorSecondary);
+    transition: all ease .5s;
+}
+
+#main #centerText {
+    padding: 16vh 25%;
+}
+#main #centerText #name{
+    font-size: 1.5vw;
+    letter-spacing: .35vw;
+    margin-bottom: 3.7vh;
+    color: var(--txtColorSecondary);
+}
+#main #centerText #skills{
+    font-size: 6.6vw;
+    font-weight: 600;
+    line-height: 15vh;
+}
+#main #centerText #skills #skills-fst{
+    display: flex;
+    align-items: center;
+}
+#main #centerText #skills #skills-fst #line{
+    height: .25vh;
+    width: 20vw;
+    margin: 1.5vh 0 0 1.3vw;
+    background-color: var(--txtColorSecondary);    
+}
+#main #centerText #skills #skills-scd{
+    position: relative;
+
+}
+#main #centerText #skills #skills-scd .skill{
+    width: max-content;
+    position: absolute;
+    margin-top: .6vh;
+    word-spacing: -.9vw;
+}
+#main #centerText #skills #skills-scd .skill::first-letter{
+    color: var(--txtColorSecondary);
+}
+#main #centerText #skills #skills-scd .skill-back{
+    opacity: 0;
+}
+
+/* #main #centerText #skills #skills-scd .skill::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; 
+    height: 107%;
+    background-color: #00EEFF;
+    animation: expandWidth 2s ease infinite; 
+}
+@keyframes expandWidth {
+    0% {
+        width: 0; 
+        opacity: 1; 
+        transform: translateX(0);
+    }
+    50% {
+        width: 102%; 
+        opacity: 1; 
+        transform: translateX(0);
+    }
+    100% {
+        width: 102%; 
+        opacity: 1; 
+        transform: translateX(0); 
+    }
+} */
+
+
+#main #dropArrow{
+    background-color: transparent;
+    margin: 17vh auto;
+    height: 3.6vh;
+    width: 2.5vw;
+    rotate: 90deg;
+    border-radius: 15px;
+    border: .12vw solid var(--txtColorSecondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#main #dropArrow #drop{
+    border-radius: 15px;
+    width: .15vw;
+    height: 1.2vh;
+    left: .4vw;
+    background-color: var(--txtColorSecondary);
+    position: absolute;
+    rotate: 90deg;
+    animation: dropAnim 1.5s .5s infinite linear;
+}
+@keyframes dropAnim {
+    0%{
+        width: .15vw;
+    }
+    100%{
+        width: .15vw;
+        transform: translateY(-150%);
+        opacity: 0;
+    }
+}

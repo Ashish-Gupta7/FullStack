@@ -1,180 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        @font-face {
+  font-family: cooperLt;
+  src: url(CooperLtBTWXXLight.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: cooperLt;
+}
+
+.swiper-slide img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.swiper-slide h2 {
+  font-size: 3vw;
+  width: 750px;
+}
+.swiper-slide .name div {
+  width: 13px;
+  height: 13px;
+  border-radius: 100px;
+  background-color: #00eb8f;
+}
+.swiper-slide .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  font-size: 1.3vw;
+}
+.swiper-slide h4 {
+  margin-top: 10px;
+  opacity: 0.5;
+}
+
+    </style>
 </head>
-<style>
-    *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: gilroy;
-}
 
-html, body{
-    width: 100%;
-    height: 100%;
-}
-
-#main{
-    height: 100%;
-    width: 100%;
-    padding: 4vh 3vw;
-}
-
-#main nav{
-    display: flex;
-    gap: 2vw;
-}
-
-#main nav #select{
-    border: .1vw solid #000;
-    padding: .2vw;
-    color: #000;
-    font-weight: 500;
-    font-size: 1vw;
-    border-radius: .3vw;
-}
-
-#main nav #select option:nth-child(even){
-    background-color: #dadadaa1;
-}
-
-#main nav #search{
-    border: .1vw solid #000;
-    padding: .3vw;
-    border-radius: .3vw;
-}
-
-#main #products{
-    margin-top: 5vh;
-    display: flex;
-    gap: 1.3vw;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-#main #products .product-details{
-    width: 14.4vw;
-    padding: 1.1vw;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5vh;
-    background-image: linear-gradient(to bottom, #dadada, #dadadaa1);
-    border-radius: 1vw;
-}
-
-#main #products .product-details h2{
-    font-size: 1.4vw;
-    font-weight: 500;
-}
-
-#main #products .product-details .category{
-    font-size: 1.1vw;
-    font-weight: 500;
-    color: #00000099;
-}
-
-#main #products .product-details p{
-    font-size: .9vw;
-    font-weight: 500;
-    height: 12.5vh;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-#main #products .product-details button{
-    padding: .4vw;
-    color: #fff;
-    font-size: 1vw;
-    font-weight: 500;
-    background-color: royalblue;
-    border: none;
-    border-radius: .5vw;
-}
-</style>
 <body>
     <div id="main">
-        <nav>
-            <select name="" id="select">
-
-            </select>
-            <input type="search" value="" name="" id="search" placeholder="Search here...">
-        </nav>
-        <div id="products">
-
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/LCFC-Big.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638360245&s=81701c1431f247310ca474760ca488b0"
+                        alt="">
+                    <h2>"They’ve been transformational, suffice to say, I can’t recommend them highly enough!"</h2>
+                    <div class="name">
+                        <div></div>
+                        <h3>Head of Retail 1</h3>
+                    </div>
+                    <h4>Leicester City Football Club</h4>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/LCFC-Big.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638360245&s=81701c1431f247310ca474760ca488b0"
+                        alt="">
+                    <h2>"They’ve been transformational, suffice to say, I can’t recommend them highly enough!"</h2>
+                    <div class="name">
+                        <div></div>
+                        <h3>Head of Retail 2</h3>
+                    </div>
+                    <h4>Leicester City Football Club</h4>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/LCFC-Big.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638360245&s=81701c1431f247310ca474760ca488b0"
+                        alt="">
+                    <h2>"They’ve been transformational, suffice to say, I can’t recommend them highly enough!"</h2>
+                    <div class="name">
+                        <div></div>
+                        <h3>Head of Retail 3</h3>
+                    </div>
+                    <h4>Leicester City Football Club</h4>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/LCFC-Big.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638360245&s=81701c1431f247310ca474760ca488b0"
+                        alt="">
+                    <h2>"They’ve been transformational, suffice to say, I can’t recommend them highly enough!"</h2>
+                    <div class="name">
+                        <div></div>
+                        <h3>Head of Retail 4</h3>
+                    </div>
+                    <h4>Leicester City Football Club</h4>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        var select = document.querySelector("#main nav #select");
-var products = document.querySelector("#main #products");
-var search = document.querySelector("#main nav #search");
-
-var arr = [
-    { name: "Apple", tag: "Fruit", price: 100 },
-    { name: "Mango", tag: "Fruit", price: 80 },
-    { name: "Orange", tag: "Fruit", price: 70 },
-    { name: "Mobile", tag: "Electronics", price: 13000 },
-    { name: "Earphone", tag: "Electronics", price: 150 },
-    { name: "Bulb", tag: "Electronics", price: 60 },
-    { name: "House", tag: "Assets", price: 10000000 },
-    { name: "Car", tag: "Assets", price: 1500000 },
-    { name: "Shirt", tag: "Clothing", price: 500 },
-    { name: "T-Shirt", tag: "Clothing", price: 200 },
-    { name: "Pant", tag: "Clothing", price: 700 },
-    { name: "Lowers", tag: "Clothing", price: 250 },
-    { name: "Clothes", tag: "Essentials", price: 5000 },
-    { name: "Milk", tag: "Essentials", price: 50 },
-    { name: "Toothbrush", tag: "Essentials", price: 10 },
-    { name: "Table", tag: "Interior", price: 1000 },
-    { name: "Bed", tag: "Interior", price: 12000 },
-    { name: "Sofa", tag: "Interior", price: 15000 },
-    { name: "Almirah", tag: "Interior", price: 7000 }
-];
-
-function getOptionsToSelect() {
-    var tags = arr.map(elm => elm.tag)
-    // tags = [...new Set(tags.sort())]     // 1st method convert into new array
-    tags = Array.from(new Set(tags.sort()));    // 2nd method
-    // console.log(tags);
-    var selectClutter = `<option value="All">All</option>`;
-    tags.forEach(elm => {
-        selectClutter = selectClutter + `<option value="${elm}">${elm}</option>`
-    })
-    select.innerHTML = selectClutter;
-}
-getOptionsToSelect();
-
-function getProducts(productDetails) {
-    var productClutter = "";
-    productDetails.forEach(elm => {
-        productClutter = productClutter + `            <div class="product-details">
-        <h2>${elm.name}</h2>
-        <div class="category">${elm.tag}</div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure est dolor doloremque cumque eos quibusdam, ut perspiciatis saepe accusantium.</p>
-        <button>Add</button>
-        </div>`
-    })
-    products.innerHTML = productClutter;
-}
-getProducts(arr);
-
-function searchProducts(){
-    search.addEventListener( "input", function(){
-        var inputEvent = arr.filter( elm => elm.name.startsWith() )
-        getProducts(inputEvent);
-    } )
-}
-searchProducts();
-
-
+        var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 1,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    grabCursor: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
     </script>
 </body>
+
 </html>
