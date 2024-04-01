@@ -13,14 +13,21 @@
         // [] => Array
         console.log(typeof([]));      // output - object, [] ka type object h pr ise Array padhte h. reason - 
         var a = [2,12,31,33,11,65];   // yaha a ek array h, lekin JavaScript ise object me convert kr deta h -
-        var a = {
-            0: 2,
-            1: 12,
-            2: 31,
-            3: 33,
-            4: 11,
-            5: 65
-        }   // 0th index pr 2, 1st index pr 12, 2nd index pr 31... h. a = {...} aur var a = {...} ye dono equal h.
+        // var a = {
+        //     0: 2,
+        //     1: 12,
+        //     2: 31,
+        //     3: 33,
+        //     4: 11,
+        //     5: 65
+        // }   // 0th index pr 2, 1st index pr 12, 2nd index pr 31... h. a = {...} aur var a = {...} ye dono equal h.
+        console.log(a.length);    // number of items in array.
+        // last index of an array => array length - 1
+        // length of an array => last index + 1
+
+        // Array methods => kuchh array methods mutable aur kuchh imutable hote hai, jo string wale methods hai jadatr wahi imutable hote hai.
+        // Mutable => Original array ya string me change kr pana. array mutable hote hai.
+        // Imutable => Original array ya string me change na kr pana, ye new array ya new string mangte hai ya return krte hai. string imutable hota hai.
 
         var arr1 = [121,122,332,442,257];
         arr1.forEach(function(val1){
@@ -106,6 +113,42 @@
 
         console.log("Object");
         // ek se jada ki baat ki to array aur kisi ek ke baare sari baat ki to object hota h. object h kisi ek ki details ko hold krna.
+
+        // Converting an Array to a String => The JS method toString() converts an array to a string of (comma seperated) array values.
+        let fruits = ["banana", "apple", "mango"];
+        let cnvrtStr = fruits.toString();
+        console.log(cnvrtStr);
+
+        // Slice() => Returns a piece of the array.  slice(startIndex, endIndex);
+        let cars = ["balano", "maruti", "suzuki", "bolero"];
+        console.log(cars.slice(2));        // suzuki, bolero => 2nd index se aage ki sabhi value ko return karo.
+        console.log(cars.slice(0, 2));     // balano, maruti => 0th index se 1st index tk ki value return karo.
+        console.log(cars.slice(2, 0));     // []  => empty
+        console.log(cars.slice(0));        // "balano", "maruti", "suzuki", "bolero" => oth index se sabhi ko return kro.
+
+        // Splice() => change original array. splice(add, remove, replace) ya phir splice(startIndex where adds, deleteCount, newElm1, newElm2...)
+        let spliceCheck = [1,2,3,4,5,6,7,8,9];
+        spliceCheck.splice(3, 2, 99, 56, 727);
+        // console.log(spliceCheck.splice(3, 2, 99, 56, 727));            // ye jise htayega usey return karega. 4,5
+        console.log(spliceCheck);
+        // the first parameter(3) => defines the position where new elements should be added(spliced in).
+        // the second parameter(2) => defines how many elements should be removed.
+        // the rest of the parameters(99, 56, 727) => defines the new elements to be added.
+        // 1,2,3,99,56,727,6,7,8,9
+
+
+        // Delete => Array elements can be deleted using the js operator delete. Using delete leaves undefined holds in the array. Use pop() or shift() instead of delete().
+        let delNum = [1,2,3,4,5];
+        let del = delete delNum[2];
+        console.log(delNum);
+        console.log(del);
+        console.log(delNum[2]);
+
+
+        // Flat() => the flat() method creates a new array with sub-array elements concatenated to a specified depth.
+        let flat = [[1,2], [3,4], [5,6] [1,2]];
+        let flatArr = flat.flat();
+        console.log(flatArr); // same array ki wajah se last wala undefined aayega.
 
     </script>
 </body>

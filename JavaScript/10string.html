@@ -90,7 +90,7 @@
         console.log(splitEx.split(""));
         console.log(splitEx.split("friends"));
 
-        // join() => ye slip() ke opposite work krta hai. aur ye string return krta hai.
+        // join() => ye slip() ke opposite work krta hai. aur ye string return krta hai. ye bhi sirf array pr kam krta hai.
         var joinStr = prompt("Enter a string");
         var joinArr = joinStr.split(" ");
         console.log(joinArr);
@@ -98,9 +98,9 @@
         var joinArrSort = joinArr.sort();        // sort() text ko pahle capital phir small letters ke anusar alphabetical order me convert kr deta hai.
         console.log(joinArrSort);
 
-        var join = joinArr.join(" ");
-        console.log(join);
-
+        // var join = joinArr.join(" ");
+        // console.log(join);
+        console.log(joinArr.join("#"));
         var joinSort = joinArrSort.join(" ");
         console.log(joinSort);
 
