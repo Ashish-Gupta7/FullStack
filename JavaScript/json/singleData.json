@@ -1,0 +1,12 @@
+{
+    "name": "Ashish Gupta",
+    "age": 23,
+    "is_student": true,
+    "passport_no": null,
+    "p_lang": ["c", "c++", "java", "javaScript"],
+    "address": {
+        "city": "shahdol",
+        "state": "Madhya Pradesh",
+        "pincode": 484771
+    }
+}

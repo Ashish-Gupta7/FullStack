@@ -78,15 +78,15 @@
 
 
 // HTML page me print karane ke liye =>
-const catFacts = document.querySelector("#catFacts");
-const catFactsBtn = document.querySelector("#catFactsBtn");
+// const catFacts = document.querySelector("#catFacts");
+// const catFactsBtn = document.querySelector("#catFactsBtn");
 
-const URL = "https://cat-fact.herokuapp.com/facts";
-const getFacts = async () => {
-    let response = await fetch(URL);
-    let data = await response.json();
-    catFacts.innerText = data[2].text;
-}
+// const URL = "https://cat-fact.herokuapp.com/facts";
+// const getFacts = async () => {
+//     let response = await fetch(URL);
+//     let data = await response.json();
+//     catFacts.innerText = data[2].text;
+// }
 
 // catFactsBtn.addEventListener("click", function(){
 //     getFacts();
@@ -94,4 +94,15 @@ const getFacts = async () => {
 
 // or
 
-catFactsBtn.addEventListener("click", getFacts);
+// catFactsBtn.addEventListener("click", getFacts);
+
+
+
+
+
+
+
+
+
+
+
