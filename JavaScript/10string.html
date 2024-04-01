@@ -83,6 +83,27 @@
         console.log(extra);
         console.log(extra.trim());  // start ke phle aur end ke baad ke sabhi spaces ko hatane ka kaam trim krta h.
 
+        // Split() => ye words or letters ko iske braces ke qoutes me jo likha hota hai uske basis pr split kr deta hai. aur phir ek array me return krta hai.
+        var splitEx = "Hello friends i am Ashish."
+        console.log(splitEx.split("e"));
+        console.log(splitEx.split(" "));
+        console.log(splitEx.split(""));
+        console.log(splitEx.split("friends"));
+
+        // join() => ye slip() ke opposite work krta hai. aur ye string return krta hai.
+        var joinStr = prompt("Enter a string");
+        var joinArr = joinStr.split(" ");
+        console.log(joinArr);
+
+        var joinArrSort = joinArr.sort();        // sort() text ko pahle capital phir small letters ke anusar alphabetical order me convert kr deta hai.
+        console.log(joinArrSort);
+
+        var join = joinArr.join(" ");
+        console.log(join);
+
+        var joinSort = joinArrSort.join(" ");
+        console.log(joinSort);
+
     </script>
 </body>
 
