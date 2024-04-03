@@ -22,5 +22,4 @@ img{
     user-select: none;
     /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
     filter: drop-shadow(20px 20px 15px #ff5213);
-
 }

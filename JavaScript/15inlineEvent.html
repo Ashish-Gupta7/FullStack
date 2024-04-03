@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-top: 10vh;
+            margin-left: 10vw;
+        }
+    </style>
+</head>
+<body>
+    <div onclick="console.log('use single qoutes'); alert('alert')" class="box1">click here</div>
+    <div ondblclick="console.log('dblclicked');" class="box2">double click</div>
+    <div onmouseenter="console.log('hovered');" class="box3">hover me</div>
+    <div id="result">click me</div>
+
+    <script>
+        let events = () => {
+            console.log("clicked");
+        }
+        document.querySelector("#result").addEventListener("click", events);
+        document.querySelector("#result").removeEventListener("click", events);
+    </script>
+</body>
+</html>

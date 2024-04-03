@@ -1,35 +1,3 @@
-// // (0.) Hello world program =>
-// // 1st method =
-// var a = "Hello World";
-// console.log(a);
-// // 2nd method =
-// var body = document.querySelector("body");
-// var b = document.createElement("h1");
-// var c = b.innerText = "Hello World";
-// body.prepend(b);
-// // 3rd & 4th method =
-// alert("Hello World");
-// prompt("say hello world");
-// // 5th method =
-// document.write("Hello World");
-
-// Que.1 => Make a variable user and initialize a value "Ram" and print it on console.
-
-// var a;
-// a = "Ram";
-// console.log(a);
-
-
-// Que.2 => Make two variables and print their sum, mul, div, sub.
-
-// var a, b;
-// a = 10;
-// b = 5;
-// console.log("sum =", a+b);
-// console.log("sum =", a-b);
-// console.log("sum =", a*b);
-// console.log("sum =", a/b);
-
 // Que.3 => Write a JavaScript program to find the area of a triangle where three sides are 5, 6, 7. 
 
 // Area = root{s.(s-a).(s-b).(s-c)}
