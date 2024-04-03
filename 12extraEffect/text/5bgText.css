@@ -1,0 +1,77 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1vw 4vw;
+    gap: 4vw;
+
+}
+#main .txt{
+    font-size: 5.2vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.txt4, .txt1{
+    position: relative;
+}
+.txt4::before ,.txt1::before{
+    content: "Sheryians";
+    position: absolute;
+    left: 1.5%;
+    top: 3%;
+    z-index: -1;
+    color: red;
+    transition: .2s ease;
+}
+.txt4:hover::before{
+    transform: scale(1.5);
+    opacity: 0;
+}
+
+.txt2, .txt5{
+    position: relative;
+}
+.txt2::before, .txt5::before{
+    content: "Sheryians";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: peru;
+    z-index: -1;
+    transition: all .2s ease;
+}
+.txt5:hover::before{
+    transform: scale(1.5);
+    opacity: 0;
+}
+
+.txt3, .txt6{
+    position: relative;
+}
+.txt3::before, .txt6::before{
+    content: "Sheryians";
+    position: absolute;
+    left: -1.5%;
+    top: -3%;
+    z-index: -1;
+    color: blue;
+    transition: all .2s ease;
+}
+.txt6:hover::before{
+    transform: scale(1.5);
+    opacity: 0;
+}

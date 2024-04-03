@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+</body>
+
+    <script>
+
+
+
+        // (1.) When the property name and variable name are the same, you can omit the property name.
+        // Instead of: 
+        // const x = 10;
+        // const obj = { x: x };
+        // you can write:
+        // const x = 10;
+        // const obj = {x};
+
+        // (2.) Arrow Functions:
+        // Arrow functions are a concise way to write anonymous functions in JavaScript.
+
+        // Basic syntax:
+        // const newFnc = function newFnc(parameter){
+        //     // fnc body...
+        // }
+
+        // Arrow function version:
+        // const newFnc = (parameter) => {
+        //     // fnc body...
+        // }
+
+        // If there's only one parameter, you can omit the parentheses:
+        // const newFnc = param => {
+        // fnc body...
+        // }
+
+        // If the function body consists of a single expression, you can omit the curly braces and return statement:
+        // const newFnc = parameter => singleExpression;
+
+
+        // (3.) When defining functions inside objects, you can use shorthand notation.
+        // Instead of:
+        // const obj = {
+        //     key: function(){
+        //         // fnc body...
+        //     }
+        // }
+        // You can write:
+        // const obj = {
+        //     key() {
+        //         // fnc body...
+        //     }
+        // }
+
+
+        // (4.) Default Parameter values:
+        // JavaScript allows you to specify default values for parameters in function definitions.
+        // // Instead of:
+        // function greet(name) {
+        //     if (!name) {
+        //         name = 'Guest';
+        //     }
+        //     console.log(name);
+        // }
+
+        // // you can write:
+        // function greet(name = 'Guest') {
+        //     console.log(name);
+        // }
+
+
+        // (5.) Spread operator:
+        // The spread operator can be used to expand an array into individual arguments when calling a function.
+        // For example, instead of doing this:
+        // const numbers = [1, 2, 3];
+        // const nums = sum(numbers[0], numbers[1], numbers[2]));
+        // console.log(nums);
+        
+        // You could do this:
+        // const numbers = [1, 2, 3];
+        // const nums = sum(...numbers);
+        // console.log(nums);
+
+
+        // (6.) If you want to use arguments passed to a function without explicitly declaring parameters for those arguments, you can use the arguments object. The arguments object is an array-like object available inside all functions. It contains an entry for each argument passed to the function, with the first entry at index 0, the second entry at index 1, and so on.
+
+        // function sum(){
+        //     var total = 0;
+        //     for(i = 0; arguments.length > i; i++){
+        //         total += arguments[i];
+        //     }
+        //     return total;
+        // }
+        // console.log(sum(1,2,3,4));
+
+        
+
+    </script>
+</body>
+
+</html>

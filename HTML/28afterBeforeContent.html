@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: gilroy;
+        }
+        
+        html, body{
+            width: 100%;
+            height: 100%
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button{
+            padding: 15px 25px;
+            font-size: 18px;
+            color: #fff;
+            background-color: royalblue;
+            position: relative;
+            /* top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+        }
+        button::before{
+            content: "";
+            height: 40px;
+            width: 110px;
+            background-color: red;
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            z-index: -2;
+            transition: .2s ease;
+        }
+        button:hover::before{
+            transform: scale(1.4);
+        }
+    </style>
+</head>
+<body>
+    <!-- <p>aap koi bhi button, div kuchh bhi banate hai yadi css ki madad se kuchh bhi add krna chahte hai to, inn div ke phle add krne ke liye before aur baad me kuchh add krne ke liye after ka use hota hai, aur jab bhi aap after, before ka use karege uske sath content ka use compulsary hai.</p>
+    <p>after, before ye seudo-elements hai => selection =>   node::after/before</p> -->
+
+    <button>Click me!</button>
+</body>
+</html>

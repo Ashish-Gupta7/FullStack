@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html, body{
+    width: 100%;
+    height: 100;
+}
+
+#buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8.5vw;
+    padding: 3.5vw 3vw 4.5vw 4vw;
+}
+#buttons .btn{
+    height: 5vh;
+    width: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+}
+.btn1{
+    position: relative;
+}
+.btn1::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: royalblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .2s ease;
+}
+.btn1:hover::before{
+    transform: scale(1.5);
+    opacity: 0;
+}
