@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html, body{
+    width: 100%;
+    height: 100;
+}
+
+#buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8.5vw;
+    padding: 3.5vw 3vw 4.5vw 4vw;
+}
+#buttons .btn{
+    height: 5vh;
+    width: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+}
+.btn1{
+    position: relative;
+}
+.btn1::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: royalblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .2s ease;
+}
+.btn1:hover::before{
+    transform: scale(1.5);
+    opacity: 0;
+}
+
+.btn3{
+    background-color: transparent !important;
+    border: 1px solid orangered !important;
+    color: orangered !important;
+    position: relative;
+}
+.btn3::before{
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 4%;
+    height: 130%;
+    width: 90%;
+    border: 1px solid orangered;
+}
+
+.btn4{
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    padding-right: 1.1vw;
+    transition: all ease .2s;
+}
+.btn4:hover{
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+    padding-left: 1.1vw;
+}
+
+/* .btn2{
+    background-color: transparent !important; 
+    height: 3vh !important;
+    width: 6vw !important;
+    color: #000 !important;
+    border: 1px solid #000;
+    position: relative;
+    font-size: .8vw !important;
+} */
+/* #btn2Parent{
+    height: 5vh;
+    width: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+}
+.btn2::before{
+    content: "";
+    height: 5vh;
+    width: 8vw;
+    border: 1px solid #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s ease;
+    opacity: 1;
+    background-color: transparent;
+}
+#btn2Parent:hover .btn2::before{
+    height: 3vh;
+    width: 6vw;
+    opacity: 1;
+    color: royalblue !important;
+    border: royalblue;
+} */

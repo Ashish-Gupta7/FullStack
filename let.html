@@ -6,152 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <style>
-        *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: gilroy;
-    background-color: #000;
-    color: #fff;
-}
-
-html, body{
-    width: 100%;
-    height: 100%;
-}
-
-#main{
-    overflow-x: hidden;
-}
-
-#main0{
-    height: 100vh;
-    width: 100%;
-}
-
-#main1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-#main1 .main1-inner{
-    height: 19vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-}
-#main1 .main1-inner h2{
-    font-size: 6.9vw;
-    text-transform: uppercase;
-    font-weight: 500;
-    -webkit-text-stroke: 1px #fff;
-    color: transparent;
-    display: inline-block;
-}
-#main1 .main1-inner h2.italic{
-    font-family: silk serif;
-    padding: 0 1vw;
-}
-
-    </style>
+    <link rel="stylesheet" href="let.css">
 </head>
 
 <body>
-
     <div id="main">
-        <div id="main0"></div>
-        <div id="main1">
-            <div class="main1-inner main1-inner1">
-                <h2 class="simple">- Sheryians -</h2>
-                <h2 class="italic">Sharthak</h2>
-                <h2 class="simple">- Sheryians -</h2>
-                <h2 class="italic">Sharthak</h2>
-                <h2 class="simple">- Sheryians -</h2>
-                <h2 class="italic">Sharthak</h2>
-            </div>
-            <div class="main1-inner main1-inner2">
-                <h2 class="simple">- Sheryians -</h2>
-                <h2 class="italic">Harsh</h2>
-                <h2 class="simple">- Sheryians -</h2>
-                <h2 class="italic">Harsh</h2>
-                <h2 class="simple">- Sheryians -</h2>
-                <h2 class="italic">Harsh</h2>
-            </div>
-            <div class="main1-inner main1-inner1">
-            <h2 class="simple">- Sheryians -</h2>
-            <h2 class="italic">Coding</h2>
-            <h2 class="simple">- Sheryians -</h2>
-            <h2 class="italic">Coding</h2>
-            <h2 class="simple">- Sheryians -</h2>
-            <h2 class="italic">Coding</h2>
-        </div>
-            <div class="main1-inner main1-inner2">
-                <h2 class="simple">- Sheryians -</h2>
-                <h2 class="italic">Shcool</h2>
-                <h2 class="simple">- Sheryians -</h2>
-                <h2 class="italic">Shcool</h2>
-                <h2 class="simple">- Sheryians -</h2>
-                <h2 class="italic">Shcool</h2>
+        <div id="page1">
+            <h1>CHANGE</h1>
+            <h1>THE COURSE</h1>
+            <div id="video-container">
+                <div id="play">PLAY</div>
+                <video autoplay loop muted src="./video.mp4"></video>
             </div>
         </div>
-        <div id="main0"></div>
-    </div>
+        <div id="page2">
+            <div id="elem1" class="elem">
+                <img data-scroll data-scroll-speed="1"
+                    src="https://cdn.sanity.io/images/w8f1ak3c/production/9032e317a6741221ae543fdae5d05160819f9a44-1500x2250.jpg/DSC0079_Dexter%20Kim.jpg?rect=0,0,1500,2008&fp-x=0.47794117647058826&fp-y=0.4461323529411765&w=640&h=1067&fit=crop&crop=focalpoint&auto=format"
+                    alt="">
+                <div class="dets"></div>
+            </div>
+            <div id="elem2" class="elem">
+                <img data-scroll data-scroll-speed="1"
+                    src="https://cdn.sanity.io/images/w8f1ak3c/production/138e191deead80c5c8e9a982c20987f8f83c1f27-5504x8256.jpg/JTG_2919%20copy.jpg?rect=276,0,4952,8256&w=640&h=1067&fit=min&auto=format"
+                    alt="">
+                <div class="dets"></div>
 
+            </div>
+
+            <div id="elem3" class="elem">
+                <img data-scroll data-scroll-speed="1"
+                    src="https://cdn.sanity.io/images/w8f1ak3c/production/d3151106849ff2494d66916cf554c68a0603444d-902x1500.png/Rectangle%20220.png?rect=1,0,900,1500&w=640&h=1067&fit=min&auto=format"
+                    alt="">
+                <div class="dets"></div>
+            </div>
+        </div>
+        <div id="page3"></div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-        gsap.registerPlugin(ScrollTrigger);
-const locoScroll = new LocomotiveScroll({
-  el: document.querySelector("#main"),
-  smooth: true
-});
-locoScroll.on("scroll", ScrollTrigger.update);
-ScrollTrigger.scrollerProxy("#main", {
-  scrollTop(value) {
-    return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-  },
-  getBoundingClientRect() {
-    return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
-  },
-  pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
-});
-
-function textScrolling() {
-    gsap.to(".main1-inner1", {
-        x: -1000,
-        scrollTrigger: {
-            trigger: "#main1",
-            scroller: "#main",
-            start: "top 60%",
-            end: "bottom 0",
-            scrub: 5,
-        }
-    })
-
-    gsap.from(".main1-inner2", {
-        x: -1000,
-        scrollTrigger: {
-            trigger: "#main1",
-            scroller: "#main",
-            start: "top 60%",
-            end: "bottom 0%",
-            scrub: 5,
-        }
-    })
-
-}
-textScrolling();
-    </script>
+    <!-- <script src="script.js"></script> -->
 </body>
 
 </html>
