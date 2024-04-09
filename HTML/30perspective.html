@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        perspective: 1500px;
+        /* Yahan 'perspective' value di gayi hai, jisse 3D effect generate hoga */
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transform: rotateY(77deg);
+        /* Yahan 'transform' property di gayi hai, jisse element ko rotate kiya ja raha hai */
+      }
+
+      /* "perspective: value;"
+        Yahan "value" ek numeric value hoti hai jo 3D space ki depth ko represent karti hai. Isko pixels (px) mein ya percentage (%) mein specify kiya ja sakta hai. */
+    </style>
+  </head>
+
+  <body>
+    <!-- perspective -->
+    <!-- HTML mein, "perspective" ek CSS property hai jo 3D transformations ke liye use hoti hai. Ye property ek element ko ek 3D space mein place karne ki capability provide karta hai, jisse aap uski position aur scale ko manipulate kar sakte hain. -->
+
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
