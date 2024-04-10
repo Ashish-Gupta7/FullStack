@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: futura;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+*::selection{
+    color: #fff;
+    background-color: #000000;
+}
+
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F7F7F7;
+    padding: 3.7vh 2vw;
+}
+#page1 nav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#page1 nav h2{
+    text-transform: uppercase;
+    font-size: 2.05vw;
+    font-weight: 900;
+    line-height: 3.7vh;
+}
+#page1 nav #nav-right{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+#page1 nav #nav-right h4{
+    font-size: .85vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: gilroy;
+    color: #000000c5;
+    cursor: pointer;
+}
+#page1 #nav-right .hoverAnimNav{
+    position: relative;
+}
+#page1 #nav-right .hoverAnimNav::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: .1vh;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background-color: #000000c5;
+    transition: transform .25s ease-out;
+}
+#page1 #nav-right .hoverAnimNav1:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+#page1 #nav-right .hoverAnimNav2:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+#page1 nav #nav-right #cate{
+    display: flex;
+    gap: .2vw;
+}
+#page1 nav #nav-right #cate #icon{
+    position: relative;
+    height: 1vh;
+    width: 1vw;
+}
+#page1 nav #nav-right #cate i{
+    rotate: -10deg;
+    color: #000000c5;
+    position: absolute;
+    bottom: -1.5vh;
+    transition: all ease .2s;
+}
+#page1 nav #nav-right #cate:hover i{
+    rotate: 45deg;
+}
+#page1 nav #nav-right #mostright{
+    display: flex;
+    gap: 4vw;
+    margin-left: .8vw;
+}
+#page1 nav #nav-right #menu{
+    height: 3vh;
+    width: 1.2vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: .7vh;
+}
+#page1 nav #nav-right #menu div{
+    height: .14vh;
+    width: 100%;
+    background-color: #000000;
+    transition: all ease .3s;
+}
+#page1 nav #nav-right #mostright #menu:hover div{
+    width: 130%;
+}
+#page1 nav #nav-right #mostright #menu:hover{
+    gap: .4vh;
+}
+#page1 nav #nav-right #mostright i{
+    transition: all ease .1s;
+}
+#page1 nav #nav-right #mostright i:hover{
+    rotate: -10deg;
+}
+#page1 #text{
+    margin-top: 20vh;
+    overflow: hidden;
+}
+#page1 #text div:nth-child(1){
+    overflow: hidden;
+}
+#page1 #text #textAnim{
+    display: flex;
+    gap: 10vh;
+}
+#page1 #text h1{
+    height: 30vh;
+    text-transform: uppercase;
+    font-size: 16vw;
+    text-align: center;
+    letter-spacing: -.8vw;
+    line-height: 30vh;
+}
+#page1 #video-container{
+    height: 100vh;
+    width: 100%;
+    margin-top: 5.2vh;
+    position: relative;
+    cursor: none;
+}
+#playBtn{
+    opacity: 0;
+    scale: 0;
+    padding: 4.8vh 1.5vw;
+    border-radius: 50%;
+    background-color: #FC5400;
+    color: #fff;
+    text-transform: uppercase;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+#page1 #video-container #bookcircle{
+    width: 100%;
+    height: 100%;
+}
+#page1 #video-container img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#page1 #video-container video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    scale: 0;
+}
+#page1 #video-container #videotext{
+    position: absolute;
+    top: 13%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+#page1 #video-container #videotext h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#page1 #video-container #videotext #circle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: anime1 linear 13s infinite;
+}
+#page1 #video-container #videotext #circle span{
+    position: absolute;
+    left: 50%;
+    transform-origin: 0 100px;
+    font-size: 1vw;
+    font-family: gilroy;
+    font-weight: 500;
+}
+@keyframes anime1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#page1 #video-container #videotext h2{
+    text-transform: uppercase;
+    font-size: 2vw;
+}
+#page1 #video-container #videotext h3{
+    text-transform: uppercase;
+    font-size: 1vw;
+}
+
+#page2{
+    margin-top: 7vh;
+    height: 185vh;
+    padding: 0 2vw;
+    width: 100%;
+}
+#page2 #differenceLine{
+    height: 3vh;
+    width: 100%;
+}
+#page2 #differenceLine #text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#page2 #differenceLine #text h4{
+    font-family: gilroy;
+    text-transform: uppercase;
+    font-size: .86vw;
+    opacity: .9;
+    font-weight: 500;
+    padding-bottom: .4vh;
+}
+#page2 #differenceLine #line{
+    height: .1vh;
+    background-color: #000;
+}
+
+#page2 #images{
+    margin-top: 2vh;
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    gap: 1.2vw;
+    justify-content: space-between;
+}
+#page2 #images .img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page2 #images .img img{
+    scale: 1.5;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page2 #images .img .shop{
+    position: absolute;
+    left: 18%;
+    width: 65%;
+    height: 36%;
+    border-radius: 20px;
+}
+#page2 #images .img .shop .shopcard{
+    height: 8vh;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 0 2vw 3vh 2vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3vw;
+    transition: all ease .5s;
+}
+#page2 #images .img .shop .shopcard:hover{
+    height: 100%;
+}
+#page2 #images .img .shop.pantry .shopcard{
+    background-color: #E5F0D6;
+}
+#page2 #images .img .shop.home .shopcard{
+    background-color: #F5DFCF;
+}
+#page2 #images .img .shop.bath .shopcard{
+    background-color: #FFFFFF;
+}
+#page2 #images .img .shop .shopcard .first{
+    display: flex;
+    align-items: center;
+    gap: 3.3vw;
+    padding: 1.3vw;
+}
+#page2 #images .img .shop .shopcard .second{
+    display: flex;
+    align-items: center;
+    width: 20vw;
+}
+#page2 #images .img .shop .shopcard .second img{
+    height: 11vh;
+    object-fit: contain;
+}
+#page2 #images .img .shop.home .shopcard .second{
+    padding-top: 1vh;
+}
+#page2 #images .img .shop .shopcard .second h3{
+    font-size: .9vw;
+    font-weight: 500;
+    font-family: gilroy;
+    text-align: center;
+    padding-top: 6vh;
+}
+#page2 #images .img .pantry .shopcard .second h3, #page2 #images .img .bath .shopcard .second h3{
+    margin-top: 3vh;
+}
+#page2 #images .img .shop #dot{
+    height: 8px;
+    width: 8px;
+    background-color: #000;
+    border-radius: 50%;
+}
+#page2 #images .img .shop h4{
+    text-transform: uppercase;
+    font-size: .85vw;
+    font-family: gilroy;
+    font-weight: 600;
+    text-wrap: nowrap;
+}
+#page2 #images .img .shop h4:nth-child(2){
+    opacity: .8;
+}
+#page2 #pg2-text{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 10vh;
+    width: 100%;
+}
+#page2 #pg2-text h1{
+    width: 75vw;
+    font-size: 3.6vw;
+    line-height: 8vh;
+    letter-spacing: -.05vw;
+    font-weight: 900;
+    font-family: gilroy;
+}
+#page2 #pg2-text #pg2right-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 6vh;
+}
+#page2 #pg2-text #pg2right-text h3{
+    font-family: gilroy;
+    font-size: 1vw;
+    font-weight: 500;
+    width: 48%;
+}
+#page2 #pg2-text #pg2right-text #shopLine{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    gap: 1vh;
+    cursor: pointer;
+}
+#page2 #pg2-text #pg2right-text #shopLine #line{
+    height: .1vh;
+    background-color: #000;
+    width: 33%;
+}
+#page2 #pg2-text #pg2right-text #shopLine h4{
+    font-family: gilroy;
+    font-size: .9vw;
+    font-weight: 500;
+    opacity: .9;
+    width: 48%;
+}
+#page2 #pg2-text #pg2right-text #shopLine:hover #line{
+    animation: animHover .4s 1 linear;
+}
+@keyframes animHover {
+    0%{
+        transform-origin: bottom left;
+        width: 0;
+    }
+    100%{
+        transform-origin: bottom right;
+        width: 33%;
+
+    }
+}
+
+
+
+#page3{
+    width: 100%;
+    min-height: 200vh;
+}
+#page3 .img{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#page3 .imgInner{
+    width: 46%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    gap: 5vh;
+    flex-direction: column;
+    position: relative;
+}
+#page3 .imgInner img{
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+}
+#page3 .img .imgInner .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vh;
+}
+#page3 .img .imgInner .text h3{
+    font-size: .9vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: gilroy;
+}
+#page3 .img .imgInner .text h4{
+    font-size: .8vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: gilroy;
+}
+#mouseFollower{
+    width: 16.6vw;
+    height: 37.5vh;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    scale: 0;
+}
+#page3 .img .imgInner .mouseFollower1{
+    background-color: #F7F2EC;
+    top: -20%;
+}
+#page3 .img .imgInner .mouseFollower2{
+    background-color: #ECECEC;
+}
+#page3 .img .imgInner .mouseFollower3{
+    background-color: #EDE6E6;
+}
+#page3 .img .imgInner .mouseFollower4{
+    background-color: #D6E0E0;
+}
