@@ -13,7 +13,7 @@ function theme() {
             document.documentElement.style.setProperty("--bgcolor", "#000");
             document.documentElement.style.setProperty("--textcolor", "#fff");
             gsap.to(buttondiv, {
-                marginLeft: 25,
+                marginLeft: 24.5,
                 duration: .5,
                 ease: Expo.easeInOut
             })
@@ -58,16 +58,6 @@ function navBar() {
 }
 navBar();
 
-Shery.textAnimate("#texthead h1" /* Element to target.*/, {
-    //Parameters are optional.
-    style: 2,
-    y: 20,
-    delay: 0.1,
-    duration: 3,
-    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-    multiplier: 0.1,
-});
-  
 gsap.from(".anime1", {
     opacity: 0,
     y: 10,
@@ -75,15 +65,63 @@ gsap.from(".anime1", {
     duration: 3.5
 })
 
-// Shery.imageEffect("#inner2 img", {
-//     style: 4,
-//     debug: true
-// })
+const hoverVid = () => {
+    let clickJoin = document.querySelector("#page5 #text h3");
+    clickJoin.addEventListener("mouseenter", (event) => {
+        console.log(event);
+        gsap.to("#page5 video", {
+            display: "initial",
+            opacity: 1,
+        });
+        gsap.to("#page5 #text", {
+            opacity: 0,
+        });
+    })
+    let leaveVid = document.querySelector("#page5 video");
+    leaveVid.addEventListener("mouseleave", (event) => {
+        console.log(event);
+        gsap.to("#page5 video", {
+            display: "none",
+            opacity: 0,
+        });
+        gsap.to("#page5 #text", {
+            opacity: 1,
+        });
+    });
+}
+hoverVid();
 
-
-
-// Shery.imageEffect("#page4", {
-//     style:3,
-//     debug: true,
-//     gooey: true,
-// }); 
+const sheryJs = () => {
+    Shery.textAnimate("#texthead h1", {
+        style: 2,
+        y: 20,
+        delay: 0.1,
+        duration: 3,
+        ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+        multiplier: 0.1,
+    });
+    Shery.makeMagnet("#main nav a", {
+        ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+        duration: 1,
+    });
+    Shery.imageMasker("#page4 #image", {
+        mouseFollower: true,
+        text: "Shery",
+        ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+        duration: 1,
+    });
+    Shery.imageMasker("#page3 #img1 img", {
+        mouseFollower: true,
+        text: "Synergy",
+        ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+        duration: 1,
+    });
+    Shery.imageMasker("#page3 #img2 img", {
+        mouseFollower: true,
+        text: "Harmony",
+        ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+        duration: 1,
+    });
+    Shery.mouseFollower();
+}
+sheryJs();
