@@ -24,28 +24,6 @@ function locomotive() {
 }
 locomotive();
 
-
-// gsap.to("#page1 #logo h2", {
-//     transform: "translateY(-100%)",
-//     scrollTrigger: {
-//         trigger: "#page1",
-//         scroller: "#main",
-//         start: "top 0",
-//         end: "top -5%",
-//         scrub: true
-//     },
-// });
-// gsap.to("#page1 #logo svg", {
-//     transform: "translateY(-200%)",
-//     scrollTrigger: {
-//         trigger: "#page1",
-//         scroller: "#main",
-//         start: "top 0",
-//         end: "top -5%",
-//         scrub: true
-//     },
-// });
-
 function loading() {
     var tl = gsap.timeline();
     tl.from("nav", {

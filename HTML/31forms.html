@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ➡️ forms me jo bhi data ya tag likhe jate hai wo sab ek sath ek packet bankr submit ya save ho jata hai => "form attributes in html mdn" -->
+    <!-- ➡️ Form attribute => 
+
+    (1️⃣.) action -> Action attribute form tag ka ek important attribute hai, jo server ya script file ka URL specify karta hai, jahan form data submit kiya jayega. Yeh URL usually server-side script ko point karta hai, jo form data ko handle karta hai aur required processing karta hai. isme url ya route kuchh bhi likh skte hai.
+
+    (2️⃣.) method -> ye specify karta hai ki form data ko submit karne ke liye kis HTTP method ka istemal kiya jayega. GET/POST ka hi use jada hota hai dialogue ka use kam hota hai. default roop me get method applied rahta hai.
+
+    (3️⃣.) accept-charset -> accept-charset attribute HTML form tag ka ek optional attribute hai jo specify karta hai ki browser ko form data ko encode karne ke liye kis character set ka istemal karna chahiye jab wo server ko submit kiya jata hai. Ye attribute typically <form> tag ke sath istemal hota hai. Character set ek set hota hai jo characters ko represent karne ke liye istemal kiya jata hai, jaise ki ASCII, UTF-8, ISO-8859-1, etc. By default, browsers UTF-8 character set ka istemal karte hain, lekin accept-charset attribute ka istemal karke aap specify kar sakte hain ki aap kis character set ko prefer karte hain.
+
+    (4️⃣.) autocomplete -> autocomplete attribute HTML form elements ke liye ek attribute hai jo browsers ko suggest karta hai ki kaise data input fields ko populate kiya jaye. Jab user ek form field mein data enter karta hai, toh browser us field ke previously entered values ya saved values ko suggest kar sakta hai. Yeh suggestion user ke browsing history, saved passwords, ya form data se aata hai. 
+
+    👍autocomplete values => 
+        "on": Yeh default value hai. Browser ko allow karta hai ki apne discretion ke according form field ko autocomplete kare.
+        "off": Browser ko disable karta hai ki form field ko autocomplete kare. Yani ke browser suggest nahi karega previously entered values ya saved values.
+        "name": Browser ko suggest karta hai ki field ko user ka name ke basis par populate kare, agar user ne browser mein apna naam save kiya hua hai.
+        "email": Browser ko suggest karta hai ki field ko user ka email address ke basis par populate kare, agar user ne browser mein apna email address save kiya hua hai.
+        "current-password": Browser ko suggest karta hai ki field ko user ka current password ke basis par populate kare, agar user ne browser mein apna password save kiya hua hai.
+        "new-password": Browser ko suggest karta hai ki field ko user ke new password ke basis par populate kare, agar user ne browser mein apna password save kiya hua hai.
+    
+    (5️⃣.) enctype -> ye attribute HTML form tag ka ek attribute hai jo specify karta hai ki form data ko kis tarah se encode kiya jana chahiye, jab wo server ko submit kiya jata hai. Ye attribute typically <form> tag ke sath istemal hota hai. Ye attribute form data ke sahi tarah se server tak pahunchane ke liye important hai, especially jab form mein file upload ya non-ASCII characters jaise ki images, audio files, ya special characters shaamil hai.
+
+    👍 enctype values =>
+        "application/x-www-form-urlencoded": Ye default value hai. Form data ko URL-encoded format mein encode karta hai, jisse data ko server tak submit karne mein asani hoti hai. Isme data ko key-value pairs mein encode kiya jata hai, aur special characters ko % followed by hexadecimal value ke sath replace kiya jata hai.
+        "multipart/form-data": Ye value files ko upload karne ke liye istemal hota hai. Isme form data ko ek MIME multipart message mein encode kiya jata hai, jisse files ko sahi tarah se server tak bheja ja sake.
+        "text/plain": Ye value form data ko plain text format mein encode karta hai, bina kisi special characters ko replace kiye.
+
+    (6️⃣.) target -> ye attribute HTML form tag ka ek optional attribute hai, jo specify karta hai ki form data ko submit karne ke baad kis window, iframe, ya frame mein response display kiya jana chahiye.
+
+    👍 target values =>
+        "_self": Yeh default value hai. Isse form data current browsing context mein submit hota hai, aur response bhi usi window mein display hota hai.
+        "_blank": Isse form data ek naye browsing context mein submit hota hai, typically ek naye tab ya window mein, aur response bhi usi naye tab ya window mein display hota hai.
+        "_parent": Isse form data apne parent browsing context mein submit hota hai, agar form ek iframe mein istemal kiya gaya hai.
+        "_top": Isse form data current browsing context ke top-level browsing context mein submit hota hai, aur response bhi usi top-level browsing context mein display hota hai.
+
+    --> 
+
+    <!-- ➡️ input attribute => "input tag attribute mdn"
+    (1.) Type:   Input element ke type ko specify karta hai, jaise ki text, password, number, email, checkbox, radio, etc.
+    (2.) Name:    Input element ka naam ko specify karta hai, jisse form submission ke dauran server ko data ko identify karne mein madad milti hai.
+    (3.) Value:    Input element ka initial value ko specify karta hai. Is attribute ka istemal karke predefined ya default value set kiya ja sakta hai. yaani ki jab page load hoti hai, tab input field mein pehle se koi value dikhai deti hai. Yeh attribute kai tarah ke input elements ke sath istemal kiya ja sakta hai jaise text fields, checkboxes, radio buttons, dropdown menus, etc.
+    (4.) Placeholder:    Input field ke andar placeholder text ko display karne ke liye istemal hota hai. Placeholder text usually user ko input ka format ya required information ke bare mein hint deta hai.
+    (5.) Required:    Ye attribute specify karta hai ki input field ka value required hai form submission ke liye. Agar yeh attribute set hai, toh user ko input field  ko fill karna mandatory hota hai.
+    (6.) Disabled:    Is attribute se input field ko disable kiya jata hai, jisse user us field ko edit nahi kar sakta.
+    (7.) Readonly:    Is attribute se input field ko read-only mode mein set kiya jata hai, jisse user us field mein sirf data dekh sakta hai, lekin edit nahi kar sakta.
+    (8.) Checked:    Checkbox aur radio buttons ke liye istemal hota hai, aur yeh specify karta hai ki element initially checked hoga ya nahi.
+    (9.) autofocus:   Ye attribute specify karta hai ki input field automatically focus ho jaye jab page load hoti hai, jisse user directly us field mein input kar sake.
+    (10.) autocomplete:   same as form tag attribute.
+    (11.) maxlength:     Ye attribute input field mein enter kiye ja sakte characters ki maximum length ko define karta hai.
+    (12.) min aur max:   Ye attribute number type ke input fields mein minimum aur maximum allowed value ko specify karte hain.
+    (13.) pattern:       Ye attribute input field mein enter kiye gaye data ka valid format define karta hai, regular expression ke form mein.
+    (14.) step:      Ye attribute number type ke input fields mein define karta hai ki value ke saath kaun sa increment/decrement hoga jab user up/down arrow keys press karta hai.
+    (16.) accept:     Ye attribute specify karta hai ki input field mein sirf kis type ke files accept kiye ja sakte hain.
+    (15.) multiple:    Ye attribute specify karta hai ki user multiple files ko ek hi input field mein select kar sakta hai, jaise ki file upload ke liye.
+    -->
+
+    <!-- ➡️ input tags => mdn
+    (1.) lable -> hume generally input tag me kya likhna hota hai wo placeholder ki wajah se bhi pta chal jata hai pr kuchh browser devices hote hai jo placeholder ko read nhi krte hai isliye hum humesha input tag ke sath lable tag ka bhi use krte hai. input tag me id naam se ek attribute hota usme jo bhi likha jata hai yadi usey hi lable tag ke for attribute me likhte hai to wo input tag aur lable sirf ek dusre ke liye hi kaam karege. iska ek aur fayda hai ki jab hum lable pr click karege to input tag ke focus ho jayenge.
+    (2.) button -> form submit karne ke liye hum button tag ka use krte hai. jiska type submit hota hai.
+
+
+    -->
+
+
+    form
+
+</body>
+</html>
