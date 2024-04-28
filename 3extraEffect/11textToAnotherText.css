@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main .text{
+    width: 20vw;
+    text-align: center;
+    /* background-color: red; */
+    position: relative;
+}
+#main .text h1:nth-child(1){
+    letter-spacing: -.9vw;
+    font-size: 1.7vw;
+    position: absolute;
+}
+#main .text h1:nth-child(2) span{
+    opacity: 0;
+}

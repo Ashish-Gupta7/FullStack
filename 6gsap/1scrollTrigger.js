@@ -40,7 +40,7 @@
 //         trigger: "#page4 .box",
 //         scroller: "body",
 //         markers: true,
-//         start: "top 50%", 
+//         start: "top 50%",            // isme pahli value element ke liye hoti hai aur dusri value screen ke liye hoti hai. jaise yaha pahli value top hai ye element ka top hai aur dusri value 50% hai ye screen ka 50% hai.
 //         end: "bottom 175px"
 //     }
 // });
