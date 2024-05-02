@@ -211,6 +211,11 @@
 // (1.) promise.then( (res) => {...} )        fulfilled hone pr. yaha res ka mtlb result hai.  ye fnc tabhi pas hoga jab hamara promise fulfilled hoga.
 // (2.) promise.catch( (err) => {...} )       rejected hone pr. yaha err ka mtlb error hai.    ye fnc tabhi pas hoga jab hamara promise rejected hoga.
 
+// .then() ka use sirf async ke sath hota hai ya phir sync ke sath bhi kr skte hai ? =>
+// .then() JavaScript mein promise chaining ke liye use hota hai. Ye synchronous aur asynchronous dono ke sath kaam karta hai.
+
+// Database se kuch maangne ke liye request bhejte waqt async ka istemal karna behtar hota hai. async ka istemal isliye kiya jata hai taaki request bhejne ke baad aage ke code ko rukne ki zarurat na pade aur dusri operations ko roka na jaye. Is tarah se, aapke program mei aur code execute ho sakta hai jab tak database se response nahi milta. Isse aapke program ki performance bhi behtar hoti hai.
+
 // Example1 =>
 // let getPromise = () => {
 //     return new Promise( (resolve, reject) => {
@@ -414,7 +419,7 @@
 // Yeh kaise kaam karta hai:
 
 // async keyword use kiya jata hai function ke pehle, jise async function kehte hain. Ye function ek promise return karta hai.
-// await keyword ko async function ke andar use kiya jata hai, jo ek promise ko wait karne ke liye use hota hai. Jab await keyword ka use hota hai, tab JavaScript runtime wait karta hai tak jab tak promise resolve nahi hoti ya reject nahi hoti.
+// await keyword ko async function ke andar use kiya jata hai, jo ek promise ko wait karne ke liye use hota hai. Jab await keyword ka use hota hai, tab JavaScript runtime wait karta hai jab tak promise resolve nahi hoti ya reject nahi hoti.
 // Async function ka use karke, aap sequential code likh sakte hain, jismein har ek asynchronous operation ko await keyword ke saath use karke handle kiya ja sakta hai.
 
 // Example1 => 
