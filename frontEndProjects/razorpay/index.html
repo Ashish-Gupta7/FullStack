@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razorpay</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="main.css"> -->
+</head>
+<body class=" overflow-hidden">
+    <!-- nav bar -->
+    <nav class="bg-deepBlue ">
+        <div class="relative w-[1080px] mx-auto px-14 flex items-center justify-between">
+            <!-- logo -->
+            <a href="/" class="cursor-pointer py-7">
+                <img class="cursor-pointer" src="./images/logo.svg" alt="razorpay logo" height="25px" width="110px">
+            </a>
+            <ul class="flex space-x-5">             <!-- space-x -->
+                <li class="text-white text-[14px] py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Payments</a>                <!-- group -->
+                    <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block"></div>
+                </li>
+                <li class="text-white text-[14px] py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Banking</a>
+                    <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block"></div>
+                </li>
+                <li class="text-white text-[14px] py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Corporate Card</a>
+                </li>
+                <li class="text-white text-[14px] py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Payroll</a>
+                </li>
+                <li class="text-white text-[14px] py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Resources</a>
+                    <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block"></div>
+                </li>
+                <li class="text-white text-[14px] py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Support</a>
+                    <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block"></div>
+                </li>
+                <li class="text-white text-[14px] py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Pricing</a>
+                    <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block"></div>
+                </li>
+            </ul>
+
+            <div class="flex space-x-2">
+                <img src="./Images/india-flag.svg" alt="india-flag" width="28px" height="20px">
+                <button class="py-3 px-5 text-white bg-transparent border-t-lightBlue border-r-lightBlue border-l-blue-400 border-b-blue-400 border rounded-sm text-sm font-semibold">Log in</button>
+                <button class="py-3 px-5 border text-lightBlue300 text-sm font-semibold bg-white rounded-sm transition-all duration-200 hover:text-lightBlue500">Sign Up <i class="ri-arrow-right-line pl-1"></i></button>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="relative bg-deepBlue">
+        <div class="w-[63.5%] flex flex-row mx-auto items-center justify-between">
+            <!-- left part -->
+            <div class="w-[36%] flex flex-col gap-4 items-start">
+                <h1 class="text-white text-[37px] leading-[48px] font-semibold">Power your finance, grow your business</h1>
+                <div class="w-6 h-1 bg-greenLight rounded-[1px]"></div>
+                <p class="text-grayText font-[500] text-[15.7px]">Accept payments from cutomers. Automate payouts to vendors & employees. Never run out of working capital.</p>
+                <button class="px-4 py-3 font-semibold text-[14px] rounded-md bg-lightBlue text-white ">Sign Up Now</button>
+            </div>
+
+            <!-- right part -->
+            <img src="./Images/hero-illustration.jpg" width="570px" alt="">
+        </div>
+
+    </section>
+    <!-- shape part -->
+    <div class="bg-[url(./Images/hero-shape.svg)] w-[100.1%] h-[150px] bg-cover bg-center bg-no-repeat">
+        <div class="flex flex-col items-center h-full justify-end pb-2">
+            <p class="text-deepBlue font-semibold text-xl">Accept Payment with Rozorpay Payment Suite</p>
+            <div class="w-6 h-1 bg-greenLight rounded-[1px]"></div>
+        </div>
+    </div>
+</body>
+</html>
