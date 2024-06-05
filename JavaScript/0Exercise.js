@@ -27,3 +27,23 @@
 // });
 
 
+// Exercise3 => guess the number
+let number = prompt("Enter a number : ");
+let random = Math.floor(Math.random() * number) + 1;
+
+let guess = prompt("guess the number or enter 'quit' for quit the game!");
+
+while(true) {
+    if(guess == "quit") {
+        console.log("Exit!");
+        break;
+    }
+    if(guess == random) {
+        console.log("congrates, you guessed correct number and the number was", random);
+        break;
+    } else if(guess < random) {
+        guess = prompt("hint : your entered number is smaller than that number! please guess again! or enter 'quit' for quit the game!");
+    } else {
+        guess = prompt("hint : your entered number is greater than that number! please guess again! or enter 'quit' for quit the game!");
+    }
+}
