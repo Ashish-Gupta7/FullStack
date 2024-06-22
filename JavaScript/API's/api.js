@@ -2,8 +2,11 @@
 // Agar aap ek building ki analogy lenge, toh API us building ke darwaze aur windows ki tarah hai jo doosri jagah se usme jaane aur usse baat karne ke liye istemal hota hai. Agar aap kisi service ya functionality ko apne application mein integrate karna chahte hain, jaise ki payment gateway, to aap unki API ka istemal karke apne application ko unke system se connect kar sakte hain.
 // Jaise hi aap API ka istemal karte hain, aap unki di gayi commands, functions, aur data formats ka istemal karke unse interaction kar sakte hain. Ye aapko naye features ko develop karne mein aur existing features ko extend karne mein madad karta hai, kyunki aapko khud se sab kuch dobaara likhne ki zarurat nahi hoti.
 // Is tarah se, API ek important concept hai jo developers ko alag-alag software components ko integrate karne mein madad karta hai aur unhe ek seamless experience provide karta hai.
+// Generally API's do softwares ke beech communication ke liye interface ka kaam krte hai.
+// Aur wo api's jo http ka use krti hai unhe web api's kahte hai.
 
 
+// "D:\Telegram Desktop\@Team_Groww_Study2 - Delta 1.0\Day - 26 (06_08_23)\31. JavaScript (Part 12)\14. Our First API request.mp4"
 //       Fetch API           =>                 Fetch API ek tarah ka tool hai jo web browsers mein mojood hai aur JavaScript developers ko server se data fetch karne aur web applications mein integrate karne ka ek naya tareeqa deta hai.
 // Ye XMLHttpRequest (XHR) ko replace karta hai, jo traditional tareeqe se server se data fetch karne ke liye istemal hota tha.
 // Sochiye aap ek web application bana rahe hain aur aapko kisi server se data lena hai, jaise ki JSON data (jaise ki ek list of users ya koi blog post). Fetch API ka istemal karke aap server se data ko retrieve kar sakte hain bina page ko refresh kiye ya browser ko navigate kiye. Ye ek asynchronous tareeqa hai, yaani aapke application ke kaam ko rokne ke bajaye, wo data fetch hota rahta hai aur aapke application ke baaki kaam chalti rahti hai.
