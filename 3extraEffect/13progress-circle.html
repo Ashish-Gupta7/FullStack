@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .progress-circle {
+      position: relative;
+      width: 150px;
+      height: 150px;
+    }
+
+    .progress-circle .circle {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: conic-gradient(#6652ff 0%, #6652ff var(--progress), #e6e6e6 var(--progress), #e6e6e6 100%);
+    }
+
+    .progress-circle .inner-circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #140b29;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6652ff;
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="progress-circle" id="progress-circle">
+    <div class="circle" id="circle"></div>
+    <div class="inner-circle" id="percentage">0%</div>
+  </div>
+
+  <script>
+    function setProgress(progress) {
+      const circle = document.getElementById('circle');
+      const percentage = document.getElementById('percentage');
+      const progressDegree = (progress / 100) * 360;
+
+      circle.style.setProperty('--progress', `${progressDegree}deg`);
+      percentage.textContent = `${progress}%`;
+    }
+
+    // Example usage:
+    setProgress(1); // Sets progress to 75%
+  </script>
+</body>
+
+</html>
