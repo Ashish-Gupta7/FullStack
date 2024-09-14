@@ -1,4 +1,4 @@
-// Que.3 => Write a JavaScript program to find the area of a triangle where three sides are 5, 6, 7. 
+// Que.3 => Write a JavaScript program to find the area of a triangle where three sides are 5, 6, 7.
 
 // Area = root{s.(s-a).(s-b).(s-c)}
 // s = ( a + b + c ) / 2
@@ -217,7 +217,7 @@
 //     console.log("Enter a positive number.");
 // }
 
-// Que.22 => Print natural number up to n. 
+// Que.22 => Print natural number up to n.
 
 // var a = parseInt(prompt("Enter a number:"));
 // if(a > 0){
@@ -392,7 +392,7 @@
 // }
 
 // Que.32 => Accept a number and check if it a perfect number or not.
-//   A number whose sum of factors(excluding number itself)  = Number 
+//   A number whose sum of factors(excluding number itself)  = Number
 //   Ex -  6 = 1, 2, 3 = 6
 
 // var n = parseInt(prompt("Enter a number:"));
@@ -600,13 +600,13 @@
 // }                                // ab wapas se loop chalega aur a aur b ko add krke temporary me save kr dega.
 
 // Que.44 => Program to check Armstrong Number.
-// Armstrong number => In the case of an Armstrong number of 3 digits, the sum of cubes of each digit is equal to the number itself. 
+// Armstrong number => In the case of an Armstrong number of 3 digits, the sum of cubes of each digit is equal to the number itself.
 // For example, 153 = 1*1*1 + 5*5*5 + 3*3*3
 // Armstrong Numbers =>
 // 1 digit -> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-// 2 digit -> No Armstrong Numbers 
+// 2 digit -> No Armstrong Numbers
 // 3 digit -> 153, 370, 371, 407
-// 4 digit -> 1634, 8208, 9474 
+// 4 digit -> 1634, 8208, 9474
 // chatGPT and me =>
 // var myNumber = prompt("Enter a number: ");
 // var digits = myNumber.toString().length;
@@ -715,9 +715,9 @@
 // var len = string.length;
 // var msg = `${string}, It is a Palindrome string.`;
 // // string ki counting index ke roop me hoti h isiliye i = 0 h. ex ke liye user dad enter krta h to console pr i ki value 0 aur 1 print hogi. 0 to phle hi chal jayega aur dad me 3 letters h ise 2 se divide krne pr 1 aayega to loop ek baar aur chalega.
-// for(var i = 0; i < len/2; i++){      
+// for(var i = 0; i < len/2; i++){
 //     // same ex ke anusar string dad ki 0th index "d" aur 1st index "a" print hogi.
-//     console.log(string[i]);   
+//     console.log(string[i]);
 //     // same ex /- len = 3 h, 3-1-i(i = 0) = 2 mtlb dad me 2nd index pr "d" h, aur isi prakar 3-1-i(i = 1) = 1 yaha 1st index pr "a" h.
 //     console.log(string[len - 1 - i]);
 //     if(string[i] != string[len - 1 - i]){
@@ -741,22 +741,194 @@
 // var newstr = string.replace(reg, "blue");
 // console.log(newstr);
 
-
 //Que.49 => Add two numbers without using any Arithmetic Operator.
-function addWithoutArithmeticOperators(a, b) {
-    while (b !== 0) {
-        // Calculate the carry
-        let carry = a & b;
-        // XOR to get the sum without carry
-        a = a ^ b;
-        // Left shift carry to add it to the sum in the next iteration
-        b = carry << 1;
-    }
-    return a;
-}
+// function addWithoutArithmeticOperators(a, b) {
+//     while (b !== 0) {
+//         // Calculate the carry
+//         let carry = a & b;
+//         // XOR to get the sum without carry
+//         a = a ^ b;
+//         // Left shift carry to add it to the sum in the next iteration
+//         b = carry << 1;
+//     }
+//     return a;
+// }
 // Example usage
-const result = addWithoutArithmeticOperators(5, 7);
-console.log(result); // Output: 12
+// const result = addWithoutArithmeticOperators(5, 7);
+// console.log(result); // Output: 12
 
 // Que.50 => Program to reverse a string using for loop.
-var string = prompt("Enter a string: ")
+// var string = prompt("Enter a string: ")
+
+// Que.51 => Given an array of numbers, use map() to create a new array that contains the square of each number.
+// let arr = [2, 3, 6, 56, 327, 33];
+// let ans = arr.map((val) => val * val);
+// console.log(ans);
+
+// Que.52 Use filter() to return an array of only the even numbers from an array of integers.
+// let arr = [2, 3, 4, 54, 6, 34, 2, 21, 4, 5, 5, 6, 379];
+// let ans = arr.filter((val) => val % 2 === 0);
+// console.log(ans);
+
+// Que.53 Transform an array of strings into an array of their lengths using map().
+// let arr = ["durgu", "durgain", "durgeswari", "durgesh"];
+// let ans = arr.map((val) => val.length);
+// console.log(ans);
+
+// Que.54 Given an array of student objects, filter out students whose scores are less than 50.
+// let arr = [
+//   { name: "durgu", score: 78 },
+//   { name: "durgain", score: 34 },
+//   { name: "durgashwari", score: 87 },
+//   { name: "durgesh", score: 25 },
+// ];
+// let ans = arr.filter((val) => val.score < 50);
+// console.log(ans);
+
+// Que.55 Use map() to convert an array of Fahrenheit temperatures to Celsius.
+// let arr = [46, 73, 87.7, 24];
+// let ans = arr.map((val) => {
+//   let cel = ((val - 32) * 5) / 9;
+//   return cel;
+// });
+// console.log(ans);
+
+// Que.56 Filter out words from an array that are shorter than 5 characters.
+// let arr = ["durgu", "durgain", "durgeswari", "durgesh", "dur", "durg"];
+// let ans = arr.filter((val) => val.length < 5);
+// console.log(ans);
+
+// Que.57 Create a new array of objects using map(), where each object includes the original array value and its index.
+// let arr = [2, 3, 4, 54, 6, 34, 2, 21, 4, 5, 5, 6, 379];
+// let ans = arr.map((val, index) => {
+//   return { val: val, index: index };
+// });
+// console.log(ans);
+
+// Que.58 Use filter() to get an array of prime numbers from an array of integers.
+// let arr = [2, 3, 4, 54, 7, 19, 6, 34, 2, 21, 4, 5, 5, 6, 379];
+// let isPrime = (val) => {
+//   if (val < 2) return false;
+//   for (let i = 2; i <= Math.sqrt(val); i++) {
+//     if (val % i === 0) return false;
+//   }
+//   return true;
+// };
+// let ans = arr.filter(isPrime);
+// console.log(ans);
+
+// Que.59 Transform an array of prices, applying a 10% discount using map().
+// let arr = [2, 3, 4, 54, 7, 19, 6, 34, 2, 21, 4, 5, 5, 6, 379];
+// let ans = arr.map((val) => val - (val * 10) / 100);
+// console.log(ans);
+
+// Que.61 Use filter() to remove null or undefined values from an array.
+// let arr = [
+//   23,
+//   434,
+//   "",
+//   34,
+//   "",
+//   null,
+//   undefined,
+//   0,
+//   -0,
+//   typeof null,
+//   typeof undefined,
+//   typeof Array,
+//   NaN,
+//   false,
+//   [],
+//   {},
+// ];
+
+// let ans = arr.filter((val) => {
+//   return val !== null && val !== undefined;
+// });
+
+// console.log(ans);
+
+// Que.62 Given an array of people objects, filter out people older than 30.
+// let arr = [
+//   { name: "durgu", age: 78 },
+//   { name: "durgain", age: 34 },
+//   { name: "durgashwari", age: 87 },
+//   { name: "durgesh", age: 25 },
+// ];
+// let ans = arr.filter((val) => val.age > 30);
+// console.log(ans);
+
+// Que.63 Use map() to capitalize the first letter of each string in an array.
+// let arr = ["durgu", "durgain", "durgeswari", "durgesh"];
+// let ans = arr.map((val) => {
+//   if (val.length === 0) return val;
+//   return val.charAt(0).toUpperCase() + val.slice(1);
+// });
+// console.log(ans);
+
+// Que.64 Filter out objects from an array where the active property is false.
+// let arr = [
+//   { name: "durgu", age: 78, active: false },
+//   { name: "durgain", age: 34, active: true },
+//   { name: "durgesh", age: 25, active: true },
+//   { name: "durgashwari", age: 87, active: false },
+// ];
+// let ans = arr.filter((val) => !val.active);
+// console.log(ans);
+
+// Que.65 Use map() to create an array of only the names from an array of user objects.
+// let arr = [
+//   { name: "durgu", age: 78, active: false },
+//   { name: "durgain", age: 34, active: true },
+//   { name: "durgesh", age: 25, active: true },
+//   { name: "durgashwari", age: 87, active: false },
+// ];
+// let ans = arr.map((val) => val.name);
+// console.log(ans);
+
+// Que.66 Given an array of words, filter out the words that contain more than 10 characters.
+// let arr = ["durgu", "durgain", "durgeshwari", "durgesh", "dur", "durg"];
+// let ans = arr.filter((val) => val.length > 10);
+// console.log(ans);
+
+// Que.67 Use map() to round an array of floating-point numbers to the nearest integer.
+// let arr = [1.2, 2.5, 3.7, 4.1, 5.9];
+// let ans = arr.map((num) => Math.round(num));
+// console.log(ans);
+
+// Que.68 Filter out all negative numbers from an array using filter().
+// let arr = [-23, -233, 78, 36, -66, 37, -0, 0, 32];
+// let ans = arr.filter((val) => val < 0);
+// console.log(ans);
+
+// Que.69 Given an array of numbers, use map() to return an array where each number is doubled if it’s odd.
+// let arr = [2, 3, 4, 54, 7, 19, 6, 34, 2, 21, 4, 5, 5, 6, 379];
+// let ans = arr.map((val) => {
+//   return val % 2 === 0 ? val : val * 2;
+// });
+// console.log(ans);
+
+// Que.70 Use filter() to return an array of strings that contain the letter 'a' from an array of words.
+// let arr = ["durgu", "durgain", "durgeshwari", "durgesh", "dur", "durg"];
+// let ans = arr.filter((val) => {
+//   for (let i = 0; i < val.length; i++) {
+//     if (val[i].toLowerCase() === "a") {
+//       return true;
+//     }
+//   }
+// });
+// console.log(ans);
+
+// second method =>
+// let ans = arr.filter((val) => val.toLowerCase().includes("a"));
+// console.log(ans);
+
+// Que.71 Create a new array of objects using map() where each object contains the original string and its reversed version.
+// let arr = ["durgu", "durgain", "durgeshwari", "durgesh", "dur", "durg"];
+// let ans = arr.map((val) => {
+//   return {
+//     original: val,
+//     reversed: val.split("").reverse().join(""),
+//   };
+// });
+// console.log(ans);
