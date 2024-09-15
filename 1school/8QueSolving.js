@@ -932,3 +932,14 @@
 //   };
 // });
 // console.log(ans);
+
+// Que.72 Given an array of arrays where each inner array contains numbers, use map() to return an array of the sum of each inner array.
+// let arr = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+// ];
+// let ans = arr.map((val) => val.reduce((a, b) => a + b, 0));
+// console.log(ans);
+
+// Que.73
